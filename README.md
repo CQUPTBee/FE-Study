@@ -4,11 +4,11 @@
 
 + 将你们完成的项目放在以姓名全拼命名的文件夹里，命名如：`yuguangjing`。注意：这里是公共发repo，大家不要修改别人的文件夹或整个项目结构
 + 每个项目一个文件夹，命名为:`yuguangjing/stage1/task1`
-+ [Level1 前端初窥传送门](/stage1.md)
-+ [Level2 小试牛刀传送门](/stage2.md)
-+ [Level3 渐入佳境传送门](/stage3.md)
-+ [Level4 得心应手传送门](/stage4.md)
-+ [Level4 玩转自如传送门](/stage5.md)
++ [Level1 前端初窥传送门](/Stage1.md)
++ [Level2 小试牛刀传送门](/Stage2.md)
++ [Level3 渐入佳境传送门](/Stage3.md)
++ [Level4 得心应手传送门](/Stage4.md)
++ [Level4 玩转自如传送门](/Stage5.md)
 
 ## 部署说明
 
@@ -27,8 +27,8 @@
 ## 推荐开发环境
 
 + 浏览器与调试：Chrome + DevTools / Firefox + Firebug
-+ 编辑器：Sublime Text 2/3（插件：[Package Control][],[Emmet][],[AutoFileName][],[Git][]）、Vim、Emacs
-+ IDE：[WebStorm][]、[PhpStorm][]
++ 编辑器：Sublime Text 2/3（插件：Package Control,Emmet,AutoFileName,Git）、Vim、Emacs
++ IDE：WebStorm、PhpStorm
 
 ## 学习帮助
 
