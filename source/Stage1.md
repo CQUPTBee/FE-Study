@@ -46,5 +46,37 @@
 	- [Markdown——入门指南](http://www.jianshu.com/p/1e402922ee32/)
 	- [GitHub上README写法暨markdown语法解读](http://www.tuicool.com/articles/zIJrEjn)
 +  **作业**：按照[部署说明](https://github.com/CQUPTBee/FE-Study)，在你们的专有文件夹（以你的姓名全拼命名）下，添加README.md文件，`参照Markdown语法`，首先在里面附上个人的照片或头像，然后填上你们的姓名、联系方式，以及诸如兴趣爱好等你愿意介绍的个人信息。最后发起一次**Pull Request**  
-## 任务3   sublime/webtorm		磊
-## 任务4   谷歌调试（HTML/CSS部分）	磊
+
+## 任务3   sublime/webtorm
+
+#### 1.ZenCoding的必要性
+
+#### 2.SublimeText 3的插件安装，设置，技巧
+
+主流前端开发编辑器，体积较小，运行速度快，文本功能强大，支持编译功能且可在控制台看到输出，支持的大量插件
+
+##### 插件安装：
++ [Sublime Text3前端必备插件](http://www.jianshu.com/p/edbc2a13494b)（安装自己需要的插件，不要全部安装）
+如果安装出现问题可以看一下[此链接的前面一段](http://www.jianshu.com/p/3cb5c6f2421c/#)
+##### 使用技巧：
++ [12个不可不知的Sublime Text应用技巧和诀窍 ](https://segmentfault.com/a/1190000000505218)
+
+备注：如果习惯了自动保存，可以在设置里面将失去焦点自动保存设置为true
+
+#### 3.WebStorm：
+功能强大的前端专用IDE，拥有即时编辑（chrome）、自动完成、debugger、Zen Coding、HTML5 支持、JSLint、Less支持、CoffeeScript支持、Node.JS、单元测试、集成git和svn版本控制等特性，但是由于其体积较大，并且现阶段我们使用不了那么多功能，所以仅作为拓展内容。
+
++ [webstorm的配置和使用](http://www.jianshu.com/p/f72dfac254ac)
+
+## 任务4   Chrome调试HTML与CSS
+
++ 大家现阶段需要掌握的调试工具[写到了Blog里面](http://879479119.github.io/2016/07/25/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E4%B8%AD%E7%9A%84HTML%E4%B8%8ECSS%E8%B0%83%E8%AF%95/)
+
+如果**实在是忍不住要学习**，可以预习一下
+
++ [Chrome开发者工具不完全指南（一、基础功能篇）](http://web.jobbole.com/82558/)
++ [Chrome开发者工具不完全指南（二、进阶篇）](http://web.jobbole.com/82562/)
++ [Chrome开发者工具不完全指南（三、性能篇）](http://web.jobbole.com/82576/)
++ [Chrome开发者工具不完全指南（四、性能进阶篇）](http://web.jobbole.com/82590/)
++ [Chrome开发者工具不完全指南（五、移动篇）](http://web.jobbole.com/82612/)
++ [Chrome开发者工具不完全指南（六、插件篇）](http://web.jobbole.com/82701/)
