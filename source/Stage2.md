@@ -23,19 +23,12 @@
 有很多种不同的`CSS预处理器`语言，比如 `Sass（SCSS）`，`LESS`，`Stylus`等等，目前业界最常用就是`Sass（SCSS）`和`LESS`。
 - 要求掌握如何编译Sass/Less文件，尝试使用多种编译方法，掌握Sass和Less的基础语法。
 - 参考资料
-	- [编译sass 文档][1]
-	- [sass教程 文档][2]
-	- [Sass入门篇 视频教程][3]
-	- [sass进阶篇 视频教程][4]
-	- [less 文档][5]
-	- [less 视频][6]
-
-	[1]:http://www.sass.hk/input-sass.html
-	[2]:http://www.sass.hk/sass-course.html
-	[3]:http://www.imooc.com/learn/311
-	[4]:http://www.imooc.com/view/436
-	[5]:http://www.bootcss.com/p/lesscss/
-	[6]:http://www.imooc.com/learn/102
+	- [编译sass 文档](http://www.sass.hk/input-sass.html)
+	- [sass教程 文档](http://www.sass.hk/sass-course.html)
+	- [Sass入门篇 视频教程](http://www.imooc.com/learn/311)
+	- [sass进阶篇 视频教程](http://www.imooc.com/view/436)
+	- [less 文档](http://www.bootcss.com/p/lesscss/)
+	- [less 视频](http://www.imooc.com/learn/102)
 
 ### 任务6  Html/css实战		雷
 ### 任务7  规范（HTML/CSS）	杰
