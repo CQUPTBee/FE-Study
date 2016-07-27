@@ -18,7 +18,7 @@
 2. 在你自己**本机**上创建一个文件夹，比如命名为`FE-Study`,然后进入该文件夹，在文件夹中打开命令行窗口，输入一下命令(注意把中文部分替换成你自己的昵称)把远程repo克隆到本地:
 
 ```
- git clone https://github.com/你的Github昵称/FE-Study/git
+ git clone 'git@github.com:你的github昵称/FE-Study.git'
 ```
 3. 现在在你本地应该有这样一个目录：`FE-Study/你的名字全称`,进入该目录，你可以在这里面创建你的项目文件夹以及你的所有代码。再次提醒**不要修改别人的文件夹**
 4. 当你在本地完成你的代码后(本地多次commit),将你的本地repo**push**到远程repo,然后再点**Pull Request**,小组管理员确认你的请求版本无误后，将**Merge**你提交的版本。
