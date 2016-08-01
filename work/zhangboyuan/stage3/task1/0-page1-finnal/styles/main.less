@@ -1,0 +1,1113 @@
+/* ==========================================================================
+ ===   变量 函数 声明   ====================================================================
+ ============================================================================ */
+@ico-url: "../images/sprite.png";
+
+.box-style-1() {
+  border: 1px solid #e7e9eb;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 3px #dcdee1;
+  & > h2 {
+    padding-left: 21px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b7b7b7;
+    background-color: #f4f5f6;
+    border-radius: 7px 7px 0 0;
+  }
+}
+
+/* ==========================================================================
+ ===   顶栏   ====================================================================
+ ============================================================================ */
+.top {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2189bf;
+}
+
+/*  顶栏左侧logo
+============================================================================ */
+.ico-top-1 {
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 13px;
+  left: 48px;
+  background: url(@ico-url) -144px -0px no-repeat;
+  display: inline-block;
+}
+
+/*  搜索栏
+============================================================================ */
+.search {
+  height: 29px;
+  width: 314px;
+  position: absolute;
+  top: 17px;
+  right: 158px;
+  background: url(@ico-url) -0px -65px no-repeat;
+  
+  .text {
+    width: 262px;
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    left: 40px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2px;
+    left: 13px;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/*  登录
+============================================================================ */
+.login {
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+  position: absolute;
+  top: 22px;
+  right: 95px;
+  background: url("../images/login.gif") no-repeat;
+  span {
+    position: absolute;
+    top: 1px;
+    left: 19px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+/* ==========================================================================
+ ===   侧边栏   ====================================================================
+ ============================================================================ */
+
+/* ==========================================================================
+    边栏长长的大盒子
+ ============================================================================ */
+.sidebar {
+  height: 1208px;
+  width: 260px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #2a2e3d;
+}
+
+/* ==========================================================================
+    用户区 (头像,姓名,关注,收藏)
+ ============================================================================ */
+.sidebar-user {
+  height: 150px;
+  overflow: hidden;
+}
+
+/*  用户头像和名字
+============================================================================ */
+.user-header {
+  height: 60px;
+  margin: 17px 0 0 42px;
+  .user-name {
+    position: relative;
+    left: 10px;
+    top: -20px;
+    font-size: 16px;
+    color: #e2e2e2;
+  }
+}
+
+/*  用户收藏和关注
+============================================================================ */
+.user-info {
+  margin-left: 60px;
+  padding-top: 20px;
+  
+  .collection, .follow {
+    width: 32px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  
+  .follow {
+    margin-left: 33px;
+    padding-left: 30px;
+    border-left: 1px solid #313545;
+  }
+  
+  a {
+    font-size: 12px;
+    color: #6a7c90;
+    font-weight: bold;
+  }
+}
+
+/* ==========================================================================
+    侧栏下拉功能列表
+ ============================================================================ */
+
+/*  下拉表大盒子
+============================================================================ */
+.sidebar-filelist {
+  li {
+    overflow: hidden;
+  }
+  
+  .header {
+    display: block;
+    padding-left: 42px;
+    font-size: 12px;
+    line-height: 48px;
+    color: #6e8096;
+    font-weight: bold;
+  }
+  
+  .active {
+    background-color: #383d4e;
+    .header {
+      color: #ececef;
+    }
+  }
+  
+  .active-show {
+    padding-left: 65px;
+    overflow: hidden;
+    
+    > li {
+      background: url("../images/sidebar-2-1.png") no-repeat;
+    }
+    li {
+      padding-left: 18px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      .sub-header {
+        color: #6e8096;
+      }
+    }
+    
+    .active {
+      background: url("../images/sidebar-2-2.png") no-repeat;
+      > a {
+        color: #ececef;
+      }
+    }
+    
+    .active-show-show .active {
+      background: none;
+    }
+    
+    .active-show-show {
+      position: relative;
+      top: 16px;
+    }
+  }
+  
+  /*  侧栏下拉栏图标定义
+  =========================================================================== */
+  .header:before {
+    height: 11px;
+    width: 12px;
+    content: '';
+    display: inline-block;
+    margin-right: 12px;
+  }
+  .personal-collection > a:before,
+  .image-base > a:before,
+  .grow-record > a:before {
+    background: url("../images/sprite.png") -212px -16px no-repeat;
+  }
+  .personal-statements > a:before {
+    background: url("../images/sprite.png") -291px -0px no-repeat;
+  }
+  .my-sharing > a:before {
+    background: url("../images/sprite.png") -224px -16px no-repeat;
+  }
+  .account-information > a:before {
+    height: 12px;
+    background: url("../images/sprite.png") -267px -0px no-repeat;
+  }
+  .sub-header:before {
+    height: 11px;
+    width: 12px;
+    content: '';
+    display: inline-block;
+    margin-right: 12px;
+    background: url("../images/sprite.png") -236px -16px no-repeat;
+  }
+  .active > a:before {
+    height: 11px;
+    width: 12px;
+    content: '';
+    display: inline-block;
+    margin-right: 12px;
+    background: url("../images/sprite.png") -291px -0px no-repeat;
+  }
+}
+
+/* ==========================================================================
+ ===   主要内容区   ====================================================================
+ ============================================================================ */
+
+/*  内容区大盒子
+============================================================================ */
+.main-content-big-box {
+  height: 1208px;
+  width: 977px;
+  position: absolute;
+  top: 60px;
+  left: 260px;
+  right: 0;
+  padding-left: 62px;
+  background: #eeeeed;
+}
+
+/* ==========================================================================
+    文档路径栏
+ ============================================================================ */
+
+/*  路径模块
+============================================================================ */
+.path {
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding-left: 30px;
+  a {
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 32px;
+  }
+  
+  .cur-path {
+    color: #6898c2;
+  }
+  
+  .root-path { margin-right: 10px }
+  .mid-path:before,
+  .cur-path:before {
+    content: '/';
+    color: #b0b0b0;
+    margin-right: 5px;
+  }
+}
+
+/* ==========================================================================
+    详细查询
+ ============================================================================ */
+
+/*  查询盒子
+============================================================================ */
+.detail-search-box {
+  width: 890px;
+  height: 87px;
+  margin-top: 50px;
+  padding-top: 16px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #dddee0;
+  
+  //.options-list-2 {
+  //  display: inline-block;
+  //  width: 120px;
+  //  height: 26px;
+  //  margin-left: 16px;
+  //  padding: 8px 0 0 8px;
+  //  float: left;
+  //  background: url("../images/search-detail-2.gif");
+  //}
+  
+  .options-list-date {
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    margin-left: 10px;
+    padding: 8px 0 0 8px;
+    float: left;
+  }
+}
+
+/*  查询项
+============================================================================ */
+.ds-query-item {
+  margin-left: 30px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  span {
+    float: left;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 28px;
+  }
+}
+
+/* 下拉菜单
+============================================================================ */
+.select {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+}
+
+.item-select-input {
+  height: 26px;
+  position: relative;
+  text-indent: 8px;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px 2px 0 0;
+  background: url("../images/downarrow.png") no-repeat 90% center;
+  &:focus{
+    border:1px solid #2189bf;
+  }
+}
+
+.isi-style-1 {
+  width: 70px;
+}
+.isi-style-2{
+  width:120px;
+}
+
+.select-content {
+  min-height: 40px;
+  max-height: 130px;
+  position: relative;
+  text-indent: 8px;
+  line-height: 26px;
+  z-index: 999;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-top: #fff;
+  border-radius: 0 0 2px 2px;
+  li:hover {
+    background-color: #6a7c90;
+    cursor: pointer;
+  }
+}
+
+
+
+/*  买方卖方
+============================================================================ */
+.ds-saler-buyer {
+  width: 190px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-left: 40px;
+  background: url("../images/search-detail-4.gif") no-repeat right;
+  span {
+    float: left;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 28px;
+  }
+  .buyer {
+    width: 160px;
+    height: 28px;
+    position: relative;
+  }
+  .saler {
+    width: 160px;
+    height: 28px;
+    position: relative;
+  }
+  .switch-btn {
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 54px;
+  }
+}
+
+/*  查询详细选项
+============================================================================ */
+.ds-details {
+  width: 390px;
+  height:61px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-left: 16px;
+  > div {
+    position: absolute;
+    display: inline-block;
+  }
+  .date{
+    top:0;
+    left:0;
+  }
+  .time{
+    top:0;
+    left:183px;
+  }
+  .people{
+    top:35px;
+    left:0;
+  }
+  .deals{
+    top:35px;
+    left:122px;
+  }
+  
+  span {
+    float: left;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 26px;
+  }
+}
+
+/*  提交按钮
+============================================================================ */
+.ds-submit {
+  width: 51px;
+  height: 25px;
+  float: left;
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+  background: url("../images/search-detail-submit.gif");
+}
+
+/* ==========================================================================
+    历史查询
+ ============================================================================ */
+
+@hs-space: 5px;
+
+/*  历史查询盒子
+============================================================================ */
+.history-search-box {
+  width: 890px;
+  height: 65px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.scroller {
+  position: absolute;
+  width: 754px;
+  height: 100%;
+}
+
+/*  滑动模块
+============================================================================ */
+/*  上一个、下一个按钮
+============================================================================ */
+.hs-prev-btn {
+  width: 30px;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-right: @hs-space;
+  background: url("../images/sprite.png") -30px -0px no-repeat;
+}
+
+.hs-next-btn {
+  height: 65px;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  background: url("../images/sprite.png") -0px -0px no-repeat;
+}
+
+/*  滑动遮罩
+============================================================================ */
+.hs-wrapper {
+  width: 684px;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  left: 35px;
+}
+
+/*  滑动内容
+============================================================================ */
+.hs-time-list {
+  width: 1126px;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  > a {
+    width: 110px;
+    height: 65px;
+    margin-right: @hs-space;
+    float: left;
+    background-color: #fff;
+    border-top: 1px solid #cacdd1;
+    border-left: 1px solid #cacdd1;
+    border-right: 1px solid #eff0f1;
+    border-bottom: 1px solid #eff0f1;
+    box-shadow: 0 0 6px #dcdee1;
+  }
+  .blue {
+    border-top: 4px solid #4388c8;
+  }
+  p:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 32px;
+    width: 55px;
+    margin: 0 auto;
+  }
+  p:last-child {
+    font-size: 21px;
+    color: #ec6500;
+  }
+  .rmb:before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 12px;
+    margin-left: 26px;
+    background: url("../images/history-search-2.gif");
+  }
+}
+
+/*  更多历史查询
+============================================================================ */
+/*  查询按钮
+============================================================================ */
+.read-more {
+  width: 131px;
+  height: 65px;
+  position: absolute;
+  right: 0;
+  background: url("../images/history-search-1.gif");
+}
+
+/* ==========================================================================
+    当月统计
+ ============================================================================ */
+.month-summary-box {
+  width: 895px;
+  margin-top: 22px;
+  h2 {
+    font-size: 12px;
+  }
+}
+
+.ms-summary-list {
+  height: 73px;
+  margin-top: 5px;
+  .pic {
+    display: inline-block;
+    width: 60px;
+    height: 46px;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+  }
+  li {
+    width: 202px;
+    height: 72px;
+    position: relative;
+    float: left;
+    margin-right: 28px;
+    padding-left: 14px;
+    border: 1px solid #cacdd1;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 6px #dcdee1;
+    .number {
+      margin-top: 18px;
+    }
+    .text {
+      color: #b5b5b5;
+      margin-top: 13px;
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  .item-type-1 {
+    border-left: 4px solid #43b29e;
+    .pic {
+      background-color: #43b29e;
+    }
+  }
+  .item-type-2 {
+    border-left: 4px solid #4388c8;
+    .pic {
+      background-color: #4388c8;
+    }
+  }
+  .item-type-3 {
+    border-left: 4px solid #cf4a36;
+    .pic {
+      background-color: #cf4a36;
+    }
+  }
+  .item-type-4 {
+    border-left: 4px solid #e2cd47;
+    .pic {
+      background-color: #e2cd47;
+    }
+  }
+}
+
+/* ==========================================================================
+    项目信息表
+ ============================================================================ */
+.project-table-box {
+  float: left;
+  position: relative;
+  display: inline-block;
+  width: 532px;
+  height: 356px;
+  margin-top: 14px;
+  .box-style-1();
+}
+
+.pt-table-box {
+  width: 490px;
+  height: 290px;
+  margin: 12px auto;
+  .nav {
+    height: 28px;
+    .nav-item {
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      width: 85px;
+      height: 28px;
+      background-color: #f4f5f6;
+      font-size: 12px;
+      text-align: center;
+      line-height: 28px;
+      color: #535353;
+      border: 2px solid #f4f5f6;
+      border-radius: 7px 7px 0 0;
+      border-bottom: 2px solid #e7e9eb;
+      cursor: pointer;
+    }
+    a:hover {
+      background-color: #fff;
+      border: 2px solid #e7e9eb;
+      border-bottom: none;
+      border-radius: 7px 7px 0 0;
+    }
+    .on-focus {
+      background-color: #fff;
+      border: 2px solid #e7e9eb;
+      border-bottom: none;
+      border-radius: 7px 7px 0 0;
+    }
+  }
+}
+
+.table-border-box {
+  width: 490px;
+  height: 250px;
+  border: 2px solid #e7e9eb;
+  overflow: hidden;
+  border-radius: 0 0 7px 7px;
+}
+
+.pt-table-box .tab {
+  display: none;
+  margin: 28px auto;
+  border-right: 1px solid #e7e9eb;
+  border-bottom: 1px solid #e7e9eb;
+  text-align: center;
+  color: #a5a5a5;
+}
+
+.pt-table-box .on-show {
+  display: table;
+}
+
+.pt-table-box .tab td {
+  font-size: 12px;
+  font-family: 宋体;
+  width: 100px;
+  border-left: 1px solid #e7e9eb;
+  border-top: 1px solid #e7e9eb;
+}
+
+.pt-table-box .tab td:hover {
+  font-size: 12px;
+  font-family: 宋体;
+  background-color: #f4f5f6;
+  width: 100px;
+  border-left: 1px solid #e7e9eb;
+  border-top: 1px solid #e7e9eb;
+}
+
+.pt-table-box .tab tr {
+  height: 28px;
+}
+
+/* ==========================================================================
+    项目搜索
+ ============================================================================ */
+.project-search-box {
+  float: left;
+  margin: 14px 0 0 10px;
+  position: relative;
+  width: 352px;
+  height: 356px;
+  .box-style-1();
+}
+
+.ps-search-option-box {
+  width: 282px;
+  height: 236px;
+  overflow: hidden;
+  margin: 14px auto 0 auto;
+  h2 {
+    margin: 3px 0 0 18px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #c7c6c6;
+  }
+  input {
+    width: 70%;
+    margin: 4px 0 0 18px;
+    outline: none;
+    border: none;
+  }
+  .header {
+    float: left;
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #f4f5f4;
+  }
+  
+  .price {
+    float: left;
+    width: 96px;
+    height: 42px;
+    border-bottom: 1px solid #f4f5f4;
+    border-right: 1px solid #f4f5f4;
+    input {
+      margin-left: 0;
+    }
+    span {
+      margin-left: 18px;
+    }
+  }
+  
+  .charger {
+    float: left;
+    width: 184px;
+    height: 42px;
+    border-bottom: 1px solid #f4f5f4;
+  }
+  
+  .details {
+    float: left;
+    width: 100%;
+    height: 144px;
+    border-bottom: 1px solid #f4f5f4;
+    textarea {
+      width: 266px;
+      height: 116px;
+      margin: 4px 0 0 17px;
+      border: none;
+      resize: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.ps-submit-box {
+  width: 282px;
+  height: 30px;
+  margin: -4px auto;
+  overflow: hidden;
+  .secret-protocol {
+    float: left;
+    height: 30px;
+    margin-left: 4px;
+    line-height: 30px;
+  }
+  #ps-agree-to-keep-secret-checkbox {
+    //fix this later
+  }
+  span {
+    display: inline-block;
+    margin-left: 3px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #c7c6c6;
+  }
+  #ps-search-btn {
+    width: 51px;
+    height: 25px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    background: url("../images/search-detail-submit.gif");
+  }
+}
+
+/* ==========================================================================
+    日历
+ ============================================================================ */
+.calendar-box {
+  width: 352px;
+  height: 352px;
+  float: left;
+  position: relative;
+  margin-top: 10px;
+  .box-style-1();
+}
+
+.cb-calendar {
+  width: 312px;
+  height: 290px;
+  margin: 10px auto;
+}
+
+.calendar-select-tab {
+  width: 308px;
+  height: 22px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+  .year-box {
+    width: 64px;
+    height: 22px;
+    float: left;
+    position: relative;
+    margin-right: 6px;
+    background: url("../images/calendar-year.gif");
+    .select-year-btn {
+      position: absolute;
+      right: 0;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .month-box {
+    width: 85px;
+    height: 22px;
+    float: left;
+    position: relative;
+    margin-right: 6px;
+    background: url("../images/calendar-month.gif");
+    .prev-month-btn {
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+    }
+    .select-month-btn {
+      position: absolute;
+      right: 22px;
+      width: 22px;
+      height: 22px;
+    }
+    .next-month-btn {
+      position: absolute;
+      right: 0;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .date-box {
+    width: 75px;
+    height: 22px;
+    float: left;
+    position: relative;
+    margin-right: 6px;
+    background: url("../images/calendar-date.gif");
+    .select-date-btn {
+      position: absolute;
+      right: 0;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  
+  .return-today-btn {
+    display: inline-block;
+    width: 64px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #808285;
+    background: url("../images/calendar-return.gif");
+  }
+  .year-text,
+  .date-text,
+  .month-text {
+    display: inline-block;
+    color: #808285;
+    font-size: 10px;
+    margin-left: 4px;
+    line-height: 22px;
+  }
+  .month-text {
+    margin-left: 24px;
+  }
+}
+
+.calendar-date-tab {
+  margin: 8px auto;
+  border-top: 2px solid #a9cfec;
+  border-spacing: 2px;
+  td {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    &:hover {
+      border: 1px solid #f7d463;
+    }
+  }
+  
+  .date-tab-head {
+    margin-bottom: 5px;
+    td {
+      border-bottom: 1px solid #e7e9eb;
+      height: 32px;
+      color: #808285;
+      font-size: 10px;
+    }
+  }
+  
+  .weekend-num,
+  .festival {
+    color: red;
+  }
+  
+  .selected {
+    border: 1px solid #f7d463;
+  }
+}
+
+/* ==========================================================================
+    汽车行业品牌榜
+ ============================================================================ */
+.car-ranking-box {
+  width: 532px;
+  height: 352px;
+  float: left;
+  position: relative;
+  margin: 10px 0 0 10px;
+  .box-style-1();
+}
+
+.car-ranking-table {
+  border-collapse: collapse;
+  margin: 18px 0 0 42px;
+  text-align: center;
+  .move-header-left {
+    text-align: left;
+    padding-left: 30px;
+  }
+  #no-hover-color {
+    background: #d5d7d9;
+  }
+  tr:hover {
+    background-color: #d5d7d9;
+  }
+  td {
+    height: 24px;
+    border: 1px solid #e7e9eb;
+  }
+  .rank {
+    width: 66px;
+  }
+  .brand {
+    width: 92px;
+  }
+  .search-hot {
+    width: 290px;
+    .search-hot-number {
+      float: left;
+      margin-left: 31px;
+    }
+    .color-bar {
+      display: block;
+      width: 168px;
+      height: 4px;
+      float: left;
+      margin-left: 22px;
+      position: relative;
+      top: 4px;
+      background: #ddd;
+      .color {
+        display: block;
+        float: left;
+        height: 4px;
+        z-index: 1000;
+      }
+    }
+  }
+  
+  .dazhong .color {
+    width: 141px;
+    background-color: #ed6e52;
+  }
+  .fengtian .color {
+    width: 122px;
+    background-color: #ef8050;
+  }
+  .audi .color {
+    width: 105px;
+    background-color: #f19f4f;
+  }
+  .bentian .color {
+    width: 98px;
+    background-color: #7ecaf0;
+  }
+  .fute .color {
+    width: 88px;
+    background-color: #7fcbf0;
+  }
+  .bmw .color {
+    width: 80px;
+    background-color: #7fcbf0;
+  }
+  .xiandai .color {
+    width: 76px;
+    background-color: #7fcbf0;
+  }
+  .qiya .color {
+    width: 73px;
+    background-color: #7fcbf0;
+  }
+  .benchi .color {
+    width: 63px;
+    background-color: #7fcbf0;
+  }
+  .bieke .color {
+    width: 54px;
+    background-color: #7fcbf0;
+  }
+}
+
