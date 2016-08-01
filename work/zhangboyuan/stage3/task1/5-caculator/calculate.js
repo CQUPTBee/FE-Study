@@ -31,17 +31,20 @@ function activeCalculator() {
     })();
 
     //绑定按钮事件
-    add.onclick = function () {
+    add.onclick = function fadd() {
         result = val;
+        console.log("val的类型是: " + typeof val);
+        console.log("result的类型是: " + typeof result);
+
         val = "";
         ca_index = 1;
     };
-    sub.onclick = function () {
+    sub.onclick = function fsub() {
         result = val;
         val = "";
         ca_index = 2;
     };
-    mult.onclick = function () {
+    mult.onclick = function fmult() {
         result = val;
         val = "";
         ca_index = 3;
@@ -69,29 +72,41 @@ function activeCalculator() {
         output(result);
     };
     dot.onclick = function () {
-        val = val + ".";
-        output(val);
+        if (val.toString().split(".").length > 1) {
+            //判断是否已经为浮点数
+            output(val);
+        }
+        else {
+            val = val + ".";
+            output(val);
+        }
     };
     equal.onclick = function () {
         switch (ca_index) {
             case 1:
+                val = Number(val);
+                result = Number(result);
                 result = result + val;
                 val = result;
                 output(result);
                 break;
             case 2:
+                val = Number(val);
+                result = Number(result);
                 result = result - val;
                 val = result;
                 output(result);
                 break;
             case 3:
-                result=Number(result);
+                val = Number(val);
+                result = Number(result);
                 result = result._mult(val);
                 val = result;
                 output(result);
                 break;
             case 4:
-                result=Number(result);
+                val = Number(val);
+                result = Number(result);
                 result = result._div(val);
                 val = result;
                 output(result);
@@ -99,30 +114,12 @@ function activeCalculator() {
         }
     };
 
-    // (function () {
-    //     for (var i = 0; i < nums.length; i++) {
-    //         nums[i].onclick = function (_i) {
-    //             return function () {
-    //                 val = val + _i.toString();
-    //                 val = Number(val);
-    //                 output(val);
-    //             }
-    //         }(i)
-    //     }
-    // })();
-
+    //输入
     (function () {
         for (var i = 0; i < nums.length; i++) {
             nums[i].onclick = function (_i) {
                 return function () {
-                    if (val.toString().split(".")) {
-                        //判断为浮点数
-                        val = val + _i.toString();
-                    }
-                    else {
-                        val = val + _i.toString();
-                        val = Number(val);
-                    }
+                    val = val + _i.toString();
                     output(val);
                 }
             }(i)
@@ -132,7 +129,6 @@ function activeCalculator() {
     //除法
     Number.prototype._div = function (arg) {
         var r = this / arg;
-
 
         if (typeof (r.toString().split(".")[1]) == "undefined")
             return r;
@@ -169,8 +165,7 @@ function activeCalculator() {
         }
         return r + "%";
     };
-//     var nummm=90;
-// alert(nummm._toPercent());
+
     function output(something) {
         output_box.innerHTML = String(something);
     }
