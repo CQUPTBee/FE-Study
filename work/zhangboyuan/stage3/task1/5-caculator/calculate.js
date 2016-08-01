@@ -134,6 +134,7 @@ function activeCalculator() {
             return r;
         if (r.toString().split(".")[1].length > 12) {
             r = r.toFixed(12);
+            r=parseFloat(r);
             return r;
         }
         return r;
@@ -145,11 +146,14 @@ function activeCalculator() {
 
         if (typeof (r.toString().split(".")[1]) == "undefined")
             return r;
-        if (r.toString().split(".")[1].length > 12) {
+        else if (r.toString().split(".")[1].length > 12) {
             r = r.toFixed(12);
+            r = parseFloat(r);
             return r;
         }
-        return r;
+        else {
+            return r;
+        }
     };
 
 
