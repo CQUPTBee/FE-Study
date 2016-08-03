@@ -89,7 +89,7 @@ function addData(){
 	prev.onclick=function()
 	{
 		if (flag) {
-			clearTimeout(timer);
+			clearInterval(timer);
 			show.style.left=show.offsetLeft+468+'px';
 			Time();
 		}
@@ -103,7 +103,7 @@ function addData(){
 	next.onclick=function()
 	{
 		if (flag) {
-			clearTimeout(timer);
+			clearInterval(timer);
 			show.style.left=show.offsetLeft-468+'px';
 			Time();
 		}
@@ -126,7 +126,7 @@ function Time(){
 			// 	else{
 			// 		range=0;
 			// 	}
-			// clearTimeout(timer2);
+			// clearInterval(timer2);
 			// debugger
 			if(show.offsetLeft<=-4212 )
 			{

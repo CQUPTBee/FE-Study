@@ -47,7 +47,7 @@ function carousel(){
 		cli[i].onmouseover=function()
 		{
 			// 清定时器
-			clearTimeout(timer);
+			clearInterval(timer);
 		}
 		cli[i].onmouseout=function(){
 
