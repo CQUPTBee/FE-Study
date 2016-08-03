@@ -1,0 +1,15 @@
+* { padding: 0; margin: 0; }
+li { list-style: none; }
+img { border: 0; }
+
+.roll { width: 698px; height: 108px; margin: 50px auto 0; position: relative; }
+.btn_left { display: block; width: 68px; height: 68px; background: url(images/btn.jpg) no-repeat -70px -69px; position: absolute; top: 20px; left: 1px; z-index: 1; }
+.btn_left:hover { background: url(images/btn.jpg) no-repeat -70px 0; }
+.btn_right { display: block; width: 68px; height: 68px; background: url(images/btn.jpg) no-repeat 1px -69px; position: absolute; top: 20px; right: 0; z-index: 1; }
+.btn_right:hover { background: url(images/btn.jpg) no-repeat 1px 0; }
+.roll .wrap { width: 546px; height: 108px; margin: 0 auto; position: relative; overflow: hidden; }
+.roll ul { position: absolute; top: 0; left: 0; }
+.roll li { float: left; width: 182px; height: 108px; text-align: center; }
+.roll li a:hover { position: relative; top: 2px; }
+
+.control { border-bottom: 1px solid #ccc; background: #eee; text-align: center; padding: 20px 0; display: none; }
