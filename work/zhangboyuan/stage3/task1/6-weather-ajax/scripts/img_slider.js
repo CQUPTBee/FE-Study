@@ -113,7 +113,7 @@ function slideImg(container, next, prev, small_dots) {
         autoPlay();
     };
 
-    // autoPlay();
+    autoPlay();
 }
 
 addLoadEvent(active_slideImg);
