@@ -1,3 +1,4 @@
+/*Ajax调用函数*/
 function ajax(url,fSunc,fnFaild) {
 	var oAjax=new XMLHttpRequest();
 

@@ -181,7 +181,7 @@ function calculater(){
 						     break;
 				case 10: if(flag==1||flag2==1){
 							if(flag2==1&&flag==1){
-							    	show.innerHTML='.';
+							    	show.innerHTML='0.';
 							    	sum='0.';
 							    }
 							    else{

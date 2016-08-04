@@ -6,9 +6,8 @@ body{
 ul,li{list-style: none;}
 li{cursor: pointer;}
 .wrap{
-	width:700px;
+	width:468px;
 	height:282px;
-	overflow:hidden;
 	margin:200px auto;
 }
 .head{
@@ -95,11 +94,22 @@ li{cursor: pointer;}
 /*展示区，点击哪一天就展示哪一天的详情*/
 #show{
 	height:250px;
+	width:468px;
 	position:absolute;
 	top:0;
 	left:0;
 	display:none;
 }
+.show-list{
+	width:468px;
+	height:250px;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+.show-list ul{overflow: hidden;}
 .show-main,.morn,.night{
 	float:left;
 	margin-right:4px;
