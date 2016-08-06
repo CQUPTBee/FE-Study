@@ -85,7 +85,7 @@ function removeClass(element, iclass) {
     element.setAttribute("class", eclass);
 }
 
-// 顺手写个替换的,以备将来之用
+// 再写个替换类的,以备将来之用
 // function replaceClass(element, iclass_name, to_class_name) {
 //     var eclass = element.getAttribute("class");
 //
@@ -116,7 +116,7 @@ function clearInputText(oinput) {
 
 function selectItem(oinput, oul) {
     var changing_opacity = false;
-    var oli=oul.getElementsByTagName("li");
+    var oli = oul.getElementsByTagName("li");
 
     oinput.onclick = function () {
         if (!changing_opacity)
@@ -179,3 +179,4 @@ function selectItem(oinput, oul) {
         }
     }
 }
+
