@@ -44,12 +44,32 @@
 3. 倒计时效果
 4. 轮播图
 5. 一个简易JS计算器
-6. 利用Ajax做一个天气预报 
+    + 使用HTML/CSS/Javascript制作一个简单的计算器，要求：具备两个数字（包括小数）的加减乘除，一个数字的求百分比功能；各种颜色和字体等样式都按照你的个人喜好来设计。[参考图][http://ww1.sinaimg.cn/large/74990035gw1edwkx6v8hjj208h08j3ym.jpg]
+6. 利用Ajax做一个天气预报  
+要求:
+    + 给你们一个接口，返回的是近5天的重庆天气格式为JSON
+    + 写一个天气预报的页面
+    + 根据所获得的数据做一个5天天气预报
+    + 要轮播效果
+    + 请求接口用ajax
+    [API地址][http://openweathermap.org/data/2.5/forecast/daily?id=1814906&appid=b1b15e88fa797225412429c1c50c122a]
+    PS：尽量好看点
  
 
 ##任务2  规范（JS）	杰
 ##任务3   谷歌调试（JS）	磊
-##任务4 DOM/BOM	雷
+##任务4 DOM/BOM
+### BOM （Browser Object Model，浏览器对象模型）
+- window对象：表示浏览器打开的窗口，包括获取焦点、改变滚动条、设置定时器等等。
+- location对象：可对当前页面的URL进行操作，如：导航到新的页面、获取URL信息等。
+- navigation对象：包含浏览器信息。如：获取浏览器名称、版本信息、操作系统平台信息等等。
+- screen对象：包含屏幕信息。如：获取屏幕高度、宽度等等。
+- history对象：可对当前页的浏览历史进行操作，如：前进、后退等。  
+**作业：**  
+	阅读《JavaScript高级程序设计》第8章`BOM`，标注或分类整理常用的浏览器API，最好写到博客或相关文档内，方便以后查阅使用。  
+	可以参考慕课网JavaScript进阶篇第8章，操作实践。  
+**参考资料：**  
+	[慕课网 JavaScript进阶篇第8章](http://www.imooc.com/learn/10)
 ##任务5 AJAX/HTTP/JSON		杰
 ##任务6 JQuery	磊
 ##任务7 js实战	晶

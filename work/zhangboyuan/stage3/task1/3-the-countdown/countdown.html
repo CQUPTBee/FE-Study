@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CountdownJS</title>
+    <link rel="stylesheet" href="../reset.min.css">
+    <style>
+        .countdown-big-box {
+            width: 210px;
+            margin: 30px auto;
+        }
+
+        .num-input-box {
+            width: 208px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        #num-box {
+            width: 130px;
+        }
+
+        #submit-btn {
+            float: right;
+        }
+
+        #time-box {
+            width: 200px;
+            height: 50px;
+            border: 2px solid red;
+            margin: 15px auto;
+            color: #000;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        img {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 1600px;
+            height: 800px;
+            z-index: 1000;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var submit_btn = document.getElementById("submit-btn");
+            var img = document.getElementsByTagName("img")[0];
+            var timer = null;
+
+            submit_btn.onclick = function () {
+                startCount();
+            };
+
+            function startCount() {
+                var num = document.getElementById("num-box").value;
+
+                if (num >= 0)
+                    countdown(num);
+                else
+                    alert("请输入大于0的数");
+            }
+
+            function countdown(num) {
+                var box = document.getElementById("time-box");
+                var clear = null;
+
+                clearInterval(timer);
+
+                //解决计时开头的卡顿bug
+                box.innerHTML = num;
+                clear=setTimeout(function () {
+                    num = num - 1;
+                    clearTimeout(clear);
+                }, 30);
+
+                timer = setInterval(function () {
+                    if (num < 0) {
+                        clearInterval(timer);
+                        img.style.display = "block";
+                    }
+                    else {
+                        box.innerHTML = num;
+                        num = num - 1;
+                    }
+                }, 30)
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="countdown-big-box">
+    <div class="num-input-box">
+        <h2>输入开始数字:</h2>
+        <form action="#">
+            <input type="text" value="" id="num-box">
+            <input type="submit" value="开始计时" id="submit-btn">
+        </form>
+    </div>
+    <div id="time-box"></div>
+</div>
+<img src="./bomb.gif" alt="bomb">
+</body>
+</html>
