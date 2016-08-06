@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>126密码提示框/换肤(练习)</title>
+	<style type="text/css">
+		p, ul, li { padding: 0; margin: 0; list-style: none; }
+#box { font-size: 12px; color: #00c; width: 58px; margin: 0 auto; }
+p { width: 55px; height: 24px; line-height: 24px; padding-left: 3px; background: url(ico.gif) no-repeat right 4px; }
+ul { width: 56px; border: 1px solid #9a99ff; display: none-; }
+a { text-decoration: none; display: block; height: 24px; line-height: 24px; text-align: center; color: #00c; }
+a:hover { background: #d9e1f6; }
+	</style>
+	<script type="text/javascript">
+		//函数加括号的时间与区别。
+		//提取行间事件
+		//搜索展开菜单
+		window.onload == function (){
+			var oBtn = document.getElementById('btn');
+			var oUl = document.getElementById('ul1');
+
+			oBtn.onclick = function ();
+			{
+				if(oUl.style.display == 'block'){
+					oUl.style.display == none;
+				}
+				else {
+					oUl.style.display == 'block';
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<!--网页换肤 onclick(); 替换css样式表，改变href.
+	-->
+	<div id="box">
+	<p id="btn">输入法</p>
+	<ul id="ul1" style="display:block;">
+		<li><a href="#">手写</a></li>
+		<li><a href="#">拼音</a></li>
+		<li><a href="#">关闭</a></li>
+	</ul>
+</body>
+</html>
