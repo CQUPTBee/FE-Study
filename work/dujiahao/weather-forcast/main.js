@@ -21,7 +21,6 @@ function addData(){
 	var night=[];//夜温
 	var morn=[];//日wen
 	var hum=[];//湿度
-	var flag=0;//判断是否在详情页面，默认不在为0
 	var oFirstDay=new Date();//获取当前时间
 	var aDate=[];
 
@@ -104,7 +103,16 @@ function addData(){
 	}
 
 };
-
+prev.onclick=function () {
+	if(oUl.offsetLeft<0){
+		oUl.style.left=oUl.offsetLeft+468+'px';
+	}
+};
+next.onclick=function(){
+	if(oUl.offsetLeft==0){
+		oUl.style.left=oUl.offsetLeft-468+'px';
+	}
+};
 
 	}
 
