@@ -1,0 +1,183 @@
+*{margin:0;padding:0;border:none;outline:none;}
+body{
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+ul,li{list-style: none;}
+li{cursor: pointer;}
+.wrap{
+	width:468px;
+	height:282px;
+	margin:200px auto;
+}
+.head{
+	width:320px;
+	height:32px;
+	overflow:hidden;
+	color:#000;
+}
+.head p,.head input{float: left;
+	margin-right:6px;
+	background:#d0ebff;
+	width:120px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	cursor:pointer;
+}
+#day{background: #ecf7ff}
+.head .prev,.head .next{width:80px;}
+.head .next{margin-right:0;}
+.main{position: relative;width:468px;height: 250px;overflow: hidden;}
+#list{
+	height:250px;
+	list-style:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display:none;//当点击变为none*/
+}
+.day{
+	float: left;
+	margin-right:2px;
+	width:84px;
+	height:252px;
+	background: #9fbcd5;
+	padding-left:4px;
+	padding-right: 4px;
+	font-size:16px;
+	color:#fff;
+}
+#list .last{margin-right: 0;}
+  .active{background: #63bafa;}
+.day .time{
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-align:center;
+	margin-top:10px;
+}
+.day .weather{
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	margin-top:20px;
+}
+.day .temp{
+	height:20px;
+	width:80px;
+	font-size:18px;
+	line-height: 20px;
+	font-size:12px;
+	text-align:center;
+	margin-top:20px;
+}
+.min, .max{
+	width:38px;
+	height:20px;
+	font-size:12px;
+	display:inline-block;
+}
+.min:after{
+	content: "/";
+	display:inline-block;
+	width:4px;
+}
+
+.day .hum{
+	height:20px;
+	line-height: 20px;
+	margin-top:60px;
+	text-align: center;
+	font-size: 12px;
+}
+/*展示区，点击哪一天就展示哪一天的详情*/
+#show{
+	height:250px;
+	width:468px;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.show-list{
+	width:468px;
+	height:250px;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+.show-list ul{overflow: hidden;}
+.show-main,.morn,.night{
+	float:left;
+	margin-right:4px;
+	height:248px;
+	border:1px solid #d4d4d4;
+	width:98px;
+}
+#show .show-main{width:258px;}
+#show .night{margin-right:0;}
+.showeve{
+	width:140px;
+	height:66px;
+	margin-top:30px;
+	margin-left:20px;
+	font-size:36px;
+	color:#2d76b6;
+	padding-left:86px;
+	padding-top:68px;
+	position:relative;
+	background:url(temp.png) no-repeat left center;
+}
+.showdate{
+	position:absolute;
+	top:20px;
+	right:0;
+	width:100px;
+	height:60px;
+	text-indent:10px;
+	color:#ccc;
+	font-size:16px;
+}
+.humidity{
+	width:116px;
+	height:16px;
+	line-height:16px;
+	padding-left:24px;
+	background:url(bg.png) no-repeat left top;
+	margin-top:30px;
+	margin-left:20px;
+}
+
+.morn h3,.night h3{
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+.tem1,.tem2{
+	height:48px;
+	line-height:48px;
+	font-size:24px;
+	color:#7f7f7f;
+	text-align:center;
+	margin-top:80px;
+}
+.cloud{
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	margin-top:20px;
+}
+.t{
+	height:18px;
+	width:74px;
+	line-height:18px;
+	padding-left:22px;
+	background:url(bg.png) no-repeat left bottom;
+	font-size:12px;
+	margin-top:10px;
+}
