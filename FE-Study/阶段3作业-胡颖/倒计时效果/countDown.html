@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>倒计时效果</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="countDown.css">
+	<script src="countDown.js"></script>
+</head>
+<body>
+  <div id="wrap">
+   <h3 id="now"></h3>
+    <div id="time">
+	    <span></span>
+	    <span></span>
+	    时
+	    <span></span>
+	    <span></span>
+	    分
+	    <span></span>
+	    <span></span>
+	    秒
+    </div>
+
+    <div id="setTime">
+    设置时间：
+	    <input id="t_year" type="text">年
+	    <input id="t_month" type="text">月
+	    <input id="t_day" type="text">日
+	    <input id="t_hour" type="text">时
+	    <input id="t_minute" type="text">分
+	    <input type="button" id="btn" value="开始">
+  	</div>
+
+
+  	<div id="lostTime">
+	    <span>倒计时:</span>
+	    <span id="t_d">00</span><span>天</span>
+	    <span id="t_h">00</span><span>时</span>
+	    <span id="t_m">00</span><span>分</span>
+	    <span id="t_s">00</span><span>秒</span>
+  	</div>
+  </div>
+</body>
+</html>
