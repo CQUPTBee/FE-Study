@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二级菜单</title>
+			<script>
+			window.onload=function(){
+				oTab=document.getElementById('tab');
+				aLi=oTab.getElementsByTagName('li');
+				aBox=document.getElementsByClassName('tab_box');
+				for(i=0;i<aLi.length;i++){
+					aLi[i].index=i;
+					aLi[i].onclick=function(){
+						for(i=0;i<aLi.length;i++){
+							aLi[i].className="";
+							aBox[i].style.display="none";
+						}
+						this.className="active_li";
+						aBox[this.index].style.display="block";
+					}
+				}
+			}
+			</script>
+			<style>
+				*{margin: 0;padding:0;}
+				#tab{
+					width: 532px;
+					height: 357px;
+					margin-left: 59px;
+					margin-top: 12px;
+					float: left;
+					background: #fff;
+					border:1px solid #d0d2d6;
+					border-radius: 15px;
+				}
+				#tab h2{
+					width: 512px;
+					height: 25px;
+					padding-top: 15px;
+					padding-left: 20px;
+					background: #f4f6f7;
+					border-bottom:1px solid #d0d2d6;
+					border-top-left-radius: 15px;
+					border-top-right-radius: 15px;
+					font-size: 15px;
+					font-weight: normal;
+					color: #aaa;
+				}
+				.tab_li ul li{
+					list-style: none;
+					float: left;
+					width: 61px;
+					height: 27px;
+					line-height: 27px;
+					background: #ededf0;
+					padding-left: 25px;
+					margin-right: 2px;
+					border-bottom:1px solid #d0d2d6;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					border-bottom :none;
+				}
+				.tab_li ul li a{
+					text-decoration: none;
+					font-size: 12px;
+					color: #535353;
+				}
+				.tab_li ul{
+					margin-top: 15px;
+					margin-left: 25px;
+					position: relative;
+					top: 1px;
+				}
+				.tab_box{
+					width: 463px;
+					height: 217px;
+					float: left;
+					margin-left: 25px;
+					border: 1px solid #cacbcb;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+				.tab_box{padding-left:35px; padding-top: 35px;display: none;}
+				.tab_li .active_li{
+					background: #fff;
+					border: 1px solid #cacbcb;
+					border-bottom :none;
+					line-height: 28px;
+
+				}
+				.active_box{display: block;}
+
+
+			</style>
+	</head>
+	<body>
+		<div id="tab">
+				<h2>第一组项目</h2>
+				<div class="tab_li">
+					<ul>
+						<li class="active_li"><a href="#">项目一</a></li>
+						<li ><a href="#">项目二</a></li>
+						<li><a href="#">项目三</a></li>
+						<li><a href="#">项目四</a></li>
+						<li><a href="#">项目五</a></li>
+					</ul>
+					<div class="tab_box active_box">
+						<h3>我就是项目一</h3>
+					</div>
+					<div class="tab_box">
+						<h3>我就是项目二</h3>
+					</div>
+					<div class="tab_box">
+						<h3>我就是项目三</h3>
+					</div>
+					<div class="tab_box">
+						<h3>我就是项目四</h3>
+					</div>
+					<div class="tab_box">
+						<h3>我就是项目五</h3>
+					</div>
+			    </div>
+			</div>
+	</body>
+</html>
