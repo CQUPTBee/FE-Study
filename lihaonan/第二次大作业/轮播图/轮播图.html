@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+			<script>
+			window.onload=function(){
+				var timer=null;
+				var oList = document.getElementById('list');
+				var aA =  document.getElementsByTagName("a");
+				timer=setInterval(move,10);
+				oList.onmouseover=function(){
+					clearInterval(timer);
+				}
+				oList.onmouseout=function(){
+					timer=setInterval(move,10);
+				}
+				aA[0].onclick=function(){
+					oList.style.left=0+"px";
+				}
+				aA[1].onclick=function(){
+					oList.style.left=-960+"px";
+				}
+				aA[2].onclick=function(){
+					oList.style.left=-1920+"px";
+				}
+				aA[3].onclick=function(){
+					oList.style.left=-2880+"px";
+				}
+				function move(){
+					var num = oList.offsetLeft-441;
+					oList.style.left=num-1+'px';
+					if(num<-3840){
+						//alert(num);
+						oList.style.left=0+"px";
+					}
+				}
+			}
+			</script>
+			<style>
+				*{padding: 0;margin: 0;}
+				#banner{
+					/*position: relative;*/
+					width: 960px;
+					height: 325px;
+					margin: 0 auto;
+					margin-top: 50px;
+					overflow: hidden;
+				}
+				#list{
+					position: relative;
+					width: 4800px;
+					height: 325px;
+				}
+				#button{position: absolute;top: 355px;left: 850px;}
+				#button a{
+					display: block;
+					background: gray;
+					float: left;
+					width: 10px;
+					height: 10px;
+					margin-right: 15px;
+					border-radius: 50%;
+				}
+				img{display:block;float: left;}
+			</style>
+	</head>
+	<body>
+		<div id="banner">
+			<div id="list" style="left: 0px;">
+				<img src="images/1.jpg" alt="1">
+				<img src="images/2.jpg" alt="2">
+				<img src="images/3.jpg" alt="3">
+				<img src="images/4.jpg" alt="4">
+				<img src="images/1.jpg" alt="5">
+			</div>
+			<div id="button">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+	</body>
+</html>
