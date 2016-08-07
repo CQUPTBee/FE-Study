@@ -1,19 +1,17 @@
 /*
- *     Created by Boyuan on 2016.7.28
+ *     Created by Boyuan on 2016.7.29
  */
 
-window.onload = (function () {
+function active_slideImg() {
     var banner_container = document.getElementsByClassName('banners-container')[0];
     var next = document.getElementsByClassName('next')[0];
     var prev = document.getElementsByClassName('prev')[0];
     var small_dots = document.getElementsByClassName('buttons')[0].getElementsByTagName('span');  //小圆点标识
 
     slideImg(banner_container, next, prev, small_dots);
-});
-
-
+}
 function slideImg(container, next, prev, small_dots) {
-    var img_width = -parseInt(container.style.left);
+    var img_width = 600;
     var moving = false;
     var timer = null;
 
@@ -23,27 +21,32 @@ function slideImg(container, next, prev, small_dots) {
     //模拟左右点击动作
     function rightClick() {
         if (!moving) {
-            if (container.offsetLeft <= -3540)  //模拟无限滚动
-            {
-                container.style.left = 0 + "px";
+            if (container.offsetLeft == -2400) {
+                startMove(0);
             }
-            startMove(container.offsetLeft - img_width);
+            else {
+                startMove(container.offsetLeft - img_width);
+            }
         }
     }
+
     function leftClick() {
-        if (!moving)
-            if (container.offsetLeft >= -1180) {
-                container.style.left = -4720 + "px";
+        if (!moving) {
+            if (container.offsetLeft == 0) {
+                startMove(-2400);
             }
-        startMove(container.offsetLeft + img_width);
+            else {
+                startMove(container.offsetLeft + img_width);
+            }
+        }
     }
 
-    //绑定点击小圆点切换事件
+    //小圆点切换事件
     for (var i = 0; i < small_dots.length; i++) {
         small_dots[i].onclick = function (temp) {
             return function () {
                 if (!moving)
-                    startMove((temp + 1) * -1180);
+                    startMove((temp) * -600);
             }
         }(i)
     }
@@ -52,7 +55,7 @@ function slideImg(container, next, prev, small_dots) {
     function startMove(target) {
         var speed = 0;
 
-        switchDot((target / -1180) - 1);        //  -1180 -2360 -3540
+        switchDot((target / -600));
 
         clearInterval(timer); //解决重复点击的定时器叠加bug
 
@@ -83,20 +86,34 @@ function slideImg(container, next, prev, small_dots) {
         small_dots[dot_index].className = 'on';
     }
 
-    var clearAutoPlay = null;
     //自动播放
+    var clearAutoPlay = null;
     function autoPlay() {
         clearAutoPlay = setInterval(function () {
             rightClick();
-        }, 1500);
+        }, 5000);    //自动播放时间间隔
     }
 
     container.onmouseover = function () {
         clearInterval(clearAutoPlay);
     };
-    container.onmouseout=function () {
+    next.onmouseover = function () {
+        clearInterval(clearAutoPlay);
+    };
+    prev.onmouseover = function () {
+        clearInterval(clearAutoPlay);
+    };
+    container.onmouseout = function () {
+        autoPlay();
+    };
+    next.onmouseout = function () {
+        autoPlay();
+    };
+    prev.onmouseout = function () {
         autoPlay();
     };
 
     autoPlay();
 }
+
+addLoadEvent(active_slideImg);

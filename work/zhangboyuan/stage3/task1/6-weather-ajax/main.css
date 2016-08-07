@@ -1,0 +1,230 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 500px;
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+li {
+    list-style: none;
+}
+
+.banners-container {
+    position: absolute;
+    width: 3000px;
+    height: 340px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 604px;
+    height: 344px;
+    overflow: hidden;
+    border: 2px solid #ced5db;
+    -webkit-box-shadow: 0 0 10px #ced5db;
+    -moz-box-shadow: 0 0 10px #ced5db;
+    box-shadow: 0 0 10px #ced5db;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.banner-wrapper .btn {
+    position: absolute;
+    top: 146px;
+    display: block;
+    width: 24px;
+    height: 48px;
+    cursor: pointer;
+    -moz-opacity: .2;
+    opacity: .2;
+    z-index: 100;
+}
+
+.banner-wrapper .next {
+    right: 0;
+    background: url("image/arrow.jpg") no-repeat 0 -48px;
+}
+
+.banner-wrapper .prev {
+    left: 0;
+    background: url("image/arrow.jpg") no-repeat;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.banner-wrapper .buttons {
+    position: absolute;
+    height: 15px;
+    width: 160px;
+    bottom: 2px;
+    left: 260px;
+    z-index: 3;
+}
+
+.banner-wrapper .buttons span {
+    float: left;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.banner-wrapper .buttons .on {
+    border-color: #5c5c5c;
+    background: #5c5c5c;
+}
+
+.banners-container > li {
+    display: inline-block;
+    float: left;
+    width: 600px;
+    height: 100%;
+    background: #cfcccf;
+}
+
+/*平均气温*/
+/*====================================================================*/
+.main-temp-box {
+    width: 336px;
+    height: 238px;
+    float: left;
+    display: inline-block;
+    border-right: 2px dotted #f7f3f7;
+    border-bottom: 2px dotted #f7f3f7;
+    background: url("image/temp-ico.png") no-repeat 50px 72px;
+}
+
+.today {
+    margin: 4px 0 0 16px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-indent: 18px;
+}
+
+.temp-eve {
+    margin: 76px 0 0 150px;
+    font-size: 40px;
+}
+
+.temp-max-min {
+    margin: 20px 0 0 150px;
+    font-size: 14px;
+}
+
+.temp-max-min span {
+    margin-right: 10px;
+}
+
+/*天气状况*/
+/*====================================================================*/
+.weather-box {
+    width: 264px;
+    height: 238px;
+    padding: 0 20px 20px 20px;
+    float: left;
+    display: inline-block;
+    border-bottom: 2px dotted #f7f3f7;
+    border-left: none;
+}
+
+.weather-box h2 {
+    width: 75px;
+    text-indent: 0;
+    margin: 10px auto 25px;
+}
+
+.weather-ico {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: url("image/weather-ico.png");
+}
+
+.w-clear {
+    background: url("image/weather-ico.png");
+}
+
+.w-rain {
+    background: url("image/weather-ico.png") 0 -104px;
+}
+
+.w-clouds {
+    background: url("image/weather-ico.png") 0 -200px;
+}
+
+.weather {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.wind, .air {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*早晨 白天 黑夜 温度分栏*/
+/*====================================================================*/
+.day-night-temp-box {
+    display: inline-block;
+    float: left;
+    width: 600px;
+}
+
+.morning, .day, .night {
+    height: 78px;
+    width: 33%;
+    margin-left: 2px;
+    float: left;
+    border-right: 2px dotted #f7f3f7;
+    border-bottom: 2px dotted #f7f3f7;
+}
+
+.night {
+    border-right: none;
+}
+
+h3 {
+    margin-top: 3px;
+    text-indent: 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.temp-morn, .temp-day, .temp-night {
+    width: 198px;
+    height: 55px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 30px;
+}
+
+.temp:after { content: '℃'; }
+
+.wind-speed:after { content: "m/s"; }
+
+.wind-degs:after { content: "度"; }
+
+.pressure:after { content: "kpa"; }
+
+.humidity:after { content: "%"; }
