@@ -1,0 +1,33 @@
+body, p, h1, h2, h3, h4, h5, h6, dl, dd { 
+	margin:0;
+}
+a { 
+	text-decoration: none;
+}
+ol, ul { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+}
+img {
+ 	border: none;
+}   
+#box1 {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-style: 黑体;
+	font-size: 16px;
+	margin: 100px 200px 0 100px;	
+	background: #bbccee;
+	cursor: pointer;
+}
+#box2 {
+	width: 200px;
+	height: 300px;
+	background: #ccc;
+	margin-left: 100px;
+	margin-top: 2px;
+	display: none;
+}
