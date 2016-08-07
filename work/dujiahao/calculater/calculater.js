@@ -9,322 +9,208 @@ function calculater(){
 	var num=document.getElementsByClassName('num');
 	//[%,/,*,-,+]
 	var opera=document.getElementsByClassName('opera');
-	var reset=document.getElementById('reset');//
-	var equal=document.getElementById('equal');//
-	var show=document.getElementById('show');//
-	var sum='0',flag=1,flag2=1,flag1=1,flag3=0,symbol;
-	var figure='0';
-	var Sum=0;
+	var reset=document.getElementById('reset');//重置
+	var equal=document.getElementById('equal');//等于
+	var show=document.getElementById('show');//展示栏
+	var j ,sum = "0",figure = "0", symbol;
+	var aOpera=['%','÷','×','-','+'] ,aNum = ['7','8','9','4','5','6','1','2','3','0','.'];
+	var flag1 = 1,flag2 = 1,flag3=1,flag4=1;//默认为1，,0输入结束，1未输入或未输入结束。
+					//flag1为第一个数（仅用于第一次计算），flag2为第-个数判断个位（重复使用）
+//flag3用于判断第二个数的第一位输入情况,flag4判断符号重复,默认1可输入0不可输入；
 
-	for(var i=0;i<num.length;i++){
-		num[i].index=i;
-		num[i].onclick=function(){
+	show.innerHTML = "0";
+	getNumber();
+	getOpera();
+	getAnswer();
+	Reset();
 
-			switch(this.index){
-				case 0: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='7';
-							    	sum='7';
-							    }
-							    else{
-							    	show.innerHTML+='7';
-							    	sum+='7';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='7';
-						     	figure+='7';
-						     }
-						     break;
+/*获得数*/
+function getNumber() {
+	for(j=0;j<num.length;j++){
 
-				case 1: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='8';
-							    	sum='8';
-							    }
-							    else{
-							    	show.innerHTML+='8';
-							    	sum+='8';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='8';
-						     	figure+='8';
-						     }
-						     break;
+		num[j].index = j;
+		num[j].onclick = function(){
+			j=this.index;
+			switch(j){
+				/*7*/
 
-				case 2: 	if(flag==1||flag2==1){
-							     if(flag2==1&&flag==1){
-							    	show.innerHTML='9';
-							    	sum='9';
-							    }
-							    else{
-							    	show.innerHTML+='9';
-							    	sum+='9';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='9';
-						     	figure+='9';
+				case 0:judge();
 
-						     }
-						     break;
-				case 3: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='4';
-							    	sum='4';
-							    }
-							    else{
-							    	show.innerHTML+='4';
-							    	sum+='4';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='4';
-						     	figure+='4';
-						     }
-						     break;
-				case 4: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='5';
-							    	sum='5';
-							    }
-							    else{
-							    	show.innerHTML+='5';
-							    	sum+='5';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='5';
-						     	figure+='5';
-						     }
-						     break;
-				case 5: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='6';
-							    	sum='6';
-							    }
-							    else{
-							    	show.innerHTML+='6';
-							    	sum+='6';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='6';
-						     	figure+='6';
-						     }
-						     break;
-				case 6: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='1';
-							    	sum='1';
-							    }
-							    else{
-							    	show.innerHTML+='1';
-							    	sum+='1';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='1';
-						     	figure+='1';
-						     }
-						     break;
-				case 7: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='2';
-							    	sum='2';
-							    }
-							    else{
-							    	show.innerHTML+='2';
-							    	sum+='2';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='2';
-						     	figure+='2';
-						     }
-						     break;
-				case 8: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='3';
-							    	sum='3';
-							    }
-							    else{
-							    	show.innerHTML+='3';
-							    	sum+='3';
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='3';
-						     	figure+='3';
-						     }
-						     break;
-				case 9: 	if(flag==1||flag2==1){
-							    if(flag2==1&&flag==1){
-							    	show.innerHTML='0';
-							    	sum='0';
-							    	flag4=1;
-							    }
-							    else{
-							    	if (flag4) {
-							    		sum='0';
-							    	} else {
-							    		show.innerHTML+='0';
-							    		sum+='0';
-							    	}
-							    }
-						     }
-						     else{
-						     	show.innerHTML+='0';
-						     		figure+='0';
-						     }
-						     break;
-				case 10: if(flag==1||flag2==1){
-							if(flag2==1&&flag==1){
-							    	show.innerHTML='0.';
-							    	sum='0.';
-							    }
-							    else{
-							    	show.innerHTML+='.';
-							    	sum+='.';
-							    }
-							}
-						else{
-							show.innerHTML+='.';
-							figure+='.';
-							}
-							break;
+				break;
+                 /*8*/
 
-				}
-			flag=0;
+				case 1:judge();
+				break;
+                 /*9*/
+				case 2:judge();
+				break;
+                 /*4*/
+
+				case 3:judge();
+				break;
+                 /*5*/
+
+				case 4:judge();
+				break;
+                 /*6*/
+
+				case 5:judge();
+				break;
+                 /*1*/
+
+				case 6:judge();
+				break;
+                 /*2*/
+
+				case 7:judge();
+				break;
+                 /*3*/
+
+				case 8:judge();
+				break;
+                 /*0*/
+
+				case 9:judge();
+				break;
+
+				case 10:judge();
+				break;
+
+
+			}
 		}
 	}
+};
+//获取每个数
+function judge(){
+	//输入第一个数
+	if(flag1){
+	//判断第一次输入的数 0输入完毕
+		if(flag2){
+			if(aNum[j]!='0'&&aNum[j]!='.'){
+				sum=aNum[j];flag2=0;
+				show.innerHTML=aNum[j];
+		}
+			else if(aNum[j] == '.'){
+				sum+=aNum[j];flag2=0;
+				show.innerHTML+=aNum[j];
+				}
+	}
+	else{
+		if(aNum[j]!='0'&&aNum[j]!='.'){//如果不是0或者.就直接加上
+				sum+=aNum[j];
+				show.innerHTML+=aNum[j];
+		}
+		else if(aNum[j]=='0'){
+			sum+=aNum[j];show.innerHTML+=aNum[j];
+		}
+		else if(aNum[j]=='.'){
+			if(sum.indexOf('.')==-1){
+				sum+=aNum[j];show.innerHTML+=aNum[j];
+			}
+		}
+	}
+}
+	//输入第二个数
+	else{
+		//判断第一次输入的数 0输入完毕
+		if(flag3){
+			if(aNum[j]!='0'&&aNum[j]!='.'){
+				figure=aNum[j];flag3=0;
+				show.innerHTML+=aNum[j];
+		}
+			else if(aNum[j] == '.'){
+				figure+=aNum[j];flag3=0;
+				show.innerHTML+='0'+aNum[j];
+				}
+			else if(aNum[j]=='0'){
+				show.innerHTML+=aNum[j];flag3=0;
+			}
+	}
+	else{
 
-	for(var j=0;j<opera.length;j++){
+		if(aNum[j]!='0'&&aNum[j]!='.'){//如果不是0或者.就直接加上
+				figure+=aNum[j];
+				show.innerHTML+=aNum[j];
+			}
+		else if(aNum[j]=='0'){
+			figure+=aNum[j];show.innerHTML+=aNum[j];
+			}
+		else if(aNum[j]=='.'){
+			if(figure.indexOf('.')==-1){
+				figure+=aNum[j];show.innerHTML+=aNum[j];
+				}
+			}
+		}
+	}
+};
+
+
+/*获得操作符*/
+function getOpera(){
+		for( j=0;j<opera.length;j++){
 
 		opera[j].index=j;
+		/*获得点击事件 */
 		opera[j].onclick=function(){
-
-			switch(this.index){
-					case 0: show.innerHTML+='%';
-							symbol='%';
+			j=this.index;
+			switch(j){
+					case 0:
+							if(flag1){sum=(parseFloat(sum)/100).toString()};
+							flag1=0;//使其不可在输入
+							figure=(parseFloat(figure)/100).toString();
+							show.innerHTML+=aOpera[j];
 							break;
 
-					case 1: show.innerHTML+='÷';
-							symbol='÷';
+					case 1:if(flag4){
+							symbol=aOpera[j];flag4=0;flag1=0;//使其不可在输入
+							show.innerHTML+=aOpera[j];}
 							break;
-					case 2: show.innerHTML+='×';
-							symbol='×';
+					case 2:if(flag4){
+							symbol=aOpera[j];flag4=0;flag1=0;//使其不可在输入
+							show.innerHTML+=aOpera[j];}
 							break;
-					case 3: show.innerHTML+='-';
-							symbol='-';
+					case 3:if(flag4){
+							symbol=aOpera[j];flag4=0;flag1=0;//使其不可在输入
+							show.innerHTML+=aOpera[j];}
 							break;
-					case 4: show.innerHTML+='+';
-							symbol='+';
+					case 4:if(flag4){
+							symbol=aOpera[j];flag4=0;flag1=0;//使其不可在输入
+							show.innerHTML+=aOpera[j];}
 							break;
 			}
-			if(flag2){
-				Sum=parseFloat(sum);}
-			flag=0;
-			flag2=0;
-			figure='0';
-			sum='0';
 		}
 	}
+};
+function getAnswer() {
 
-	// 重置
-	reset.onclick=function(){
-		show.innerHTML='0';
-		flag=1;
-		flag2=1;
-		sum='0';
-	}
-//触发计算
-	equal.onclick=function(){
-		show.innerHTML='=';
+	equal.onclick = function(){
+		console.log(sum);console.log(figure);
 		switch(symbol){
-			case '+': Sum=add(Sum,parseFloat(figure));
-					  break;
-			case '-': Sum=sub(Sum,parseFloat(figure));
-					  break;
-			case '×': Sum=mul(Sum,parseFloat(figure));
-					  break;
-			case '÷': Sum=div(Sum,parseFloat(figure));
-					  break;
-			case '%': flag3=1;
-					  break;
+			case '+' :sum=add(parseFloat(sum),parseFloat(figure));
+			break;
+			case '-' :sum=sub(parseFloat(sum),parseFloat(figure));
+			break;
+			case '÷' :sum=div(parseFloat(sum),parseFloat(figure));
+			break;
+			case '×' :sum=mul(parseFloat(sum),parseFloat(figure));
+			break;
+
 		}
-		if (flag3) {
-			show.innerHTML+=Sum+'%';
-		} else {
-			show.innerHTML+=Sum;
+
+
+		show.innerHTML = '=' + sum;
+		flag2 = 1;flag4=1,flag3=1;
+		figure = "0";
+
+	}
+};
+
+function Reset() {
+
+	reset.onclick = function(){
+		show.innerHTML = "0";sum = "0";figure = "0",symbol = '',j=0;
+		flag1 = 1,flag2 = 1,flag3 = 1,flag4 = 1;
 		}
-		figure='0';
-		flag1=1;
-		flag3=0;
-		flag4=0;
-	}
-//加法
-function add(a, b) {
-    var c, d, e,g;
-    try {
-        c = a.toString().split(".")[1].length;
-    } catch (f) {
-        c = 0;
-    }
-    try {
-        d = b.toString().split(".")[1].length;
-    } catch (f) {
-        d = 0;
-    }
-    finally{
-    	e = Math.pow(10, Math.max(c,d));
-    }
-    return	(mul(a,e) + mul(b,e))/e;
-	}
-
-	//减法
-function sub(a, b) {
-    var c, d, e;
-    try {
-        c=a.toString().split(".")[1].length;
-    } catch (f) {
-        c = 0;
-    }
-    try {
-        d=b.toString().split(".")[1].length;
-    } catch (f) {
-        d=0;
-    }
-    finally{
-    	e=Math.pow(10, Math.max(c, d));
-    }
-    return  (mul(a, e)-mul(b, e)) / e;
+	};
 }
-//乘法
-function mul(a,b) {
-    var c=0,d=a.toString(),e=b.toString();
-    try {
-        c += d.split(".")[1].length;
-    } catch (f) {}
-    try {
-        c += e.split(".")[1].length;
-    } catch (f) {}
-    return Number(d.replace(".", "")) * Number(e.replace(".", "")) / Math.pow(10, c);
-}
-//除法
-function div(a, b) {
-    var c, d, e = 0,
-        f = 0;
-    try {
-        e = a.toString().split(".")[1].length;
-    } catch (g) {}
-    try {
-        f = b.toString().split(".")[1].length;
-    } catch (g) {}
-    return c = Number(a.toString().replace(".", "")), d = Number(b.toString().replace(".", "")), mul(c / d, Math.pow(10, f - e));
-	}
-
-
-}
-
