@@ -41,19 +41,19 @@ body { margin-top: 50px; font-size: 12px; background: #f0fcff; }
 
     window.onload = function(){
         var oTab = document.getElementById('tab');
-        var oli = getByClass(oTab, 'nav')[0].getElementsByTagName('li');
+        var oli = getByClass(oTab, 'nav').getElementsByTagName('li');
         var aA = oTab.getElementsByTagName('ul')[0].getElementsByTagName('a');
 
         var oDiv = getByClass(oTab, 'box');
 
         var i = 0;
-        aDiv[0].style.display = 'block';
+        oDiv[0].style.display = 'block';
         for (var i = 0; i<oli.length;i++) {
 
             oli[i].index = i;
             oli[i].onclick = function (){
 
-                for (var i = 0;) {
+                for (var i = 0;i< oli.length;i++) {
                     oli[i].className = ' ';
                     oDiv[i].style.display = 'none';
                 }
@@ -63,6 +63,19 @@ body { margin-top: 50px; font-size: 12px; background: #f0fcff; }
 
         }
     };
+    function getByClass(id,name){
+        var odiv = id.getElementsByTagName('div');
+        var i = 0;
+        for(i=0;i<odiv.length;i++){
+            if(odiv[i].className == name){
+                console.log(odiv[i].className);
+                return odiv[i];
+            } else {
+                return false;
+            }
+
+        }
+    }
 </script>
 
 </head>
