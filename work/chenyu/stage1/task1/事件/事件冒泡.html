@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" onclick="alert('html')">
+<head>
+	<meta charset="UTF-8">
+	<title>事件冒泡</title>
+</head>
+<body onclick="alert('body')">
+	<div style="width:300px;height:300px;background:red;" onclick="alert(this.style.background)">
+		<div style="width:200px;height:200px;background:green;"  onclick="alert(this.style.background)">
+		<div style="width:100px;height:100px;background:pink;"  onclick="alert(this.style.background)">
+		<!-- 点击pink时，其他两个颜色也会弹出来 -->
+	</div>
+	</div>
+	</div>
+</body>
+</html>
