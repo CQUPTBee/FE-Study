@@ -81,7 +81,7 @@ window.onload = function () {
 
 
 				for(var i=0; i<aDay1.length; i++) {
-					aTemp[i].innerHTML=forecast[i].main.temp+'℃';
+					aTemp[i].innerHTML=forecast[i].main.temp+'℃';console.log(aTemp[i].innerHTML);
 					aWeather[i].innerHTML=forecast[i].weather[0].description;
 				}
 				
@@ -105,55 +105,55 @@ window.onload = function () {
 						oUl.style.left='0';
 					}
 				}
-				timer1=setInterval(show1,30);
+				timer1=setInterval(show1,27);console.log(timer1);
 				function stop1() {
 					clearInterval(timer1);
 				}
 				function start1() {
-					timer1=setInterval(show1,30);
+					timer1=setInterval(show1,27);
 				}
 
 				stop1();
-				timer2=setInterval(stop1,3030);
-				timer3=setInterval(start1, 6060);
+				timer2=setInterval(stop1,3030);console.log(timer2);
+				timer3=setInterval(start1,6060);console.log(timer3);
 				
 
 				for(var i=0; i<aDay2.length; i++)
 					aWind[i].innerHTML=forecast[i].wind.speed;console.log(forecast[i].main.humidity);
-					aHum[i].innerHTML=forecast[i].main.humidity;
-					aMin[i].innerHTML=forecast[i].main.temp_min+'℃';
-					aMax[i].innerHTML=forecast[i].main.temp_max+'℃';
+					// aHum[i].innerHTML=forecast[i].main.humidity;
+					// aMin[i].innerHTML=forecast[i].main.temp_min+'℃';
+					// aMax[i].innerHTML=forecast[i].main.temp_max+'℃';
 				}
 
-				var timer4 = null;
-				var timer5 = null;
-				var timer6 = null;
-				var iSpeed = -100;
+				// var timer4 = null;
+				// var timer5 = null;
+				// var timer6 = null;
+				// var iSpeed = -100;
 
-				oBottom.innerHTML += oBottom.innerHTML;
-				aWind[5].innerHTML=forecast[0].wind.speed;console.log(forecast[i].main.humidity);
-				aHum[5].innerHTML=forecast[0].main.humidity;
-				aMin[5].innerHTML=forecast[0].main.temp_min+'℃';
-				aMax[5].innerHTML=forecast[0].main.temp_max+'℃';
+				//oBottom.innerHTML += oBottom.innerHTML;
+				//aWind[5].innerHTML=forecast[0].wind.speed;console.log(forecast[i].main.humidity);
+				// aHum[5].innerHTML=forecast[0].main.humidity;
+				// aMin[5].innerHTML=forecast[0].main.temp_min+'℃';
+				// aMax[5].innerHTML=forecast[0].main.temp_max+'℃';
 
-				oBottom.style.width = aDay2[0].offsetWidth*aDay2.length+ 'px';console.log(oBottom.style.width);
-				function show2 () {
-					oBottom.style.left = oBottom.offsetLeft+iSpeed+'px';
-					console.log(oBottom.style.left);
+				// oBottom.style.width = aDay2[0].offsetWidth*aDay2.length+ 'px';console.log(oBottom.style.width);
+				// function show2 () {
+				// 	oBottom.style.left = oBottom.offsetLeft+iSpeed+'px';
+				// 	console.log(oBottom.style.left);
 
-					if (oBottom.offsetLeft < -oBottom.offsetWidth/2) {
-						oBottom.style.left='0';
-					}
-					else if(oBottom.offsetLeft > 0){
-						oBottom.style.left=-oBottom.offsetWidth/2 + 'px';
-					}
-				}
-				// timer4=setInterval(show2,30);console.log(timer4);
+				// 	if (oBottom.offsetLeft < -oBottom.offsetWidth/2) {
+				// 		oBottom.style.left='0';
+				// 	}
+				// 	else if(oBottom.offsetLeft > 0){
+				// 		oBottom.style.left=-oBottom.offsetWidth/2 + 'px';
+				// 	}
+				// }
+				// timer4=setInterval(show2,10);console.log(timer4);
 				// function stop2() {
 				// 	clearInterval(timer4);
 				// }
 				// function start2() {
-				// 	timer4=setInterval(show2,30);
+				// 	timer4=setInterval(show2,10);
 				// }
 
 				// stop2();
