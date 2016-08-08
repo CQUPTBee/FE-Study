@@ -8,7 +8,7 @@ window.onload = function () {
 };
 
 function activeCalculator() {
-    var result = 0;
+    var result = "";
     var val = "";
     var output_box = document.getElementsByClassName("output-box")[0];
     var enter_tab = document.getElementById("enter_tab");
@@ -22,49 +22,15 @@ function activeCalculator() {
         }
     })();
 
-    //绑定按钮事件
-    add.onclick = function() {
-        result = val;
-        val = "";
-    };
-    sub.onclick = function() {
-        result = val;
-        val = "";
-        ca_index = 2;
-    };
-    mult.onclick = function() {
-        result = val;
-        val = "";
-        ca_index = 3;
-    };
-
-    div.onclick = function() {
-        result = val;
-        val = "";
-        ca_index = 4;
-    };
-    to_percent.onclick = function() {
-        val = parseFloat(val);
-        val = val / 100;
-        output(val * 100 + "%");
-    };
-    not.onclick = function() {
-        val = -val;
-        result = val;
-        output(result);
-    };
-    AC.onclick = function() {
-        result = 0;
-        val = "";
-        output(result);
-    };
-    dot.onclick = function() {
-        if (val.toString().split(".").length > 1) {
-            //判断是否已经为浮点数
-            output(val);
-        } else {
-            val = val + ".";
-            output(val);
+    //数字输入
+    (function () {
+        for (var i = 0; i < nums.length; i++) {
+            nums[i].onclick = function (_i) {
+                return function () {
+                    val = val + _i.toString();
+                    output(val);
+                }
+            }(i)
         }
     })();
 
