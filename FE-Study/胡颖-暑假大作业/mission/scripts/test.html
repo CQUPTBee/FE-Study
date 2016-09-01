@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+<script src="jquery-3.1.0.js"></script>
+<script src="jqcookie.js"></script>
+<script type="text/javascript">
+$(function (){
+	var $j_mtips = $("#j_mtips");
+	var $j_notips = $(".j_notips");
+	Cookies.set('closeTips', 'true', {expires: 7, path: '/'});
+	console.log(Cookies.get('closeTips',{path: '/'}));
+});
+</script>
+</body>
+
+</html>
