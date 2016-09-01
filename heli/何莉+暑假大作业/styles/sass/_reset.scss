@@ -1,0 +1,34 @@
+
+/*适用于任何页面，通用重置样式（css reset）*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,blockquote,pre,legend,textarea,th,td{
+	margin:0;
+	padding: 0;
+}/*不使用“*”，性能差*/
+ol,ul{
+	list-style: none;
+}
+img{
+	border:none;
+}
+
+li{
+	list-style: none;
+}
+
+input,select,textarea{
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*清浮动，各种方法的优缺点*/
+.clearfix{
+	*zoom:1;/*ie6,7	*/
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}

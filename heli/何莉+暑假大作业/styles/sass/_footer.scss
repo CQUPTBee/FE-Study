@@ -1,0 +1,30 @@
+footer {
+	position: ablolute;
+	bottom: 0;
+	height: 264px;
+	width: 100%;
+	background: #2c3339;
+	dl {
+		padding-left: 120px; 
+		float: left;
+		color: #a2a4a5;
+		dt {
+			font-size: 12px;
+		}
+		dd {
+			padding-top: 15px;
+			font-size: 14px;
+		}
+	}
+}
+.copyright {
+	padding-top: 94px;
+	padding-left: 256px;
+	width:  396px;
+	height: 86px;
+	a {
+		width: 236px;
+		height: 20px;
+		background: url() 0 0 no-repeat;
+	}
+}
