@@ -1,0 +1,735 @@
+@charset 'UTF-8';
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+body {
+    color: #333;
+    background: #fff;
+}
+
+#top {
+    width: 100%;
+    background: #f3f3f3;
+}
+
+#j_mtips {
+    width: 1206px;
+    margin: 0 auto;
+    display: -none;
+}
+
+#small-bar {
+    font-size: 12px;
+}
+#small-bar .left-bar {
+    margin-left: 1px;
+    line-height: 36px;
+    float: left;
+}
+#small-bar a {
+    cursor: pointer;
+    color: #21a557;
+}
+#small-bar .j_notips {
+    width: 65px;
+    height: 12px;
+    margin-top: 13px;
+    padding: 0 2px 0 15px;
+    float: right;
+    cursor: pointer;
+    background: url('../../mission/images/close-bg.gif') no-repeat left 1px;
+}
+
+#nav .nav-title,
+#nav .nav-focus,
+#nav .has-focus,
+.nav-title span,
+#nav .fan-wrap {
+    float: left;
+}
+
+#nav {
+    width: 1206px;
+    height: 24px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#nav .nav-focus {
+    width: 54px;
+    height: 21px;
+    margin-top: 3px;
+    padding: 0 9px;
+    font-family: '宋体';
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    background: #21a557;
+}
+#nav .nav-focus a {
+    margin: 0;
+    color: #fff;
+}
+#nav .has-focus {
+    width: 106px;
+    height: 21px;
+    margin-top: 3px;
+    padding: 0 6px;
+    font-family: '宋体';
+    font-size: 12px;
+    display: none;
+    cursor: pointer;
+    border: 1px solid #efefef;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    background: #f8f8f8;
+}
+#nav .has-focus span {
+    cursor: pointer;
+}
+#nav .has-focus a {
+    margin: 0;
+    color: #333;
+}
+#nav .has-focus a:hover {
+    text-decoration: underline;
+    color: #21a557;
+}
+#nav .has-focus .dev {
+    vertical-align: top;
+}
+#nav .has-focus .cal {
+    color: #999;
+}
+#nav .fan-wrap {
+    margin: 4px 0 0 14px;
+    cursor: default;
+}
+#nav .fans,
+#nav .fan-num {
+    margin-right: 7px;
+    font-family: '宋体';
+    font-size: 12px;
+    color: #666;
+}
+#nav .nav-search,
+#nav a {
+    margin-top: 3px;
+    float: right;
+    color: #666;
+}
+#nav .ahover {
+    color: #39a030;
+}
+#nav .nav-search {
+    margin: 1px 14px 0 0;
+    cursor: pointer;
+}
+#nav .wygkk {
+    margin-right: 30px;
+}
+#nav .ykt {
+    margin-right: 56px;
+}
+#nav .mooc {
+    margin-right: 55px;
+}
+
+.nav-title {
+    margin-left: 1px;
+    background: url('../../mission/images/nav-title-bg.gif') no-repeat 70px 4px;
+}
+.nav-title span {
+    cursor: pointer;
+}
+.nav-title .edu {
+    font-family: '微软雅黑';
+    font-size: 28px;
+    font-weight: bold;
+    color: #39a030;
+}
+.nav-title .depart {
+    margin: 0 29px 0 23px;
+    font-family: '微软雅黑';
+    font-size: 22px;
+    line-height: 24px;
+}
+
+#banner-wrap {
+    position: relative;
+    height: 378px;
+    margin-top: 33px;
+}
+#banner-wrap .banner {
+    overflow: hidden;
+}
+#banner-wrap a {
+    display: block;
+}
+#banner-wrap img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#banner-wrap .imgOn {
+    z-index: 10px;
+    margin: 0 auto;
+    display: block;
+}
+#banner-wrap .indexList {
+    position: absolute;
+    z-index: 20;
+    bottom: 1%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#banner-wrap .indexList li {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    background: #fff;
+}
+#banner-wrap .indexList .indexOn {
+    background: #333;
+}
+
+#product {
+    width: 1206px;
+    margin: 0 auto;
+}
+#product div {
+    width: 242px;
+    height: 176px;
+    margin-top: 60px;
+    padding-left: 100px;
+    float: left;
+}
+#product h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: normal;
+}
+#product p {
+    font-size: 14px;
+    color: #666;
+}
+#product .pro-gkk {
+    margin-left: 5px;
+    background: url('../../mission/images/pro-gkk-bg.gif') no-repeat left 8px;
+}
+#product .pro-ykt {
+    margin-left: 84px;
+    background: url('../../mission/images/pro-ykt-bg.gif') no-repeat left 8px;
+}
+#product .pro-mooc {
+    margin-left: 82px;
+    background: url('../../mission/images/pro-mooc-bg.gif') no-repeat left 8px;
+}
+#product a {
+    margin-top: 34px;
+    float: left;
+    color: #39a030;
+}
+#product a:hover {
+    text-decoration: underline;
+}
+
+#we-wrap {
+    background: #f8f8f8;
+}
+
+#work-environment {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 80px;
+}
+#work-environment img {
+    width: 19.8%;
+    height: 220px;
+    margin-right: .2%;
+    float: left;
+}
+#work-environment .we-last {
+    margin: 0;
+}
+
+#footer-wrap {
+    background: #2c3339;
+}
+
+#footer {
+    width: 1206px;
+    margin: 0 auto;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer .foot-title {
+    width: 351px;
+    margin: 92px 0 77px 50px;
+    float: left;
+    background: url('../../mission/images/nav-title-bg.gif') no-repeat 70px 5px;
+}
+#footer .foot-title span {
+    display: inline-block;
+    cursor: pointer;
+}
+#footer .foot-title .edu {
+    font-family: '微软雅黑';
+    font-size: 28px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #39a030;
+}
+#footer .foot-title .depart {
+    margin: 0 29px 22px 16px;
+    font-family: '微软雅黑';
+    font-size: 24px;
+    color: #39a030;
+}
+#footer .foot-title p {
+    font-size: 12px;
+    line-height: 24px;
+    float: left;
+    color: #bebfc0;
+}
+#footer .link {
+    margin: 82px 96px 0 150px;
+    float: left;
+    color: #bebfc0;
+}
+#footer li {
+    margin-bottom: 15px;
+    cursor: default;
+}
+#footer a {
+    color: #bebfc0;
+}
+#footer .us {
+    margin: 81px 72px 0 0;
+    float: left;
+    color: #bebfc0;
+}
+#footer .focus {
+    width: 62px;
+    display: inline-block;
+    background: url('../../mission/images/web.png') no-repeat right top;
+}
+#footer .more {
+    margin-top: 82px;
+    float: left;
+    color: #bebfc0;
+}
+
+.mask {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: url('../../mission/images/background.png');
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 387px;
+    height: 288px;
+    margin-top: -144px;
+    margin-left: -193.5px;
+    background-color: #fff;
+}
+.login .txt {
+    position: relative;
+    width: 295px;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    background-color: #fafafa;
+}
+
+.form .tit {
+    padding: 30px 39px 0 44px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+.form .itm2 {
+    margin-top: 15px;
+}
+
+.form .input {
+    width: 271px;
+    height: 16px;
+    padding: 14px 10px;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+    background-color: #fafafa;
+}
+
+.form .btn {
+    width: 293px;
+    height: 46px;
+    margin: 29px auto 0;
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    border: none;
+    background: url('../../mission/images/login-btn.png');
+}
+
+.form .wrap {
+    margin: 0 auto;
+}
+
+.form .closed {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 23px;
+    height: 22px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url('../../mission/images/closed.png');
+}
+
+.video {
+    position: relative;
+    width: 890px;
+    height: 616px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+}
+.video .tt {
+    font-size: 18px;
+    color: #444;
+}
+.video video {
+    margin-top: 22px;
+}
+.video .closed {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 23px;
+    height: 22px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url('../../mission/images/closed.png');
+}
+
+.flow-wrap {
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.flow {
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.content-wrap {
+    margin-right: 245px;
+    float: left;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 118px;
+    float: left;
+}
+.content h3 {
+    cursor: pointer;
+}
+
+.cover:hover .wrap {
+    position: absolute;
+    width: 470px;
+    height: 254px;
+}
+
+.cover:hover .tt {
+    color: #39a030;
+}
+
+.cover {
+    position: relative;
+    width: 225px;
+    height: 228px;
+    margin: 0 0 20px 20px;
+    float: left;
+    cursor: pointer;
+    background-color: #fff;
+}
+.cover .wrap {
+    height: 228px;
+    display: block;
+    overflow: hidden;
+    color: #999;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.cover .wrap:hover {
+    position: absolute;
+    z-index: 100;
+    top: -10px;
+    left: -10px;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(12, 4, 8, .3);
+}
+.cover .wrap:hover .imgpic,
+.cover .wrap:hover .tt,
+.cover .wrap:hover .writer,
+.cover .wrap:hover .num,
+.cover .wrap:hover .kind,
+.cover .wrap:hover .disc {
+    display: block;
+    float: left;
+}
+.cover .wrap:hover .price {
+    display: none;
+}
+.cover .wrap:hover .imgpic {
+    padding: 12px;
+}
+.cover .wrap:hover .tt {
+    width: 187px;
+    padding: 12px 6px;
+    text-overflow: ellipsis;
+}
+.cover .wrap:hover .writer {
+    width: 120px;
+    padding-bottom: 16px;
+}
+.cover .wrap:hover .num {
+    width: 120px;
+    padding-bottom: 14px;
+}
+.cover .wrap:hover .num:after {
+    content: '在学';
+}
+.cover .wrap:hover .disc {
+    padding: 0 18px 0 12px;
+    line-height: 15px;
+    text-overflow: ellipsis;
+    background: #f8f8f8;
+}
+.cover .imgpic {
+    width: 223px;
+    height: 124px;
+    padding: 2px;
+}
+.cover .tt {
+    height: 14px;
+    padding: 10px 6px 6px 6px;
+    color: #333;
+}
+.cover .writer {
+    height: 14px;
+    padding: 6px;
+}
+.cover .num {
+    padding: 0 0 0 18px;
+    font-size: 12px;
+    background: url('../../mission/images/people.gif') no-repeat 6px 2px;
+}
+.cover .price {
+    padding: 6px 6px;
+}
+.cover .pri {
+    height: 14px;
+    font-size: 12px;
+    color: #ff3f00;
+}
+.cover .kind {
+    padding: 6px;
+    font-size: 12px;
+}
+.cover .disc {
+    height: 42%;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.f-oh {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.f-fs0 {
+    font-size: 12px;
+}
+
+.data-lists {
+    margin-bottom: -20px;
+    margin-left: -20px;
+}
+
+.pager {
+    padding: 30px 0 0 0;
+    line-height: 20px;
+    float: right;
+}
+.pager .prv,
+.pager .nxt {
+    width: 30px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.pager .prv {
+    background: #9dd8b1 url('../../mission/images/btn1.png') no-repeat center;
+}
+.pager .nxt {
+    background: #9dd8b1 url('../../mission/images/btn2.png') no-repeat center;
+}
+.pager a {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    float: left;
+    text-align: center;
+}
+.pager .pg:hover {
+    color: #fff;
+    background-color: #9dd8b1;
+}
+.pager .selected,
+.pager .selected:hover {
+    cursor: default;
+    color: #10ae58;
+    background: none;
+}
+.pager .f-dis {
+    cursor: default;
+    background-color: #ddd;
+}
+
+.nav {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.nav .item {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    color: #666;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(6, 0, 1, .2);
+}
+.nav .selected {
+    color: #fff;
+    background-color: #39a030;
+}
+
+.f-templete {
+    display: none;
+}
+
+.sd2 {
+    width: 223px;
+    margin-left: -223px;
+    float: right;
+}
+
+.advertise {
+    width: 223px;
+    height: 229px;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(6, 0, 1, .2);
+}
+.advertise .text {
+    padding: 20px 23px 9px;
+    font-size: 14px;
+    color: #666;
+}
+.advertise .playbox {
+    position: relative;
+    padding: 0 21.5px;
+}
+.advertise .playbox img {
+    cursor: pointer;
+}
+.advertise .icon {
+    width: 14px;
+    height: 18px;
+}
+
+.tit {
+    height: 55px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.toplit .imgpic {
+    float: left;
+}
+
+.top {
+    width: 223px;
+    margin-top: 21px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(6, 0, 1, .2);
+}
+
+.toptit {
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+.toptit a {
+    color: #333;
+}
+
+.toplit {
+    position: absolute;
+    bottom: -900px;
+    width: 223px;
+    cursor: pointer;
+}
+.toplit .item {
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.toplit .item:hover .tt {
+    color: #39a030;
+}
+.toplit .tt {
+    margin-left: 60px;
+}
+.toplit .num {
+    height: 17px;
+    margin: 10px 0 0 60px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    background: url('../../mission/images/people.gif') no-repeat 2px 4px;
+}

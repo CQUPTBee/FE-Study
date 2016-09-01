@@ -1,0 +1,150 @@
+@charset 'utf-8';
+/* 使用重置样式表 */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td{
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑', Arial;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+button {
+    font-family: '微软雅黑', Arial;
+    font-weight: normal;
+    cursor: pointer;
+    border: none;
+    outline: medium;
+    background: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+select {
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+    font-family: 'SimHei';
+    font-size: 12px;
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #000;
+    /*很关键：将默认的select选择框样式清除*/
+
+            appearance: none;
+       -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+body{
+    line-height: 1;
+}
+ol,
+ul{
+    list-style: none;
+}
+blockquote,
+q{
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after{
+    content: '';
+    content: none;
+}
+/* remeber to define focus styles! */
+:focus{
+    outline: 0;
+}
+/* remeber to highlight inserts somehow */
+ins{
+    text-decoration: none;
+}
+del{
+    text-decoration: line-through;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+/* tables still need 'cellspacing="0" in the markup' */
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,h5,h6 {
+    cursor: default;
+}
