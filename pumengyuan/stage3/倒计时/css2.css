@@ -1,0 +1,17 @@
+input {
+	display: block;
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #000;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.btn {
+	width: 110px;
+	margin-top: 10px;
+}
+#start {
+	width: 96px;
+	margin-top: 10px;
+}
