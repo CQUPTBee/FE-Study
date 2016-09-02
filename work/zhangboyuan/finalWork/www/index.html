@@ -1,0 +1,268 @@
+<!--
+ --   Created by boyuan on 8/29/16.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="教育 在线学习 互联网">
+    <meta name="keyword" content="网易教育产品部">
+    <title>网易教育产品部</title>
+    <link rel="stylesheet" href="static/css/lib/reset.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <!--<link rel="stylesheet" href="static/css/narrow.css">-->
+</head>
+
+<body>
+    <!--顶部提示-->
+    <div class="top-tips" id="J_top-tips" style="display: none;">
+        <div class="global-center">
+            <p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势!</p>
+            <a href="#" class="top-tips-check">立即查看 ></a>
+            <a href="#" class="top-tips-dismiss" id="J_top-tips-dismiss">不再提醒</a>
+        </div>
+    </div>
+    <!--标题栏-->
+    <header class="header global-center">
+        <section class="header-left">
+            <a href="#" class="header-left-logo">EDU<span class="slash"></span></a>
+            <a href="#" class="header-left-text">网易教育产品部</a>
+            <div class="header-left-follow">
+                <span class="header-left-follow-btn" id="J_header-left-follow-btn"><span>+</span>关注</span>
+                <span class="header-left-follow-btn-followed" style="display: none;"><span class="ico"></span>已关注<span class="slash"></span><a class="cancel">取消</a></span>
+                <span class="header-left-follow-fans">粉丝<span id="J_fans">45</span>人</span>
+            </div>
+        </section>
+        <nav class="header-right">
+            <a href="#" class="header-right-nav">网易公开课</a>
+            <a href="#" class="header-right-nav">云课堂</a>
+            <a href="#" class="header-right-nav">中国大学MOOC</a>
+            <a href="#" class="header-right-search"></a>
+        </nav>
+    </header>
+    <!--大banner盒子-->
+    <div class="banner" id="J_banner">
+        <ul class="banner-ul">
+            <li class="banner-ul-li J_carousel-imgs on">
+                <a href=""><img src="static/img/banner1.jpg" alt="1"></a>
+            </li>
+            <li class="banner-ul-li J_carousel-imgs">
+                <a href=""><img src="static/img/banner2.jpg" alt="2"></a>
+            </li>
+            <li class="banner-ul-li J_carousel-imgs">
+                <a href=""><img src="static/img/banner3.jpg" alt="3"></a>
+            </li>
+        </ul>
+        <div class="banner-dots" id="J_banner-dots">
+            <span class="on" data-id="0"></span>
+            <span data-id="1"></span>
+            <span data-id="2"></span>
+        </div>
+    </div>
+    <!--平台入口-->
+    <article class="platform global-center">
+        <section>
+            <h2>网易公开课</h2>
+            <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+            <a href="http://open.163.com/">了解更多 ></a>
+        </section>
+        <section>
+            <h2>云课堂</h2>
+            <p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+            <a href="http://study.163.com/">了解更多 ></a>
+        </section>
+        <section>
+            <h2>中国大学MOOC</h2>
+            <p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+            <a href="http://www.icourse163.org/">了解更多 ></a>
+        </section>
+    </article>
+    <!--照片墙-->
+    <section class="imgwall">
+        <img src="static/img/imgwall1.jpg" alt="1">
+        <img src="static/img/imgwall2.jpg" alt="2">
+        <img src="static/img/imgwall3.jpg" alt="3">
+        <img src="static/img/imgwall4.jpg" alt="4">
+        <img src="static/img/imgwall5.jpg" alt="5">
+    </section>
+    <!--主要区域-->
+    <div class="usedForBgOnly!" style="background-color: #f8f8f8;width: 100%;">
+        <div class="global-center main clear-float">
+            <article class="course">
+                <a href="#" id="anchor1"></a>
+                <div class="course-selectTab" id="J_course-selectTab">
+                    <a href="javascript:;" class="selected" data-type="10">产品设计</a>
+                    <a href="javascript:;" data-type="20">编程语言</a>
+                </div>
+                <div class="course-list clear-float" id="J_course-list">
+                    <!--用juicer渲染-->
+                    <!--<section class="course-list-item">-->
+                    <!--<img src="img/course.jpg" alt="" width="223" height="124">-->
+                    <!--<h2 class="course-list-item-title">大大大撒打算打算打算</h2>-->
+                    <!--<a href="" class="course-list-item-author">极客公园</a>-->
+                    <!--<span class="course-list-item-people">465</span>-->
+                    <!--<h3 class="course-list-item-price">¥59</h3>-->
+                    <!--&lt;!&ndash;详情&ndash;&gt;-->
+                    <!--<section class="course-list-item-details">-->
+                    <!--<div class="course-list-item-details-header">-->
+                    <!--<img src="img/course.jpg" alt="" width="223" height="124">-->
+                    <!--<div class="course-list-item-details-header-info">-->
+                    <!--<h3 class="course-list-item-details-header-info-title">如何低成本制作在线课程</h3>-->
+                    <!--<div class="course-list-item-details-header-info-leaner">-->
+                    <!--62211人在学-->
+                    <!--</div>-->
+                    <!--<div class="course-list-item-details-header-info-distor">-->
+                    <!--发布者: <a href="" target="_blank">网易云课堂</a>-->
+                    <!--</div>-->
+                    <!--<div class="course-list-item-details-header-info-category">-->
+                    <!--分类: 暂无-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="course-list-item-details-content">-->
+                    <!--<p>制作在线课程，并不是将线下课程录像上网-->
+                    <!--那么简单。好的在线课程，必须针对在线教-->
+                    <!--育特点进行设计和制作。本课程总结了让课-->
+                    <!--程更适合在线学习的若干要点，和多项制作-->
+                    <!--经验，力图帮助您用最少的时间、最低的成-->
+                    <!--本，制作出精彩的在线课程。课程本身就是-->
+                    <!--这套制作方案最好的演示。共包括准备工作-->
+                    <!--、录制课程和后期制作三个部分，持续更新-->
+                    <!--中</p>-->
+                    <!--</div>-->
+                    <!--</section>-->
+                    <!--</section>-->
+                </div>
+                <div class="course-paging">
+                    <a href="javascript:;" class="course-paging-prev" id="J_paging-prev"></a>
+                    <!--用juicer渲染-->
+                    <a href="javascript:;" class="course-paging-num on">1</a>
+                    <a href="javascript:;" class="course-paging-num">2</a>
+                    <a href="javascript:;" class="course-paging-num">3</a>
+                    <a href="javascript:;" class="course-paging-num">4</a>
+                    <a href="javascript:;" class="course-paging-num">5</a>
+                    <a href="javascript:;" class="course-paging-num">6</a>
+                    <a href="javascript:;" class="course-paging-num">7</a>
+                    <a href="javascript:;" class="course-paging-num">8</a>
+                    <a href="javascript:;" class="course-paging-next" id="J_paging-next"></a>
+                </div>
+            </article>
+            <aside class="sidebar">
+                <section class="sidebar-org">
+                    <h2>机构介绍</h2>
+                    <p>观看下面的视频来了解吧:</p>
+                    <div class="sidebar-org-video" id="J_sidebar-org-video"></div>
+                </section>
+                <section class="sidebar-hottest">
+                    <h2>最热排行</h2>
+                    <div class="sidebar-hottest-scroll-wrapper">
+                        <div id="juicer-hottest-wrapper" style="position: absolute;">
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="contact global-center">
+            <div class="contact-info">
+                <h2><span>EDU</span><span class="slash"></span>网易教育产品部</h2>
+                <p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+                <p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+            </div>
+            <div class="contact-link">
+                <ul class="contact-link-group">
+                    <li>
+                        <h3>友情链接:</h3></li>
+                    <li><a href="#">网易公开课</a></li>
+                    <li><a href="#">网易云课堂</a></li>
+                    <li><a href="#">中国大学MOOC</a></li>
+                </ul>
+                <ul class="contact-link-group">
+                    <li>
+                        <h3>我们:</h3></li>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">联系</a></li>
+                    <li><a href="#" class="sina-ico">关注</a></li>
+                </ul>
+                <ul class="contact-link-group">
+                    <li>
+                        <h3>更多:</h3></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--加载require-->
+        <script data-main="app" src="lib/require.js"></script>
+    </footer>
+    <section class="popup-video" id="J_popup-video">
+        <h2>请观看下面的视频</h2>
+        <div class="video">
+            <video src="" controls poster="static/img/video-play-poster.gif" width="887" height="564">
+                抱歉,您的浏览器版本过低,视频无法播放。
+            </video>
+        </div>
+        <a href="javascript:;" class="close" id="J_close-popup-video"></a>
+    </section>
+    <section class="popup-login" id="J_popup-login">
+        <h2>登录网易云课堂</h2>
+        <form action="" autocomplete="on" name="login" method="get">
+            <input id="J_uid" type="text" autofocus name="用户名" required="required" maxlength="20" value="">
+            <input id="J_pwd" type="password" name="密码" required="required" maxlength="20" value="">
+        </form>
+        <button type="submit" id="J_submit">登录</button>
+        <a href="javascript:;" class="close" id="J_close-popup-login"></a>
+    </section>
+    <div class="bg-wrap" id="J_popup-wrap" style="display: none;position: fixed;top:0;left:0;width: 100%;height: 100%;background: #000;opacity: .5;z-index:10;"></div>
+    <!-- juicer模板 -->
+    <script id='sidebarTpl' type="text/template">
+        {@each list as item}
+        <div class="sidebar-hottest-item">
+            <img src="${item.smallPhotoUrl}" alt="${item.name}">
+            <h3>${item.name}</h3>
+            <span>${item.learnerCount}</span>
+        </div>
+        {@/each}
+    </script>
+    <script id="courseTpl" type="text/template">
+        {@each list as item}
+        <section class="course-list-item">
+            <img src="${item.middlePhotoUrl}" alt="" width="223" height="124">
+            <h2 class="course-list-item-title">${item.name}</h2>
+            <a href="" class="course-list-item-author">极客公园</a>
+            <span class="course-list-item-people">465</span>
+            <h3 class="course-list-item-price">¥59</h3>
+            <!--详情-->
+            <section class="course-list-item-details">
+                <div class="course-list-item-details-header">
+                    <img src="${item.middlePhotoUrl}" alt="" width="223" height="124">
+                    <div class="course-list-item-details-header-info">
+                        <h3 class="course-list-item-details-header-info-title">${item.name}</h3>
+                        <div class="course-list-item-details-header-info-leaner">
+                            ${item.learnerCount} 人在学
+                        </div>
+                        <div class="course-list-item-details-header-info-distor">
+                            发布者: <a href="${item.providerLink}" target="_blank">${item.provider}</a>
+                        </div>
+                        {@if item.categoryName == null}
+                        <div class="course-list-item-details-header-info-category">分类: 暂无</div>
+                        {@else}
+                        <div class="course-list-item-details-header-info-category">分类: ${item.item.categoryName}</div>
+                        {@/if}
+                    </div>
+                </div>
+                <div class="course-list-item-details-content">
+                    <p>${item.providerDesc}</p>
+                </div>
+            </section>
+        </section>
+        {@/each}
+    </script>
+</body>
+
+</html>

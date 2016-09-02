@@ -1,0 +1,725 @@
+@charset "UTF-8";
+@import "lib/reset.css";
+@import "common/global-set";
+
+//顶部tip
+//--------------------
+.top-tips {
+    width: 100%;
+    color: $darkGray;
+    background-color: #f3f3f3;
+    p {
+        display: inline-block;
+        line-height: 37px;
+        font-size: 12px;
+    }
+    &-check {
+        margin-left: 13px;
+        color: $mainGreen;
+    }
+    &-dismiss {
+        display: inline-block;
+        float: right;
+        line-height: 37px;
+        &:before {
+            content: "×";
+            margin-right: 2px;
+            padding: 1px;
+        }
+    }
+}
+
+//标题logo和导航
+//--------------------
+.header {
+    overflow: hidden;
+    height: 57px;
+    padding-top: 31px;
+    &-left {
+        display: inline-block;
+        float: left;
+        line-height: 22px;
+        &-logo {
+            position: relative;
+            top: -3px;
+            display: inline-block;
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: $mainGreen;
+            .slash {
+                position: relative;
+                top: 3px;
+                display: inline-block;
+                width: 1px;
+                height: 22px;
+                margin-right: 10px;
+                margin-left: 12px;
+                background-color: $mainGreen;
+            }
+        }
+        &-text {
+            display: inline-block;
+            float: left;
+            line-height: 22px;
+            font-size: 22px;
+            color: $darkGray;
+        }
+        &-follow {
+            display: inline-block;
+            float: left;
+            height: 21px;
+            line-height: 21px;
+            &-btn {
+                display: inline-block;
+                width: 54px;
+                height: 20px;
+                line-height: 20px;
+                margin-left: 30px;
+                padding-top: 1px;
+                text-align: center;
+                color: #fff;
+                border-radius: 2px;
+                background-color: $mainGreen;
+                &:hover {
+                    cursor: pointer;
+                    background-color: lighten($mainGreen, 3%);
+                }
+                span {
+                    margin-right: 2px;
+                }
+            }
+            &-btn-followed {
+                display: inline-block;
+                width: 82px;
+                height: 20px;
+                line-height: 22px;
+                margin-left: 20px;
+                padding-left: 22px;
+                color: $darkGray;
+                border: 1px solid #efefef;
+                border-radius: 2px;
+                background: url("../img/check.gif") 6px 6px no-repeat;
+                .cancel {
+                    color: #999;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                        color: $mainGreen;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                .slash {
+                    position: relative;
+                    top: 1.5px;
+                    display: inline-block;
+                    width: 2px;
+                    height: 10px;
+                    margin-right: 8px;
+                    margin-left: 8px;
+                    background: lighten(#999, 20%);
+                }
+            }
+            &-fans {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                margin-left: 13px;
+                color: $lightGray;
+            }
+        }
+    }
+    &-right {
+        position: relative;
+        top: -4px;
+        display: inline-block;
+        float: right;
+        vertical-align: middle;
+        &-nav {
+            margin: 0 21px 0 21px;
+            font-size: 16px;
+            color: $darkGray;
+            &:hover {
+                color: $mainGreen;
+            }
+        }
+        &-search {
+            position: relative;
+            top: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 21px;
+            margin-left: 10px;
+            background: url("../img/search.png") no-repeat;
+            &:hover {
+                background: url("../img/search-hover.png") no-repeat;
+            }
+        }
+    }
+}
+
+//轮播banner
+//--------------------
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1652px;
+    height: 460px;
+    margin: 0 auto;
+    &-ul {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        &-li {
+            position: absolute;
+            left: 0;
+            display: none;
+            img {
+                width: 100%;
+                height: 460px;
+
+                object-fit: cover;
+            }
+        }
+        .on {
+            display: list-item;
+        }
+    }
+    &-dots {
+        position: absolute;
+        z-index: 5;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-left: 11px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #fff;
+            &:first-child {
+                margin: 0;
+            }
+        }
+        .on {
+            background-color: #000;
+        }
+    }
+}
+
+//三个平台入口
+//--------------------
+.platform {
+    height: 242px;
+    padding-top: 60px;
+    section {
+        display: inline-block;
+        margin-left: 80px;
+        padding-left: 105px;
+        vertical-align: middle;
+        background: url("../img/platform1.png") no-repeat 5px 2px;
+        &:first-child {
+            margin: 0;
+        }
+        h2 {
+            font-size: 22px;
+            color: $darkGray;
+        }
+        p {
+            width: 240px;
+            margin-top: 18px;
+            margin-bottom: 34px;
+            font-size: 14px;
+            color: $lightGray;
+        }
+        a {
+            color: $mainGreen;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//照片墙
+//--------------------
+.imgwall {
+    overflow: hidden;
+    width: 100%;
+    img {
+        box-sizing: border-box;
+        float: left;
+        width: 20%;
+        padding-left: 4px;
+    }
+}
+
+//主要内容区
+//--------------------
+.main {
+    padding-bottom: 121px;
+}
+
+//课程
+.course {
+    position: relative;
+    float: left;
+    width: 980px;
+    min-height: 1437px;
+    &-selectTab {
+        width: 404px;
+        height: 50px;
+        margin-top: 83px;
+        background-color: #fff;
+
+        @include boxShadow();
+        a {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: $lightGray;
+        }
+        .selected {
+            color: #fff;
+            background-color: $mainGreen;
+        }
+    }
+    &-list {
+        margin-top: 30px;
+        &-item {
+            position: relative;
+            float: left;
+            width: 223px;
+            height: 227px;
+            margin-right: 18px;
+            margin-bottom: 20px;
+            margin-left: 2px;
+            padding: 1px;
+            cursor: pointer;
+            background-color: #fff;
+
+            @include boxShadow();
+            &:hover {
+                cursor: pointer;
+                box-shadow: 4px 4px 4px #ecebeb;
+            }
+            &:hover .course-list-item-title {
+                color: $mainGreen;
+            }
+            &-title {
+                overflow: hidden;
+                margin-top: 5px;
+                padding: 0 5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                color: $darkGray;
+            }
+            &-author {
+                display: block;
+                line-height: 32px;
+                padding: 0 5px;
+                color: #999;
+            }
+            &-people {
+                display: block;
+                width: 18px;
+                height: 14px;
+                line-height: 14px;
+                margin-left: 5px;
+                padding-right: 4px;
+                padding-left: 18px;
+                color: #999;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                background: url("../img/people.gif") 4px -1px no-repeat;
+            }
+            &-price {
+                padding-top: 10px;
+                padding-left: 5px;
+                color: #ff3f00;
+            }
+            &:hover .course-list-item-details {
+                display: block;
+            }
+            //详情
+            &-details {
+                position: absolute;
+                z-index: 999;
+                top: -10px;
+                left: -10px;
+                display: none;
+                width: 479px;
+                background: #fff;
+                box-shadow: 0 0 1px 2px #edeced;
+                &-header {
+                    overflow: hidden;
+                    width: 457px;
+                    height: 133px;
+                    padding: 11px;
+                    img {
+                        float: left;
+                    }
+                    &-info {
+                        float: left;
+                        overflow: hidden;
+                        width: 215px;
+                        margin-left: 19px;
+                        &-title {
+                            margin-bottom: 17px;
+                            padding-top: 2px;
+                            font-size: 18px;
+                            color: $darkGray;
+                        }
+                        &-leaner {
+                            display: inline-block;
+                            height: 16px;
+                            margin-left: 4px;
+                            padding-left: 15px;
+                            font-size: 12px;
+                            color: $lightGray;
+                            background: url("../img/people.gif") 0 1px no-repeat;
+                        }
+                        &-distor {
+                            margin-top: 5px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: $lightGray;
+                            a:hover {
+                                cursor: pointer;
+                                color: $mainGreen;
+                            }
+                        }
+                        &-category {
+                            margin-top: 5px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: $lightGray;
+                        }
+                    }
+                }
+                &-content {
+                    width: 479px;
+                    background-color: #f8f8f8;
+                    p {
+                        overflow: hidden;
+                        width: 433px;
+                        padding: 11px 23px;
+                        font-size: 14px;
+                        color: $lightGray;
+                    }
+                }
+            }
+        }
+    }
+    &-paging {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        height: 20px;
+        margin-top: 28px;
+        > a {
+            display: inline-block;
+            float: left;
+            height: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:first-child {
+                margin-right: 8px;
+            }
+            &:last-child {
+                margin-left: 8px;
+            }
+        }
+        &-num {
+            width: 20px;
+            line-height: 20px;
+            margin-right: 5px;
+            margin-left: 5px;
+            font-size: 14px;
+            text-align: center;
+            color: $darkGray;
+            &:hover {
+                color: #fff;
+                background-color: #9dd8b1;
+            }
+            &.on {
+                color: $mainGreen;
+            }
+        }
+        &-prev,
+        &-next {
+            width: 30px;
+        }
+        &-prev {
+            background: url("../img/page-left-arrow.gif") no-repeat;
+        }
+        &-next {
+            background: url("../img/page-right-arrow.gif") no-repeat;
+        }
+    }
+}
+
+//侧边栏
+.sidebar {
+    float: left;
+    width: 223px;
+    &-org {
+        margin-top: 82px;
+        text-align: left;
+        border-top: 1px solid #ecebeb;
+        background-color: #fff;
+
+        @include boxShadow();
+        h2 {
+            height: 55px;
+            line-height: 55px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: $darkGray;
+            border-bottom: 1px solid #ecebeb;
+        }
+        p {
+            padding: 20px 0 9px 22px;
+            font-size: 14px;
+            color: $lightGray;
+        }
+        &-video {
+            width: 180px;
+            height: 129px;
+            margin: 0 auto;
+            background: url("../img/video-poster.gif") no-repeat;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-hottest {
+        overflow: hidden;
+        margin-top: 20px;
+        border-top: 1px solid #ecebeb;
+        background-color: #fff;
+
+        @include boxShadow();
+        &-scroll-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 721px;
+        }
+        h2 {
+            height: 55px;
+            line-height: 55px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: $darkGray;
+            border-bottom: 1px solid #ecebeb;
+        }
+        &-item {
+            position: relative;
+            height: 50px;
+            margin-top: 21px;
+            padding-left: 20px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+
+                object-fit: cover;
+            }
+            h3 {
+                position: absolute;
+                top: 0;
+                left: 81px;
+                overflow: hidden;
+                width: 123px;
+                font-size: 14px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-all;
+            }
+            span {
+                position: absolute;
+                top: 27px;
+                left: 81px;
+                display: inline-block;
+                width: 18px;
+                height: 14px;
+                line-height: 14px;
+                padding-left: 15px;
+                font-size: 14px;
+                color: #999;
+                background: url("../img/people.gif") 0 -1px no-repeat;
+            }
+        }
+    }
+}
+
+//页脚
+//--------------------
+footer {
+    width: 100%;
+    height: 262px;
+    background-color: #2c3339;
+}
+
+.contact {
+    overflow: hidden;
+    padding-top: 92px;
+    &-info {
+        float: left;
+        h2 {
+            margin-bottom: 28px;
+            font-size: 28px;
+            color: $mainGreen;
+            span {
+                font-weight: bold;
+            }
+            .slash {
+                position: relative;
+                top: 2px;
+                display: inline-block;
+                width: 2px;
+                height: 22px;
+                margin-right: 10px;
+                margin-left: 10px;
+                background-color: $mainGreen;
+            }
+        }
+        p {
+            color: #bebfc0;
+        }
+        p:last-child {
+            margin-top: 8px;
+        }
+    }
+    &-link {
+        float: right;
+        margin-right: 205px;
+        color: #bebfc0;
+        &-group {
+            display: inline-block;
+            margin-right: 95px;
+            vertical-align: top;
+            .sina-ico {
+                display: inline-block;
+                width: 62px;
+                background: url("../img/sina-ico.gif") 41px 0 no-repeat;
+            }
+            &:last-child {
+                margin: 0;
+            }
+            > li {
+                margin-bottom: 13px;
+                > a {
+                    font-size: 14px;
+                    color: #bebfc0;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//播放视频弹窗
+//--------------------
+.popup-video {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 950px;
+    height: 676px;
+    margin-top: -338px;
+    margin-left: -475px;
+    background: #fff;
+    h2 {
+        line-height: 18px;
+        margin: 31px 0 17px 31px;
+        font-size: 18px;
+        color: $darkGray;
+    }
+    .video {
+        width: 887px;
+        margin: 0 auto;
+    }
+    .close {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url("../img/close.gif") no-repeat;
+    }
+}
+
+//登录弹窗
+//--------------------
+.popup-login {
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 386px;
+    height: 288px;
+    margin-top: -144px;
+    margin-left: -193px;
+    opacity: 0;
+    background: #fff;
+    h2 {
+        line-height: 18px;
+        margin-top: 29px;
+        margin-bottom: 20px;
+        margin-left: 37px;
+        font-size: 18px;
+        color: $darkGray;
+    }
+    input {
+        display: inline-block;
+        width: 293px;
+        height: 43px;
+        margin-bottom: 15px;
+        margin-left: 40px;
+        text-indent: 4px;
+        border: 1px solid #dfdfdf;
+        background: #fafafa;
+        box-shadow: inset -1px -1px 1px #f1f1f1;
+    }
+    button {
+        width: 293px;
+        height: 46px;
+        margin-left: 40px;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        background: url("../img/login-btn.gif") no-repeat;
+        box-shadow: 2px 2px 0 #d5e3da;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url("../img/close.gif") no-repeat;
+    }
+}
