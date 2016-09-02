@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page3</title>
+	<link rel="stylesheet" type="text/css" href="style/page3.css">
+	<script type="text/javascript" src="js/page3.js"></script>
+
+	<!-- 背景特效 -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+
+<!-- 头部和尾部 -->
+	<link rel="stylesheet" type="text/css" href="style/head and bottom.css">
+	
+	<script type="text/javascript" src="js/move2.js"></script>
+	<script type="text/javascript" src="js/head and bottom.js"></script>
+<!-- 	头部尾部结束 -->
+</head>
+<body>
+<!-- 头部 -->
+<div id="wrap-1">
+	<div class="header clearfix">
+		<div class="header-left">
+			<a href="#"><img src='images3/images/logo.png'></a>
+			<span><a href="#">勤奋蜂</a></span>
+		</div>
+		<div class="header-right">
+			<ul id="top-ul1">
+				<li ><a href="#">加入我们</a></li>
+				<li><a href="#">关于</a></li>
+				<li><a href="#">首页</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 头部结束
+ -->
+
+<div id="introduce">
+	<ul>
+		<li class="cqbox1">
+			<h1>前 端 组</h1>
+		</li>
+		<li class="cqbox2">
+			<h1>后 台 组</h1>
+		</li>
+		<li class="cqbox3">
+			<h1>运 营 组</h1>
+		</li>
+		<li class="cqbox4">
+			<h1>产 品 组</h1>
+		</li>
+		<li class="cqbox5">
+			<h1>设 计 组</h1>
+		</li>
+		<li class="cqbox6">
+			<h1>行 政 组</h1>
+		</li>
+		<li class="cqbox7">
+			<h1>市 场 组</h1>
+		</li>
+	</ul>
+	<div class="sum one" style="display:none;">
+		主要职责是利用(X)HTML/CSS/JavaScript/Flash等各种Web技术进行客户端产品的开发。
+	</div>
+	<div class="sum two">
+		网站后台，有时也称为网站管理后台，是指用于管理网站前台的一系列操作.
+	</div>
+	<div class="sum three">
+		运营就是对运营过程的计划、组织、实施和控制，是与产品生产和服务创造密切相关的各项管理工作的总称。
+	</div>
+	<div class="sum four">
+		涉及到的工作就是需求调研、挖掘需求、画原型写各种文档（MRD、PRD、产品说明文档、产品使用文档等）、跟进项目进度、协调各部门人员
+	</div>
+	<div class="sum five">
+		根据环境的变化不断的调整经营策略，调整组织结构，调整资源配置。
+	</div>
+	<div class="sum six">
+		负责本部的行政管理和日常事务，协助领导做好各部门之间的综合协调.
+	</div>
+	<div class="sum seven">
+		定位好目标客户在哪里，对目标客户做有针对性的宣传。 做好市场调研，找好产品市场并对市场进行细分。
+	</div>
+	<div class="cq-join"><a href="#">不行，我要加入</a></div>
+
+	<input id="cqbtn1" type="button" value="回到顶部" />
+
+</div>
+
+
+<div id="wrap-2">
+	<div class="bottom">
+		<div class="bottom-account clearfix">
+			<div class="weibo">
+				
+			</div>
+			<div id="weixin1" class="weixin" >
+				<div id="code"></div>
+			</div>
+		</div>
+		<div class="bottom-information">
+			
+			<a href="#">关于勤奋蜂</a>
+			<a href="#">联系我们</a>
+		    <a href="#">客户服务</a>
+
+		</div>
+	</div>
+</div>
+<!-- 底部结束 -->
+
+
+
+<!-- 背景特效 -->
+
+
+<div id="particles-js"></div>
+
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<!-- 背景特效结束 -->
+
+
+
+	
+
+
+</body>
+</html>
