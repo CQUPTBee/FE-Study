@@ -20,11 +20,11 @@ var livereload = require('gulp-livereload');
 // 编译 scss 文件
 gulp.task('sass', function(cb) { // 传入一个回调函数，因此引擎可以知道何时它会被完成
     // return a value as the completion hint
-    return gulp.src('sass/**/*.scss')
+    return gulp.src('static/sass/**/*.scss')
         .pipe(plumber())
         // .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('static/css'))
         // .pipe(concat('zz-all-sass.css'))
         // .pipe(gulp.dest('src/css/sass/tmp'))
         // .pipe(rename('all.min.css'))
@@ -63,7 +63,7 @@ gulp.task('live', function() {
 gulp.task('css-watch', ['sass'], function() {
     console.log('正在监视 scss 及 css 文件变动');
     // 监听 sass
-    var watcher = gulp.watch('sass/**/*.scss', ['sass']); // 监视那些文件的变动，以及变动之后执行的任务
+    var watcher = gulp.watch('static/sass/**/*.scss', ['sass']); // 监视那些文件的变动，以及变动之后执行的任务
     watcher.on('change', function(event) {
         // 在 CLI 中输出一些提示信息，帮助我们了解程序发生了什么
         // console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');

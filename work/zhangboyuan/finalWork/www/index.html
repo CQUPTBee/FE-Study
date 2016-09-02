@@ -234,9 +234,13 @@
         <section class="course-list-item">
             <img src="${item.middlePhotoUrl}" alt="" width="223" height="124">
             <h2 class="course-list-item-title">${item.name}</h2>
-            <a href="" class="course-list-item-author">极客公园</a>
-            <span class="course-list-item-people">465</span>
-            <h3 class="course-list-item-price">¥59</h3>
+            <a href="" class="course-list-item-author">${item.provider}</a>
+            <span class="course-list-item-people">${item.learnerCount}</span>
+            {@if item.price == 0}
+                <h3 class="course-list-item-price" style="color:#39a030">免费</h3>
+            {@else}
+                <h3 class="course-list-item-price">${item.price}</h3>
+            {@/if}
             <!--详情-->
             <section class="course-list-item-details">
                 <div class="course-list-item-details-header">

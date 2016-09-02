@@ -291,8 +291,7 @@ body {
         padding: 0 5px;
         color: #999; }
       .course-list-item-people {
-        display: block;
-        width: 18px;
+        display: inline-block;
         height: 14px;
         line-height: 14px;
         margin-left: 5px;
