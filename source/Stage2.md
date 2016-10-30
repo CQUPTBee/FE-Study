@@ -3,17 +3,11 @@
 - 学习HTML常用标签的使用,明白每个标签的用途.
 - 认识CSS样式,理解CSS选择器的权值计算、布局模型、盒模型等，掌握基本的网页布局基础
 - 参考资料：
-	- [HTML 教程][1]
-	- [CSS 教程][2]
-	- [HTML+CSS基础课程-技术学习教程-慕课网][3]
-	- [如何用CSS进行网页布局-技术学习教程-慕课网][4]
-	- [网页布局基础-技术学习教程-慕课网][5]
-
-	[1]:http://www.w3school.com.cn/html/index.asp
-	[2]:http://www.w3school.com.cn/css/index.asp
-	[3]:http://www.imooc.com/learn/9
-	[4]:http://www.imooc.com/learn/57
-	[5]:http://www.imooc.com/learn/95
+	- [HTML 教程][http://www.w3school.com.cn/html/index.asp]
+	- [CSS 教程][http://www.w3school.com.cn/css/index.asp]
+	- [HTML+CSS基础课程-技术学习教程-慕课网][http://www.imooc.com/learn/9]
+	- [如何用CSS进行网页布局-技术学习教程-慕课网][http://www.imooc.com/learn/57]
+	- [网页布局基础-技术学习教程-慕课网][http://www.imooc.com/learn/95]
 
 ## 任务2 PS学习
 
