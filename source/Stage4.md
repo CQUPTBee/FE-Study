@@ -1,5 +1,10 @@
 # Level 4  得心应手
 ## 任务1 HTML5/CSS3/响应式布局/移动Web开发
+> 参考书籍:
++ HTML5高级程序设计
++ CSS 揭秘
++ 响应式Web设计：HTML5和CSS3实战
+
 ### HTML5
 + HTML5新元素与标签结构
 + HTML5音频与视频
