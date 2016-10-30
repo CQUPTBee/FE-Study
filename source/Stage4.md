@@ -45,10 +45,55 @@
 + 见缝插针
 + 围住神经猫
 
-## 任务2 性能优化
+## 任务2 NodeJs基础
+> 参考书籍
++ 初级: 了不起的NodeJS
++ 中级: Node 实战
++ 高级: 深入浅出NodeJS
+
+### 快速入门
++ Node.js发展，生态圈，io.js
++ Linux/Window/OS X环境配置
++ REPL环境与控制台程序
++ 异步编程，非阻塞I/O
++ 模块概念，模块管理工具
++ 开发流程，调试，测试
+
+### 核心模块和对象
++ 全局对象global,process,console.util
++ 事件驱动，事件发射器
++ 加密解密，路径操作，序列化和反序列化
++ 文件流操作
++ HTTP服务端与客户端
++ Socket.IO
+
+### WEB开发基础
++ HTTP协议，请求响应处理过程
++ 关系型数据库操作和数据访问
++ 非关系型数据库操作和数据访问
++ 原生的Nodejs开发Web应用程序
++ Web开发工作流
++ NodeJS开发Blog实例
+
+### 快速开发框架
++ Express简介+MVC简介
++ Express常用API
++ Express路由模块
++ Jade/Ejs模板引擎
++ 使用Express重构Blog案例
++ KOA等其他常见MVC框架
+
+### Nodejs 开发电子商务实战
++ 需求与设计
++ 账户模块注册登录
++ 会计中心模块
++ 前台展示模块
++ 购物车，订单结算
++ 在线客服即时通讯模块
+
+## 任务3 性能优化
 
 
-## 任务3 NodeJs基础		
 
 ## 任务4 Grunt/gulp/webpack
 
