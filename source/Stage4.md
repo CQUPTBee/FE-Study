@@ -91,10 +91,24 @@
 + 购物车，订单结算
 + 在线客服即时通讯模块
 
-## 任务3 性能优化
+## 任务3 主流的流行框架
 
+### Web开发工作流
++ GIT/SVN
++ Yeoman脚手架
++ NPM/Bower依赖管理工具
++ Grunt/Gulp/Webpack
 
+### MVC/MVVM/MVW框架
++ Angular.js
++ Backbone.js
++ Knockout/Ember
 
-## 任务4 Grunt/gulp/webpack
+### 常用库
++ Recat.js
++ Vue.js
++ Zepto.js
+
+## 任务4 性能优化
 
 ## 任务5 数据可视化
