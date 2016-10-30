@@ -8,6 +8,7 @@
 + 你不知道的JavaScript
 + JavaScript忍者秘籍
 + JavaScript函数式编程
++ 高性能JavaScript
 + 锋利的jQuery
 
 ### JavaScrit基础
