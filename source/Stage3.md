@@ -7,6 +7,7 @@
 + JavaScript 精粹
 + 你不知道的JavaScript
 + JavaScript忍者秘籍
++ JavaScript函数式编程
 + 锋利的jQuery
 
 ### JavaScrit基础
@@ -87,6 +88,8 @@
 
 ## 任务3 JavaScript 面向对象进阶
 > 推荐书籍
++ JavaScript面向对象编程指南
++ JavaScript设计模式
 
 ### 面向对象中级篇
 + 从内存角度到理解JS面向对象
