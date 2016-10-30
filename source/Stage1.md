@@ -8,9 +8,9 @@
 
 ## 任务1 Git/Github/利用Hexo+Github Pages搭建博客
 
-+ 任务描述：学会Git/Github网站的使用，并学会使用Github Pages建立博客，推荐Hexo,Jelly也可以，作为自己以后发布博文的地方。在自己的文件夹下建立README.md文件，在里面写入自己博客的链接。比如文件路径是`work/yuguangjing/README.md`,博客链接是`xxx.github.com`
-+ 追求博客美感。可以选择自己喜欢的主题
-+ 有兴趣的可以尝试给自己的博客添加自己喜欢的域名
+> 任务描述：学会Git/Github网站的使用，并学会使用Github Pages建立博客，推荐Hexo,Jelly也可以，作为自己以后发布博文的地方。在自己的文件夹下建立README.md文件，在里面写入自己博客的链接。比如文件路径是`work/yuguangjing/README.md`,博客链接是`xxx.github.com`
+> 追求博客美感。可以选择自己喜欢的主题
+> 有兴趣的可以尝试给自己的博客添加自己喜欢的域名
 
 备注：已经有自己博客的可以忽略用Hexo搭建博客(注意不是第三方的写作网站，比如博客园）
 
