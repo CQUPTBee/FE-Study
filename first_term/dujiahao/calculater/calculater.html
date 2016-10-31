@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calculator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="calculater" />
+		<meta name="description" content="计算器" />
+		<link rel="stylesheet" href="calculater.css"/>
+	</head>
+	<body>
+	<div class="wrap">
+		<div class="show-screen">
+			<p id="show">0</p>
+		</div>
+		<div class="operator-btn">
+			<div class="line">
+				<input type="button" class="opera fir" value="%" />
+				<input type="button" id="reset" class="flo last" value="AC" />
+			</div>
+			<div class="line">
+				<input type="button" class="num flo" value="7"/>
+				<input type="button" class="num flo" value="8"/>
+				<input type="button" class="num flo" value="9"/>
+				<input type="button" class="opera flo last" value="÷"/>
+			</div>
+			<div class="line">
+				<input type="button" value="4" class="num flo"/>
+				<input type="button" value="5" class="num flo"/>
+				<input type="button" value="6" class="num flo"/>
+				<input type="button" value="×" class="opera flo last"/>
+			</div>
+			<div class="line">
+				<input type="button" value="1" class="num flo"/>
+				<input type="button" value="2" class="num flo"/>
+				<input type="button" value="3" class="num flo"/>
+				<input type="button" value="-"	class="opera flo last"/>
+			</div>
+			<div class="line">
+				<input type="button" value="0" class="num flo"/>
+				<input type="button" value="." class="flo num "/>
+				<input type="button" value="=" id="equal" class="flo"/>
+				<input type="button" value="+" class="opera flo last"/>
+			</div>
+		</div>
+	</div>
+	<script src="tool.js"></script>
+	<script src="calculater.js"></script>
+	</body>
+</html>

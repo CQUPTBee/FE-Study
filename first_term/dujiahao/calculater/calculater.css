@@ -1,0 +1,60 @@
+input,button,p,ul,li{
+	margin:0;
+	padding:0;
+	border:none;
+	font-size: 12px;
+	font-family:"宋体",arial,sans-serif;
+	color:#19283d;
+}
+
+.wrpa{
+	width:292px;
+	height:276px ;
+	margin:200px auto;
+}
+/*显示窗口*/
+.show-screen{
+	width:258px;
+	height:27px;
+	padding:9px 19px 13px 13px;
+	border:1px solid #a0a0a0;
+	overflow-x: hidden;
+	font-size:22px;
+
+}
+.show-screen p{
+	height:24px;
+	line-height:24px;
+	font-size:24px;
+	overflow:hidden;
+	text-align:right;
+}
+/*操作键盘*/
+.operator-btn{
+	width:288px;
+	height:224px;
+}
+.line{
+	width:288px;
+	height: 37px;
+	margin:9px 0 0 4px;
+	overflow:hidden;
+}
+.line .flo,.fir{
+	float:left;
+	margin-right:8px;
+	width:64px;
+	height:35px;
+	line-height:35px;
+	background:#d3d3d3;
+	border:1px solid #a0a0a0;
+	text-align:center;
+}
+.operator-btn .line .last{margin-right: 0;}
+.fir{margin-left:144px;}
+.line .flo:hover,.fir:hover{background:#4b8ef9;color:#fff;}
+
+
+
+
+

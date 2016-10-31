@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src='calculator.js'></script>
+</head>
+<body>
+	<div id="wrap">
+		<input type="text" name="showbox" id="result" value="0"  onfocus="this.blur();">
+		<!--使用onfocus="this.blur();"避免键盘输入-->
+		<table id="key">
+			<tr>
+				<td style="border:0;background:none;cursor: default;"></td>
+				<td  style="border:0; background:none;cursor: default;"></td>
+				<td class="bcg" id="persent">%</td>
+				<td class="bcg" id="clearscreen">AC</td>
+			</tr>
+			<tr>
+				<td class="number">7</td>
+				<td class="number">8</td>
+				<td class="number">9</td>
+				<td class="bcg tool" id="divide">÷</td>
+			</tr>
+			<tr>
+				<td class="number">4</td>
+				<td class="number">5</td>
+				<td class="number">6</td>
+				<td class="bcg tool" id="times">×</td>
+			</tr>
+			<tr>
+				<td class="number">1</td>
+				<td class="number">2</td>
+				<td class="number">3</td>
+				<td class="bcg tool" id="minus">-</td>
+			</tr>
+			<tr>
+				<td class="number">0</td>
+				<td id="dot">.</td>
+				<td class="bcg tool" id="equal">=</td>
+				<td class="bcg tool" id="plus">+</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

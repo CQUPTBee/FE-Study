@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片滚屏效果 - www.miaov.com - 妙味课堂</title>
+<link href="miaov_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="miaov.js">
+</script>
+</head>
+<body>
+<div class="control">
+	<label id="chk_pause"><input type="checkbox" checked="checked">间隔停顿</label>
+	<select id="pause_time">
+		<option value="100">短</option>
+		<option value="1000" selected="selected">中</option>
+		<option value="3000">长</option>
+	</select>
+
+	滚动速度：
+	<select id="sel_speed">
+		<option value="2">慢</option>
+		<option value="5">中</option>
+		<option value="10">快</option>
+	</select>
+</div>
+
+<div class="roll" id="roll">
+    <a href="javascript:void(0);" class="btn_left"></a>
+    <a href="javascript:void(0);" class="btn_right"></a>
+    <div class="wrap">
+        <ul>
+            <li><a href="http://www.miaov.com/"><img src="images/1.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/2.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/3.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/4.jpg" /></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

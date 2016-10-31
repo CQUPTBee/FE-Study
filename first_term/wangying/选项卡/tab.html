@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选项卡布局 - 妙味课堂 - www.miaov.com</title>
+<style type="text/css">
+* { padding: 0; margin: 0; }
+li { list-style: none; }
+img { border: none; }
+body { margin-top: 50px; font-size: 12px; background: #f0fcff; }
+
+#tab { width: 490px; margin: 0 auto; position: relative; background: url(images/tab_bg.gif) repeat-y -490px 0; }
+#tab .adorn1 { position: absolute; top: 0; left: 0; width: 490px; height: 6px; overflow: hidden; background: url(images/tab_bg.gif) no-repeat; z-index: 1; }
+#tab .adorn2 { width: 490px; height: 6px; overflow: hidden; background: url(images/tab_bg.gif) no-repeat -980px 0; z-index: 1; }
+
+#tab .nav { position: relative; z-index: 2; }
+#tab .nav ul { width: 484px; height: 44px; border-left: 1px solid #d4d4d4; background: url(images/nav_bg.gif) repeat-x 0 -44px; }
+#tab .nav li { float: left; height: 44px; line-height: 44px; font-family: arial;border-right: 1px solid #d4d4d4; }
+#tab .nav li a { float: left; height: 44px; text-decoration: none; color: #999; padding: 0 20px; }
+#tab .nav li a:hover { background: url(images/nav_bg.gif) repeat-x 0 0; }
+#tab .nav .active { background: url(images/nav_bg.gif) repeat-x 0 -88px; }
+#tab .nav .active a { background: url(images/ico.gif) no-repeat center bottom; color: #333; font-weight: bold; }
+#tab .nav .active a:hover { background: url(images/ico.gif) no-repeat center bottom; }
+
+#tab .more { font-family: "宋体"; position: absolute; top: 16px; right: 20px; color: #999; text-decoration: none; }
+#tab .more:hover { text-decoration: underline; font-weight: bold; right: 18px; }
+
+#tab .content { position: relative; z-index: 2; width: 484px; overflow: hidden; margin-left: 1px; }
+#tab .box { width: 444px; padding: 20px; overflow: hidden; display: none; }
+#tab .pic { padding: 7px 0 0 7px; width: 189px; height: 115px; background: url(images/pic_bg.jpg) no-repeat; float: left; }
+#tab .pic_list { float: right; width: 232px; padding-left: 16px; display: inline-block; }
+#tab .pic_list li { width: 232px; float: left; font-family: arial; line-height: 18px; margin-bottom: 4px; }
+#tab .pic_list h2 { width: 232px; font-size: 12px; height: 18px; background: url(images/line.gif) repeat-x 0 8px; }
+#tab .pic_list h2 a { height: 18px; text-decoration: none; color: #333; font-weight: bold; background: #fff; padding-right: 5px; float: left; }
+#tab .pic_list h2 a:hover { text-decoration: underline; color:#D31A05; }
+#tab .pic_list h2 span { height: 18px; color: #999; float: right; background: #fff; padding-left: 5px; }
+#tab .pic_list p { color: #999; word-spacing: 10px; }
+</style>
+
+<script type="text/javascript">
+window.onload=function()
+{
+    var oTab=document.getElementById('tab');
+    var aLi=getByClass(oTab, 'nav')[0].getElementsByTagName('li');
+    var aA=oTab.getElementsByTagName('ul')[0].getElementsByTagName('a');
+    var aDiv=getByClass(oTab, 'box');
+    var i=0;
+	
+	aDiv[0].style.display='block';
+    
+    for(i=0; i<aLi.length; i++)
+    {
+        aLi[i].index=i;
+        aLi[i].onclick=function()
+        {
+            for(i=0; i<aLi.length; i++)
+            {
+                aLi[i].className='';
+                aDiv[i].style.display='none';
+            }
+            this.className='active';
+            aDiv[this.index].style.display='block';
+        };
+        aA[i].onfocus=function(){this.blur();};
+    }
+};
+function getByClass(oParent, sClassName)
+{
+    var aElm=oParent.getElementsByTagName('*');
+    var aArr=[];
+    for(var i=0; i<aElm.length; i++)
+    {
+        if(aElm[i].className==sClassName)
+        {
+            aArr.push(aElm[i]);
+        }
+    }
+    return aArr;
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="tab">
+    
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="#">妙味课堂</a></li>
+            <li><a href="#">妙味茶馆</a></li>
+            <li><a href="#">精通JavaScript开发课程</a></li>
+        </ul>
+        <a class="more" href="http://bbs.miaov.com">>>更多</a>
+    </div>
+    <div class="content">
+        <div class="box" style="display:block;">
+            <div class="pic"><a href="http://www.miaov.com"><img src="images/1.jpg" alt="妙味课堂" /></a></div>
+            <ul class="pic_list">
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/viewthread.php?tid=104&extra=page%3D1">妙味课堂周六聚会活动现场</a>
+                        <span>Blue</span>
+                    </h2>
+                    <p>点击：223  2011.3.22</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/viewthread.php?tid=126&extra=page%3D1">课程常见问题合集</a>
+                        <span>Leo</span>
+                    </h2>
+                    <p>点击：122  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/viewthread.php?tid=78&extra=page%3D1">妙味课堂JS课程结课标准</a>
+                        <span>Blue</span>
+                    </h2>
+                    <p>点击：345  2011.3.30</p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="pic"><a href="http://www.miaov.com"><img src="images/2.jpg" alt="妙味课堂" /></a></div>
+            <ul class="pic_list">
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/forumdisplay.php?fid=2">妙味课堂-JS视频教程</a>
+                        <span>Blue</span>
+                    </h2>
+                    <p>点击：1123  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/forumdisplay.php?fid=3">妙味生活秀</a>
+                        <span>Leo</span>
+                    </h2>
+                    <p>点击：2223  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://bbs.miaov.com/forumdisplay.php?fid=4">妙味课堂-特效兜儿</a>
+                        <span>Blue</span>
+                    </h2>
+                    <p>点击：22112  2011.4.1</p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="pic"><a href="http://www.miaov.com"><img src="images/3.jpg" alt="妙味课堂" /></a></div>
+            <ul class="pic_list">
+                <li>
+                    <h2>
+                        <a href="http://www.miaov.com/course.html.php">妙味课堂-课程列表</a>
+                        <span>miaov</span>
+                    </h2>
+                    <p>点击：923  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://www.miaov.com/course_detail_1.html.php">精通JavaScript开发课程</a>
+                        <span>Blue</span>
+                    </h2>
+                    <p>点击：2223  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://www.miaov.com/course_detail_2.html.php">高级页面架构师精品课程</a>
+                        <span>Leo</span>
+                    </h2>
+                    <p>点击：2223  2011.4.1</p>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://www.miaov.com/course_detail_3.html.php">零基础网页制作精品课程</a>
+                        <span>Leo</span>
+                    </h2>
+                    <p>点击：4223  2011.4.1</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="adorn1"></div>
+    <div class="adorn2"></div>
+    
+</div>
+
+</body>
+</html>

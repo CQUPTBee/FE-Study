@@ -5,11 +5,12 @@
 + [知乎-如何优雅地向前辈或者高手请教技术问题？][1]
 + [张鑫旭-如何提问才能进阶成为前端大神？][2]
 
+
 ## 任务1 Git/Github/利用Hexo+Github Pages搭建博客
 
-+ 任务描述：学会Git/Github网站的使用，并学会使用Github Pages建立博客，推荐Hexo,Jelly也可以，作为自己以后发布博文的地方。在自己的文件夹下建立README.md文件，在里面写入自己博客的链接。比如文件路径是`work/yuguangjing/README.md`,博客链接是`xxx.github.com`
-+ 追求博客美感。可以选择自己喜欢的主题
-+ 有兴趣的可以尝试给自己的博客添加自己喜欢的域名
+> 任务描述：学会Git/Github网站的使用，并学会使用Github Pages建立博客，推荐Hexo,Jelly也可以，作为自己以后发布博文的地方。在自己的文件夹下建立README.md文件，在里面写入自己博客的链接。比如文件路径是`work/yuguangjing/README.md`,博客链接是`xxx.github.com`
+> 追求博客美感。可以选择自己喜欢的主题
+> 有兴趣的可以尝试给自己的博客添加自己喜欢的域名
 
 备注：已经有自己博客的可以忽略用Hexo搭建博客(注意不是第三方的写作网站，比如博客园）
 
@@ -49,16 +50,16 @@
 
 ## 任务3   sublime/webtorm
 
-#### 1.ZenCoding的必要性
++ 1.ZenCoding的必要性
 
-#### 2.SublimeText 3的插件安装，设置，技巧
++ 2.SublimeText 3的插件安装，设置，技巧
 
 主流前端开发编辑器，体积较小，运行速度快，文本功能强大，支持编译功能且可在控制台看到输出，支持的大量插件
 
-##### 插件安装：
+### 插件安装：
 + [Sublime Text3前端必备插件](http://www.jianshu.com/p/edbc2a13494b)（安装自己需要的插件，不要全部安装）
 如果安装出现问题可以看一下[此链接的前面一段](http://www.jianshu.com/p/3cb5c6f2421c/#)
-##### 使用技巧：
+### 使用技巧：
 + [12个不可不知的Sublime Text应用技巧和诀窍 ](https://segmentfault.com/a/1190000000505218)
 
 备注：如果习惯了自动保存，可以在设置里面将失去焦点自动保存设置为true

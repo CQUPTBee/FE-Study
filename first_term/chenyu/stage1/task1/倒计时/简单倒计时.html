@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			var Txt=document.getElementById('txt1');
+			var Btn=document.getElementById('btn1');
+			var timer=null;
+			Btn.onclick=function(){
+				timer=setInterval(function(){	
+							Txt.value--;							
+
+						if(Txt.value==0){
+						clearInterval(timer);
+				}
+			},1000);
+
+				
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="type" id="txt1" value=""/>
+	<input type="button" id="btn1" value="输入数字倒计时"/>
+</body>
+</html>

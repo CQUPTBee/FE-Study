@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一串div随鼠标移动</title>
+	<style type="text/css">
+		div{
+			height:20px;
+			width:20px;
+			background: green;
+			position: absolute;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oDiv=document.getElementsByTagName('div');
+			var i=0;
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+			for(i=oDiv.length-1;i>0;i--){
+					oDiv[i].style.left=oDiv[i-1].style.left;
+					oDiv[i].style.top=oDiv[i-1].style.top;
+			}
+			oDiv[0].style.left=oEvent.clientX+'px';
+			oDiv[0].style.top=oEvent.clientY+'px';
+		};
+		};
+
+	</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+</html>

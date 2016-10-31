@@ -2,26 +2,27 @@
 
 ##说明
 
-+ 将你们完成的项目放在以姓名全拼命名的文件夹里，命名如：`yuguangjing`。注意：这里是公共发repo，大家不要修改别人的文件夹或整个项目结构
++ 将你们完成的项目放在以姓名全拼命名的文件夹里，命名如：`yuguangjing`。注意：这里是公共repo，大家不要修改别人的文件夹或整个项目结构
 + 每个项目一个文件夹，命名为:`yuguangjing/stage1/task1`
-+ [Level1 前端初窥传送门](/source/Stage1.md)
-+ [Level2 小试牛刀传送门](/source/Stage2.md)
-+ [Level3 渐入佳境传送门](/source/Stage3.md)
-+ [Level4 得心应手传送门](/source/Stage4.md)
-+ [Level4 玩转自如传送门](/source/Stage5.md)
++ 学习路线
+ + [Level1 前端初窥传送门](/source/Stage1.md)
+ + [Level2 小试牛刀传送门](/source/Stage2.md)
+ + [Level3 渐入佳境传送门](/source/Stage3.md)
+ + [Level4 得心应手传送门](/source/Stage4.md)
+ + [Level5 玩转自如传送门](/source/Stage5.md)
 
 ## 部署说明
 
-请第一次提交代码的同学遵照以下步骤来部署你的代码(处假设你已经注册了Github账号，安装并且配置好了Git):
+请第一次提交代码的同学遵照以下步骤来部署你的代码(此处假设你已经注册了Github账号，安装并且配置好了Git):
 
-1. 到[CQUPTBee前端学习培训体系][1],把`CQUPTBee/FE-Study`这个项目**Fork**到你自己的项目。
-2. 在你自己**本机**上创建一个文件夹，比如命名为`FE-Study`,然后进入该文件夹，在文件夹中打开命令行窗口，输入一下命令(注意把中文部分替换成你自己的昵称)把远程repo克隆到本地:
+1.到[CQUPTBee前端学习培训体系][1],把`CQUPTBee/FE-Study`这个项目**Fork**到你自己的项目。<br/>
+2.在你自己**本机**上创建一个文件夹，比如命名为`FE-Study`,然后进入该文件夹，在文件夹中打开命令行窗口，输入一下命令(注意把中文部分替换成你自己的昵称)把远程repo克隆到本地:
 
-```
- git clone https://github.com/你的Github昵称/FE-Study/git
-```
-3. 现在在你本地应该有这样一个目录：`FE-Study/你的名字全称`,进入该目录，你可以在这里面创建你的项目文件夹以及你的所有代码。再次提醒**不要修改别人的文件夹**
-4. 当你在本地完成你的代码后(本地多次commit),将你的本地repo**push**到远程repo,然后再点**Pull Request**,小组管理员确认你的请求版本无误后，将**Merge**你提交的版本。
+
+>  git clone 'git@github.com:你的github昵称/FE-Study.git'
+
+3.现在在你本地应该有这样一个目录：`FE-Study/你的名字全称`,进入该目录，你可以在这里面创建你的项目文件夹以及你的所有代码。再次提醒**不要修改别人的文件夹**<br/>
+4.当你在本地完成你的代码后(可以本地多次commit),将你的本地repo **push** 到远程repo,然后再点**Pull Request**,小组管理员确认你的请求版本无误后，将**Merge**你提交的版本。
 以后提交新的代码，只需要执行以上**第4步**即可。
 
 ## 推荐开发环境
