@@ -1,43 +1,46 @@
-## Level 3 渐入佳境
-## 任务1 JavaScrit基础
-###任务目的 
+# Level 3 渐入佳境
 
-掌握JavaScript基础知识，能够使用JavaScript编写一些复杂度不大的交互功能
+## 任务1 JavaScript和jQuery基础
+> 参考书籍
++ JavaScript DOM编程艺术
++ JavaScript高级程序设计
++ JavaScript 精粹
++ 你不知道的JavaScript
++ JavaScript忍者秘籍
++ JavaScript函数式编程
++ 高性能JavaScript
++ 锋利的jQuery
 
-### 学习内容
+### JavaScrit基础
 
-+ JS语言基础
-    + JS介绍：`html、css --> js`、`hello  world`、js特性,`js&DOM`、js历史
-    + JS调试：`alert`、`console`、展示chrome,ff,ie   调试器界面、以Chrome为例子，详细展示、展示面板作用、查找要调试的文件、设置断点，debugger、展示4个按钮，并展示响应的堆栈变化，watch
-    + 基本语法：标识符、变量、直接量、关键字和保留字、语句、区分大小写、注释
-    + 基本类型：`Number（Interger, Float, NaN,Infinity）`、`String("",’’)`、`Boolean(true,false)`、`undefined`(什么情况下为`undefined`)、null、Object({})、原始类型和引用类型的区别、typeof
-    + 运算符与表达式：	表达式、运算符、一元操作符(`++,--, +,-`)、算术运算(`+、-、*、/、%`)、关系运算`(>、<、== 、!=、>=、<=、===、!==)`、逻辑运算`(！、&&、 ||)`、位运算`(&、|、^、~、<<、>>,>>>)`、赋值运算(=)、条件运算(?:)、逗号运算(,)、对象运算符`(new delete . [] instanceof)`、运算符的优先级
-    + 语句：	语句、条件（`if`,`switch`）、循环（`for/for in/ while/ do-while`） `lable break continue`、异常 (`try catch finally`)、`with`、`label`
-    + 数值:	Math`（abs、round、ceil、floor、max、min、random、其他`）、`parseInt、parseFloat、Number、NaN、toFixed`
-    + 字符串:定义、`length`、`charAt（下标）`、`indexOf`、`lastIndexOf`、`search、match、replace、substring、slice、substr、split、toLowerCase、toUpperCase`、连接、转字符串（+、String()）、转义
-    + 对象:	定义、创建（new、直接量）、属性、方法、constructor、toString、valueOf、hasOwnproperty
-    + 数组:定义、创建（new、直接量）、`length`、`indexOf`、`forEach`、【（`reverse`、`sort`）、（`push`、`unshift`）、（`shift`、`pop`）、`splice`】、`【slice、concat、join、reduce】`
-    + 函数:函数定义(函数声明、函数表达式、函数参数、return)、函数调用、arguments、作用域、对象方法、构造函数、function.prototype
-    + Date:`new Date()`,`Date.getXXXX()`,格式化, `Date.setXXX()`,求天数, `Date.getTime()`
-    + RegExp:字符类、元字符、量词、多选分支、转义、捕获、匹配模式
-    + JSON:定义，`JSON.parse()`,`JSON.stringify`
-+ JS进阶
-    + 类型进阶： 数识别应用场景（字符串和数组的例子）、类型识别方法：`typeof`，`constructor`,`Object.prototype.toString`,instanceof和其他（Array.isArray, isNaN)、类型转换（所有的方法+隐式转换）
-    + 函数进阶：函数定义（函数声明、函数表达式、`new Function`）、`arguments（callee、转数组）`、`apply`、`call`、`bind`、高阶函数（AOP、curry、记忆函数）
-    + 原型：原型（概念）、构造函数、原型链（原型链,原型链查找,原型链修改,原型链删除,`Function.prototype`,`Object.prototype`）、原型继承
-    + 变量作用域：	动态作用域和静态作用域，词法环境（函数作用域），作用域链，`with/catch`
-    + 闭包：闭包举例、闭包原理、闭包应用
-    + 面向对象：JS面向对象
-    
-### 参考资料
++ Javascript 基础教程
++ JavaScript内置对象及常用方法
++ 常见DOM树操作大全
++ ECMAScript，DOM,BOM
++ 定时器和焦点图
 
-+ [妙味课堂-精通JavaScript开发][1]
-+ 《JavaScript高级程序设计》前1-13章
-+ [慕课网JavaScript入门篇][2]
-+ [慕课网JavaScript进阶篇][3]
-+ [MDN][4]
+### JS基本特效
++ 常见特效，例如：tab，导航，整页滚动
++ 轮播图，用JS制作幻灯片
++ 弹出层，手风琴菜单
++ 瀑布流布局，滚动事件
++ 滚差视图
 
-### 练习
+### JavaScript 高级特性
++ 正则表达式
++ JavaScript数据结构与算法，比如排序算法，递归算法
++ 闭包，函数节流，作用域链
++ 基于距离运动框架
++ 面向对象基础
+
+### jQuery基本使用
++ 选择器
++ DOM操作
++ 特效与动画
++ 方法链，拖拽，变形
++ jQuery UL组件基本使用
+
+### 必做练习
 
 1. 下拉菜单
 2. Tab选项卡切换
@@ -56,29 +59,71 @@
     PS：尽量好看点
  
 
-##任务2  规范（JS）	杰
-##任务3   谷歌调试（JS）	磊
-##任务4 DOM/BOM
-### BOM （Browser Object Model，浏览器对象模型）
-- window对象：表示浏览器打开的窗口，包括获取焦点、改变滚动条、设置定时器等等。
-- location对象：可对当前页面的URL进行操作，如：导航到新的页面、获取URL信息等。
-- navigation对象：包含浏览器信息。如：获取浏览器名称、版本信息、操作系统平台信息等等。
-- screen对象：包含屏幕信息。如：获取屏幕高度、宽度等等。
-- history对象：可对当前页的浏览历史进行操作，如：前进、后退等。  
-**作业：**  
-	阅读《JavaScript高级程序设计》第8章`BOM`，标注或分类整理常用的浏览器API，最好写到博客或相关文档内，方便以后查阅使用。  
-	可以参考慕课网JavaScript进阶篇第8章，操作实践。  
-**参考资料：**  
-	[慕课网 JavaScript进阶篇第8章](http://www.imooc.com/learn/10)
-##任务5 AJAX/HTTP/JSON		杰
-##任务6 JQuery	磊
-##任务7 js实战	晶
-##任务8 运动/动画	晶
-##任务9 正则	磊
-##任务10 RequireJs	磊
+## 任务2 HTTP与Ajax编程
+> 推荐书籍
++ 图解HTTP
 
+### Web服务器基本知识
++ 服务器基础知识
++ Apache服务器和其他常见Web服务器介绍
++ Apache服务器搭建
++ HTTP介绍
 
-  [1]: http://pan.baidu.com/s/1pLH6t7t
-  [2]: http://www.imooc.com/view/36
-  [3]: http://www.imooc.com/view/10
-  [4]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+### PHP基础
++ PHP基本语法
++ 使用PHP处理简单的GET和POST请求
+
+### Ajax
++ Ajax简介和异步的概念
++ Ajax框架的封装
++ XMLHttpRequest对象详细介绍、兼容性处理方法
++ Ajax框架的封装
++ Ajax中缓存问题
++ XML介绍和使用
++ JSON和JSON的解析
++ 数据绑定和模板技术
++ JSONP、跨域技术
++ 图片预读取和lazy-load技术
++ jQuery框架中的AjaxAPI
++ 使用Ajax实现瀑布流案例
+
+## 任务3 JavaScript 面向对象进阶
+> 推荐书籍
++ JavaScript面向对象编程指南
++ JavaScript设计模式
+
+### 面向对象中级篇
++ 从内存角度到理解JS面向对象
++ 基本类型，复杂类型
++ 原型链
++ ES6中的面向对象
++ 属性读写权限，设置器，访问器
+
+### 面向对象三大特征
++ 继承性
++ 多态性
++ 封装性
++ 接口
+
+### 设计模式
++ 面向对象编程思维
++ 单例模式 工厂模式
++ 策略模式 观察者模式
++ 模板方法模式 代理模式
++ 装饰者模式，适配器模式，面向切面编程
+
+## 任务4 模块化组件化开发
+
+### 面向组件编程
++ 面向组件编程的方式
++ 面向组件编程的实现原理
++ 面向组件编程实战
++ 基于组件化思想开发网站应用程序
+
+### 面向模块编程
++ AMD设计规范
++ CMD设计规范
++ RequireJS,loadjs
++ Seajs
+
+## 任务5 JavaScript运动/动画
