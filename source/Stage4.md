@@ -22,13 +22,13 @@
 + 元素进场，出场策略
 + 炫酷的CSS3网页制作
 
-### Bootstarp
+### Bootstrap
 + 响应式概念
 + 媒体查询
 + 响应式网站制作
 + 栅格系统
 + 栅格系统原理
-+ BootStarp
++ BootStrap
 + Less和Sass
 
 ### 移动Web开发
