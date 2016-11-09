@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<link rel="stylesheet" href="../styles/css.css"/>
+	 <script src="../js/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="calculator">
+	<form action="#" name="calculator" method="get">
+		<div class="calculator_input">
+			<input type="type" value="0" name="numScreen" onfocus="this.blur();"/>
+		</div>
+		<div class="calculator_button">
+			<table>
+				<tr>
+					<td class="td_color2"></td>
+					<td  class="td_color2"></td>
+					<td class="td_color" onclick="persent()"><span>%</span></td>
+					<td class="td_color" onclick="clearscreen()"><span>AC</span></td>
+				</tr>
+				<tr>
+					<td onclick="command(7)"><span>7</span></td>
+					<td onclick="command(8)"><span>8</span></td>
+					<td onclick="command(9)"><span>9</span></td>
+					<td class="td_color" onclick="divide()"><span >÷</span></td>
+				</tr>
+				<tr>
+					<td onclick="command(4)"><span>4</span></td>
+					<td onclick="command(5)"><span>5</span></td>
+					<td onclick="command(6)"><span>6</span></td>
+					<td class="td_color" onclick="times()"><span >×</span></td>
+				</tr>
+				<tr>
+					<td onclick="command(1)"><span>1</span></td>
+					<td onclick="command(2)"><span>2</span></td>
+					<td onclick="command(3)"><span>3</span></td>
+					<td class="td_color" onclick="minus()"><span>-</span></td>
+				</tr>
+				<tr>
+					<td onclick="command(0)"><span>0</span></td>
+					<td onclick="dot()"><span>.</span></td>
+					<td class="td_color1" onclick="equal()"><span >=</span></td>
+					<td class="td_color" onclick="plus()"><span>+</span></td>
+				</tr>
+						
+
+					</table>
+				</div>
+
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片滚屏</title>
+<link href="scroll_picture.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+window.onload=function()
+{	
+		var oDiv=document.getElementById('roll');
+		var oUl=oDiv.getElementsByTagName('ul')[0];
+		var aLi=oUl.getElementsByTagName('li');
+		var aBtn=oDiv.getElementsByTagName('a');
+		var timer=null;
+		var iSpeed=-5;
+		oUl.innerHTML+=oUl.innerHTML;
+	//复制一份放在后面
+
+		oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+		//动态计算ul的宽度，不管有多少个li;
+		timer=setInterval(function(){
+				
+			oUl.style.left=oUl.offsetLeft+iSpeed+'px';
+			if(oUl.offsetLeft<-oUl.offsetWidth/2)
+			{
+				oUl.style.left='0px';
+			//ul滚动到一半的时候将其拉回到原来的位置，此处
+			//注：此时offsetleft的为负值
+			}
+			else if(oUl.offsetLeft>=0)
+			{
+				oUl.style.left=-oUl.offsetWidth/2+'px';
+			}
+		},30);
+
+		aBtn[0].onmouseover=function(){
+			iSpeed=-5;
+				//加一个负数即为往左走
+		};
+		aBtn[1].onmouseover=function(){
+			iSpeed=5;
+				
+		};
+		
+		
+		oUl.onmouseover=function(){
+			clearInterval(timer);
+		};
+		oUl.onmouseout=function()
+
+	{
+			timer=setInterval(function(){
+
+			oUl.style.left=oUl.offsetLeft+iSpeed+'px';
+			
+			if(oUl.offsetLeft<-oUl.offsetWidth/2)
+			{
+				oUl.style.left='0px';
+			}else if(oUl.offsetLeft>0)
+			{
+
+				oUl.style.left=-oUl.offsetWidth/2+'px';
+
+			}
+
+		},30);
+	};
+
+};
+
+</script>
+</head>
+<body>
+
+<div class="roll" id="roll">
+    <a href="javascript:void(0);" class="btn_left"></a>
+    <a href="javascript:void(0);" class="btn_right"></a>
+    <div class="wrap">
+        <ul>
+            <li><a href="http://www.miaov.com/"><img src="images/1.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/2.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/3.jpg" /></a></li>
+            <li><a href="http://www.miaov.com/"><img src="images/4.jpg" /></a></li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

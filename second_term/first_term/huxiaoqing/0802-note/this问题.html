@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="">i
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function Aaa( ) {
+			var _this=this;
+			this.a=12;
+
+			setInterval(function () {
+				_this.show();
+
+			},1000);
+		}
+
+		Aaa.prototype.show = function() {
+			alert(this.a);
+		};
+
+		var obj=new Aaa();
+
+		obj.show();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

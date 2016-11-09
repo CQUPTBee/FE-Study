@@ -1,0 +1,270 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+	<link rel="stylesheet" type="text/css" href="chongzhibiao.css">
+	<script src="ajax函数.js"></script>
+	<style type="text/css">
+		h6 {
+			position: relative;
+			top: 18px;
+			left: 28px;
+			margin: 0;
+			color: #7e7e7e;
+		}
+		.play {
+			position: absolute;
+			left: 400px;
+			top: 100px;
+			width: 400px;
+			height: 299px;
+			border:1px solid silver;
+			overflow: hidden;
+		}
+		#u1 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			height: 300px;
+			left: 0;
+			/*display: none;*/
+		}
+		#u1 li{
+			float: left;
+			list-style: none;
+		}
+		.date {
+			position: relative;
+			top: -122px;
+			left: 300px;
+		}
+		.forcast {
+			top: 100px;
+			left: 380px;
+			width: 400px;
+			height: 298px;
+			border:1px solid silver;
+		}
+		.i-tempure {
+			position: relative;
+			left: -55px;
+			top:50px;
+		}
+		.p-tempure {
+			position: relative;
+			left: -60px;
+			top: 35px;
+			font-size: 68px;
+			color: #2d76b6;
+		}
+		.Centigrade {
+			position: relative;
+			left: 328px;
+			top: -36px;
+		}
+		.left {
+			position: relative;
+			top: 48px;
+			left: -1px;
+		}
+		.humidity {
+			position: relative;
+			left: 90px;
+			top: -12px;
+			margin: 0;
+		}
+		.right {
+			position: relative;
+			top: -30px;
+			left: 210px;
+		}
+		.wind {
+			position: relative;
+			top: -48px;
+			left: 250px;
+			margin: 0;
+		}
+		.air {
+			position: relative;
+			top: -35px;
+			left: 90px;
+			margin: 0;
+		}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var timer=null;	 
+			odiv=document.getElementsByTagName("div");
+			ou1=document.getElementById('u1');
+			oli=document.getElementsByTagName('li');
+			odate=document.getElementsByClassName('date');
+			optempure=document.getElementsByClassName('p-tempure');
+			ohumidity=document.getElementsByClassName('humidity');
+			owind=document.getElementsByClassName('wind');
+			oair=document.getElementsByClassName('air');
+			ou1.style.width=oli[0].offsetWidth*oli.length+"px";
+			function go() {
+				t=3000;
+				ou1.style.transition="2s";//缓慢移动效果，怎么第一张跳转时候不行呀？？？？？？？？？
+				ou1.style.left=ou1.offsetLeft-oli[0].offsetWidth+"px";//整个ul左移一个li的宽度
+				if(ou1.offsetLeft==-ou1.offsetWidth/2)
+				{
+					ou1.style.transition="0s";//关掉缓慢移动效果
+					back();
+					t=0
+				}//蹦的一下把整个ul拉回来
+			timer=setTimeout(go,t); 
+		}
+		timer=setTimeout(go,3000);
+			function back(){
+				{
+					ou1.style.left='0px';
+				}
+			}//这就是拉回来搞得函数，完全是为了改掉用拼音的习惯而弄得。。。。。
+			odiv[0].onmouseover=function()
+			{
+				clearInterval(timer);
+			}//鼠标移上去清除器
+			odiv[0].onmouseout=function()
+			{
+				timer=setTimeout(go,3000);
+			}//哎，解决掉的定时器叠加问题，不容易
+		Ajax("http://openweathermap.org/data/2.5/forecast/daily?id=1814906&appid=b1b15e88fa797225412429c1c50c122a",function (str) {
+			var data=JSON.parse(str);
+			var days=data.list;
+			for(var i=0;i<4;i++){
+				odate[i].innerHTML=days[i].dt;
+				odate[i+4].innerHTML=days[i].dt;
+				optempure[i].innerHTML=days[i].temp.day;
+				optempure[i+4].innerHTML=days[i].temp.day;
+				ohumidity[i].innerHTML=days[i].humidity;
+				ohumidity[i+4].innerHTML=days[i].humidity;
+				owind[i].innerHTML=days[i].speed;
+				owind[i+4].innerHTML=days[i].speed;
+				oair[i].innerHTML=days[i].clouds;
+				oair[i+4].innerHTML=days[i].clouds;
+			}
+		}
+		,function(){alert("false");})
+	}
+	</script>
+</head>
+<body>
+<div class="play">
+	<ul id="u1">
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+		<li>
+			<div class="forcast">
+				<h6>Chongqing</h6>
+				<span class="date"></span>
+				<img class="i-tempure" src="tempure.png">
+				<span class="p-tempure"></span>
+				<img class="Centigrade" src="Centigrade.png">
+				<img class="left" src="left.png">
+				<p class="humidity"></p>
+				<img class="right" src="right.png">
+				<p class="wind"></p>
+				<p class="air"></p>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

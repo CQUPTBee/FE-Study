@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上下滑动的侧边栏</title>
+	<style type="text/css">
+		#div1 { width:100px; height:100px; background:red; position:absolute; right:0; }
+	</style>
+	<script type="text/javascript">
+	//先弄清楚几件事情：
+	//clientX:鼠标到可视区左边的距离,clientY：鼠标到可视区上边的距离
+	//clientHeight:整个body的宽度
+	//offsetLeft：元素距离左边的偏移量
+	//offsetTop：元素距离上边的偏移量
+	//offsetWidth：元素的宽度（不包括边框）
+	//offsetHeight：元素的高度（不包括边框）
+	//scrollTop: 。。。
+	//scrollLeft: 。。。
+		window.onscroll = function(){
+			var odiv = document.getElementById('div1');
+			var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;//兼容IE和FF(chrome)
+			var t = scrollTop + (document.documentElement.clientHeight - odiv.offsetHeight)/2;//定位元素块的位置
+
+			startMove(parseInt(t));
+		};
+
+		var timer = null;
+		function startMove(itarget){
+			var odiv = document.getElementById('div1');
+
+			clearInterval(timer);
+			timer = setInterval(function(){
+				var ispeed=(itarget-odiv.offsetTop)/8;
+				ispeed = ispeed>0?Math.ceil(ispeed):Math.floor(ispeed);
+
+				if(odiv.offsetTop == itarget){
+					clearInterval(timer);
+				} else {
+					odiv.style.top = odiv.offsetTop+ispeed+'px';
+				}
+				txt1.value = odiv.offsetTop + ',目标'+itarget;
+			},30);
+		}
+	</script>
+</head>
+<body style="height:2000px;">
+<input id="txt1" type="text" style="position:fixed; top:20px;" />
+<div id="div1"></div>
+</body>
+</html>

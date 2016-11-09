@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html> 
+<head> 
+  <title>...</title>
+  <meta charset="utf-8">
+<style> 
+p, ul, li { padding: 0; margin: 0; list-style: none; }
+#box{font-size: 12px; color: #00c; width: 58px; margin: 0 auto;}
+p{width:58px;height:24px;line-height:24px;padding-left:3px;background:url(ico.png) no-repeat right 4px;}
+ul{width:58px;border:1px solid #9a99ff;display:none-;}
+a{text-align:center;text-decoration:none;display:block;height:24px;line-height:24px;}
+a:hover{background:#d9e1f6;}
+</style>
+<script> 
+window.onload=function(){
+	var obtn=document.getElementById("btn");
+	var oull=document.getElementById("ull");
+	obtn.onclick=function()
+	{
+		if(oull.style.display=="block")
+		{	
+			oull.style.display="none";
+		}
+		else
+		{	
+			oull.style.display="block";
+		}	
+	};
+};
+</script>
+</head>
+<body> 
+<div id="box">
+  <p id="btn">输入法</p>
+  <ul id="ull"> 
+  <li><a href>手写</a></li>
+  <li><a href>拼音</a></li>
+  <li><a href>关闭</a></li>
+  </ul>
+</div>
+</body>
+
+</html>

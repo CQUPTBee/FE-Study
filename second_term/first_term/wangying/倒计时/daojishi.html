@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html> 
+<head> 
+<title>倒计时</title>
+<meta charset="utf-8">
+<link href="style/css.css" rel="stylesheet">
+<script type="text/javascript"> 
+var count=5;
+var timer=null;
+function change(){
+	count--;
+	if(count>-1)
+	{
+		document.getElementById("count").innerHTML=count;
+		timer=setTimeout('change()',1000);
+	}
+	else
+	{
+		clearTimeout(timer);
+		document.getElementById("count").style.display="none";
+		document.getElementById("text").style.display="block";
+
+	}
+
+}
+timer=setTimeout('change()',1000);
+</script>
+</head>
+<body> 
+<div id="count">5</div>
+<p id="text">Hello World!</p>
+</body>
+
+</html>

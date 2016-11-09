@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+	<style type="text/css">
+		.play {
+			position: absolute;
+			left: 300px;
+			width: 465px;
+			height: 300px;
+			border: 1px solid silver;
+			overflow: hidden;
+		}
+		#u1 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			height: 300px;
+			left: 0;
+		}
+		#u1 li{
+			float: left;
+			list-style: none;
+		}
+		#circle1 {
+			position: relative;
+			left: 500px;
+			top: 280px;
+			width: 10px;
+			height: 10px;
+			opacity: 0.8;
+			border-radius: 50%;
+			background-color: white;
+		}
+		#circle2 {
+			position: relative;
+			left: 520px;
+			top: 270px;
+			width: 10px;
+			height: 10px;
+			opacity: 0.8;
+			border-radius: 50%;
+			background-color: white;
+		}
+		#circle3 {
+			position: relative;
+			left: 540px;
+			top: 260px;
+			width: 10px;
+			height: 10px;
+			opacity: 0.8;
+			border-radius: 50%;
+			background-color: white;
+		}
+		#circle4 {
+			position: relative;
+			left: 560px;
+			top: 250px;
+			width: 10px;
+			height: 10px;
+			opacity: 0.8;
+			border-radius: 50%;
+			background-color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function ()
+		{
+			var  timer=null;
+				 ocircle=new Array(4);
+				 odiv=document.getElementsByTagName("div");
+				 ou1=document.getElementById("u1");
+				 oli=document.getElementsByTagName("li");
+				 for(i=0;i<4;i++){//获取四个小圆点
+				 	ocircle[i]=document.getElementById('circle'+(i+1));
+				 };
+				 ocircle[0].onmousedown=function(){
+				  	ou1.style.left=-oli[0].offsetWidth*0;
+				  	clearTimeout(timer);
+				 }//点击圆点的时候跳转，嗨呀，这个好麻烦以后来改
+				 ocircle[1].onmousedown=function(){
+				  	ou1.style.left=-oli[0].offsetWidth*1;
+				  	clearTimeout(timer);
+				 }
+				 ocircle[2].onmousedown=function(){
+				  	ou1.style.left=-oli[0].offsetWidth*2;
+				  	clearTimeout(timer);
+				 }
+				ocircle[3].onmousedown=function(){
+				  	ou1.style.left=-oli[0].offsetWidth*3;
+				  	clearTimeout(timer);
+				 }
+			ou1.style.width=oli[0].offsetWidth*oli.length+"px";//让ul的宽度等于所以li的宽度和
+			function go() {
+				t=3000;
+				ou1.style.transition="2s";//缓慢移动效果，怎么第一张跳转时候不行呀？？？？？？？？？
+				ou1.style.left=ou1.offsetLeft-465+"px";//整个ul左移一个li的宽度
+				if(ou1.offsetLeft==-ou1.offsetWidth/2)
+				{
+					ou1.style.transition="0s";//关掉缓慢移动效果
+					back();
+					t=0
+				}//蹦的一下把整个ul拉回来
+			timer=setTimeout(go,t); 
+		}
+		timer=setTimeout(go,3000);
+			function back(){
+				{
+					ou1.style.left='0px';
+				}
+			}//这就是拉回来搞得函数，完全是为了改掉用拼音的习惯而弄得。。。。。
+			odiv[0].onmouseover=function()
+			{
+				clearInterval(timer);
+			}//鼠标移上去清除器
+			odiv[0].onmouseout=function()
+			{
+				timer=setTimeout(go,3000);
+			}//哎，解决掉的定时器叠加问题，不容易
+		}
+	</script>
+</head>
+<body>
+	<div class="play">
+		<ul id="u1">
+			<li><img src="1.jpg"></li>
+			<li><img src="2.jpg"></li>
+			<li><img src="3.jpg"></li>
+			<li><img src="4.jpg"></li>
+			<li><img src="1.jpg"></li>
+			<li><img src="2.jpg"></li>
+			<li><img src="3.jpg"></li>
+			<li><img src="4.jpg"></li>
+		</ul>
+	</div> 
+	<div id="circle1"></div>
+	<div id="circle2"></div>
+	<div id="circle3"></div>
+	<div id="circle4"></div>
+</body>
+</html>
+
+
+

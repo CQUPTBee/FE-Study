@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather ajax</title>
+    <link rel="stylesheet" href="../reset.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="scripts/addLoadEvent.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <script src="scripts/img_slider.js"></script>
+    <script src="scripts/refresh.js"></script>
+</head>
+<body>
+<h1>重庆5天的天气预报 Created by Boyuan on 2016.7.30</h1>
+<div class="banner-wrapper">
+    <ul class="banners-container clear-float" style="left:0;">
+        <li>
+            <div class="main-temp-box">
+                <h2 class="date">7月30日 </h2>
+                <span class="today">(今天)</span>
+                <div class="temp temp-eve">37</div>
+                <div class="temp-max-min">最高 <span class="temp temp-max">38</span>最低 <span
+                        class="temp temp-min">37</span></div>
+            </div>
+            <div class="weather-box">
+                <h2>天气状况</h2>
+                <div class="weather-ico"></div>
+                <div class="weather">小雨</div>
+                <div class="wind">
+                    风速 <span class="wind-speed">0.91</span>&nbsp;&nbsp;&nbsp;&nbsp;风向 <span class="wind-degs">220</span>
+                </div>
+                <div class="air">
+                    气压 <span class="pressure">956.34</span>&nbsp;&nbsp;&nbsp;&nbsp;湿度 <span class="humidity">0</span>
+                </div>
+            </div>
+            <div class="day-night-temp-box">
+                <div class="morning">
+                    <h3>清晨</h3>
+                    <div class="temp temp-morn">29</div>
+                </div>
+                <div class="day">
+                    <h3>白天</h3>
+                    <div class="temp temp-day">38.2</div>
+                </div>
+                <div class="night">
+                    <h3>夜晚</h3>
+                    <div class="temp temp-night">33</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="main-temp-box">
+                <h2 class="date">7月31日</h2>
+                <span class="today">(明天)</span>
+                <div class="temp temp-eve">37</div>
+                <div class="temp-max-min">最高 <span class="temp temp-max">38</span>最低 <span
+                        class="temp temp-min">37</span></div>
+            </div>
+            <div class="weather-box">
+                <h2>天气状况</h2>
+                <div class="weather-ico"></div>
+                <div class="weather">小雨</div>
+                <div class="wind">
+                    风速 <span class="wind-speed">0.91</span>&nbsp;&nbsp;&nbsp;&nbsp;风向 <span class="wind-degs">220</span>
+                </div>
+                <div class="air">
+                    气压 <span class="pressure">956.34</span>&nbsp;&nbsp;&nbsp;&nbsp;湿度 <span class="humidity">0</span>
+                </div>
+            </div>
+            <div class="day-night-temp-box">
+                <div class="morning">
+                    <h3>清晨</h3>
+                    <div class="temp temp-morn">29</div>
+                </div>
+                <div class="day">
+                    <h3>白天</h3>
+                    <div class="temp temp-day">38.2</div>
+                </div>
+                <div class="night">
+                    <h3>夜晚</h3>
+                    <div class="temp temp-night">33</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="main-temp-box">
+                <h2 class="date">8月1日(后天)</h2>
+                <div class="temp temp-eve">37</div>
+                <div class="temp-max-min">最高 <span class="temp temp-max">38</span>最低 <span
+                        class="temp temp-min">37</span></div>
+            </div>
+            <div class="weather-box">
+                <h2>天气状况</h2>
+                <div class="weather-ico"></div>
+                <div class="weather">小雨</div>
+                <div class="wind">
+                    风速 <span class="wind-speed">0.91</span>&nbsp;&nbsp;&nbsp;&nbsp;风向 <span class="wind-degs">220</span>
+                </div>
+                <div class="air">
+                    气压 <span class="pressure">956.34</span>&nbsp;&nbsp;&nbsp;&nbsp;湿度 <span class="humidity">0</span>
+                </div>
+            </div>
+            <div class="day-night-temp-box">
+                <div class="morning">
+                    <h3>清晨</h3>
+                    <div class="temp temp-morn">29</div>
+                </div>
+                <div class="day">
+                    <h3>白天</h3>
+                    <div class="temp temp-day">38.2</div>
+                </div>
+                <div class="night">
+                    <h3>夜晚</h3>
+                    <div class="temp temp-night">33</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="main-temp-box">
+                <h2 class="date">8月2日</h2>
+                <div class="temp temp-eve">37</div>
+                <div class="temp-max-min">最高 <span class="temp temp-max">38</span>最低 <span
+                        class="temp temp-min">37</span></div>
+            </div>
+            <div class="weather-box">
+                <h2>天气状况</h2>
+                <div class="weather-ico"></div>
+                <div class="weather">小雨</div>
+                <div class="wind">
+                    风速 <span class="wind-speed">0.91</span>&nbsp;&nbsp;&nbsp;&nbsp;风向 <span class="wind-degs">220</span>
+                </div>
+                <div class="air">
+                    气压 <span class="pressure">956.34</span>&nbsp;&nbsp;&nbsp;&nbsp;湿度 <span class="humidity">0</span>
+                </div>
+            </div>
+            <div class="day-night-temp-box">
+                <div class="morning">
+                    <h3>清晨</h3>
+                    <div class="temp temp-morn">29</div>
+                </div>
+                <div class="day">
+                    <h3>白天</h3>
+                    <div class="temp temp-day">38.2</div>
+                </div>
+                <div class="night">
+                    <h3>夜晚</h3>
+                    <div class="temp temp-night">33</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="main-temp-box">
+                <h2 class="date">8月3日</h2>
+                <div class="temp temp-eve">37</div>
+                <div class="temp-max-min">最高 <span class="temp temp-max">38</span>最低 <span
+                        class="temp temp-min">37</span></div>
+            </div>
+            <div class="weather-box">
+                <h2>天气状况</h2>
+                <div class="weather-ico"></div>
+                <div class="weather">小雨</div>
+                <div class="wind">
+                    风速 <span class="wind-speed">0.91</span>&nbsp;&nbsp;&nbsp;&nbsp;风向 <span class="wind-degs">220</span>
+                </div>
+                <div class="air">
+                    气压 <span class="pressure">956.34</span>&nbsp;&nbsp;&nbsp;&nbsp;湿度 <span class="humidity">0</span>
+                </div>
+            </div>
+            <div class="day-night-temp-box">
+                <div class="morning">
+                    <h3>清晨</h3>
+                    <div class="temp temp-morn">29</div>
+                </div>
+                <div class="day">
+                    <h3>白天</h3>
+                    <div class="temp temp-day">38.2</div>
+                </div>
+                <div class="night">
+                    <h3>夜晚</h3>
+                    <div class="temp temp-night">33</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a class="next btn" href="#"></a>
+    <a class="prev btn" href="#"></a>
+    <div class="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+</div>
+</body>
+</html>

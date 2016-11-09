@@ -1,0 +1,134 @@
+body, p, h1, h2, h3, h4, h5, h6, dl, dd { 
+	margin:0;
+}
+a { 
+	text-decoration: none;
+}
+ol, ul { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+}
+img {
+ 	border: none;
+}   
+
+body {
+	width: 1616px;
+}
+#notice {
+	background: #f3f3f3;
+	position: relative;
+}
+
+@mixin content-style {
+	width: 1206px;
+	margin: auto;
+}
+
+.notice-content {
+	@include content-style;
+	height: 36px;
+	background: #f3f3f3;
+}
+
+@mixin word {
+	font: {
+		size: 12px;
+		family: 'weiruanyahei';
+	}
+	color: #333333;
+	line-height:14px;
+	margin-top: 11px;
+}
+.notice-left {
+	display: inline-block;
+	@include word;
+}
+.notice-right {
+	display:inline-block;
+	position: absolute;
+	right: 205px;
+	@include word;
+	padding-right: 2px;
+	padding-left: 16px;
+	background: url(../images/x.png) no-repeat 1px 3px;
+}
+
+.notice-content >a {
+	color: #21a557;
+}
+
+
+#top {
+	@include content-style;
+	height: 88px;
+	position: relative;
+}
+
+
+.top-left > ul>li {
+	display:inline-block;
+	float: left;
+	padding-top: 25px;
+	a {
+		display: inline-block;
+		font: {
+			size: 28px;
+			weight: bold;
+			family: 'Gill Sans MT';
+		}
+		color: #39a030;
+		line-height: 26px;
+		width:60px;
+		margin-left: 1px;
+		padding-right: 10px;
+
+	}
+	h2 {
+		display: inline-block;
+		font: {
+			size: 22px;
+			family: 'HiraginoSansGB W3';
+			weight: 22px;
+		}
+		color:#333;
+		line-height: 26px;
+		padding-left: 12px;
+
+	}
+	input {
+		margin-left: 30px;
+		margin-top: 2px;
+		width: 54px;
+		height: 21px;
+		font:{
+			size:12px;
+			family:'宋体';
+		}
+		color: #fff;
+		background-color: #21a557;
+		border:none;
+		outline: none;
+		border-radius: 1px;
+	}
+	span {
+		padding-left：14px;
+		font{
+			size: 12px;
+			family: '宋体';
+		}
+		color: #666;
+	}
+}
+
+.bar {
+	font: {
+			size: 22px;
+			weight: bold;
+			family: 'Gill Sans MT';
+		}
+		color: #39a030;
+	margin-top: -2px;
+}
+
