@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bom基础</title>
+	<style type="text/css">
+		#btn1{
+			position:fixed;
+			right: 0;
+			bottom: 0;
+		}
+	</style>
+	<script type="text/javascript">
+	/*	window.onload=function(){
+			var oBtn=document.getElementById('btn');
+             window.open();
+			//document.write:清空当前页面，并输出当前内容
+		};
+	//运行代码的思想
+	var oNewWindow = window.open('about:blank');
+	oNewWindow.document.write(otxt.value);*/
+	//window.close();关闭窗口
+	//window.navigator.userAgent; 返回浏览器的版本
+	//window.location;当前的网址（可读写）
+	//window.onscroll = function (){	}
+	//scrollTop属性，可视区距离浏览器顶部的高度。
+	
+	// 任务：侧边栏广告
+
+	//回到顶部脚本：
+	window.onload = function (){
+		var obtn  = document.getElementById('btn1');
+		var bSyst = true;
+		//如何检测用户拖动了滚动条
+		window.onscroll = function(){
+			if(!bSyst){
+				clearInterval(timer);
+			}
+			bSyst = false ; 
+		};
+		obtn.onclick = function(){
+			timer = setInterval(function(){
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				var ispeed = Math.floor(-scrollTop/8);
+				if(scrollTop == 0){
+					clearInterval(timer);
+				}
+				bSyst = true;
+				document.body.scrollTop = document.documentElement.scrollTop = scrollTop + ispeed;
+			},60);
+		};
+	};
+	</script>
+</head>
+<body style="height:5000px;">
+
+	<input type="button" id="btn1" value="返回顶部">
+</body>
+</html>

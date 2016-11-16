@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>“分享到”侧边栏</title>
+	<style type="text/css">
+	#div1{
+		height:200px;
+		width:100px;
+		background: pink;
+		position: absolute;
+		top:0;
+		left:-100px;
+	}	
+	#div1 span{
+			display:block;
+			width:40px;
+			height:30px;
+			background: yellow;
+			line-height: 20px;
+			position: absolute;
+			top:50px;
+			left:100px;
+			font-size: 10px;
+	}
+
+
+	</style>
+	<script type="text/javascript">
+	// window.onload=function(){
+	// 	var oDiv=document.getElementById('div1');
+	// 	oDiv.onmouseover=function(){
+	// 		startMove();
+	// 	}
+	// 	oDiv.onmouseout=function(){
+	// 		startMove1();
+	// 	}
+
+
+	// }
+
+		
+
+	// var timer=null;
+	// 	function startMove(){
+	// 		var oDiv=document.getElementById('div1');
+	// 		clearInterval(timer);//为防止多次点击按钮而发生加速的现象
+	// 		timer=setInterval(function(){
+	// 			if(oDiv.offsetLeft==0){
+	// 				clearInterval(timer);
+
+	// 			}else{
+	// 				oDiv.style.left=oDiv.offsetLeft+10+'px';
+	// 			}	
+
+	// 		},30);
+
+	// }
+
+	// function startMove1(){
+	// 		var oDiv=document.getElementById('div1');
+	// 		clearInterval(timer);
+	// 		timer=setInterval(function(){
+	// 			if(oDiv.offsetLeft==-100){
+	// 				clearInterval(timer);
+
+	// 			}else{
+	// 				oDiv.style.left=oDiv.offsetLeft-10+'px';
+	// 			}	
+
+	// 		},30);
+
+	// }
+
+window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		oDiv.onmouseover=function(){
+			startMove(10,0);
+		}
+		oDiv.onmouseout=function(){
+			startMove(-10,-100);
+		}
+
+
+	}
+
+	var timer=null;
+	var iSpeed=0;
+	var iTarget=0;
+		function startMove(iSpeed,iTarget){
+			var oDiv=document.getElementById('div1');
+			clearInterval(timer);
+			timer=setInterval(function(){
+				if(oDiv.offsetLeft==iTarget){
+					clearInterval(timer);
+
+				}else{
+					oDiv.style.left=oDiv.offsetLeft+iSpeed+'px';
+				}	
+
+			},30);
+
+	}
+
+	
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<span>分享到</span>
+	</div>
+
+
+</body>
+</html>

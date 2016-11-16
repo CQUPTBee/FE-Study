@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>select</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.select {
+    display: inline-block;
+    margin-left: 10px;
+    float: left;
+}
+
+.item-select-input {
+    height: 26px;
+    position: relative;
+    text-indent: 8px;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px 2px 0 0;
+    background: url("./downarrow.png") no-repeat 90% center;
+}
+
+.item-select-input:focus {
+    border: 1px solid #2189bf;
+}
+
+.isi-style-1 {
+    width: 70px;
+}
+
+.isi-style-2 {
+    width: 120px;
+}
+
+.select-content {
+    min-height: 40px;
+    max-height: 130px;
+    position: relative;
+    text-indent: 8px;
+    line-height: 26px;
+    z-index: 999;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    border-top: #fff;
+    border-radius: 0 0 2px 2px;
+}
+
+.select-content li:hover {
+    background-color: #6a7c90;
+    cursor: pointer;
+}
+</style>
+<script>
+window.onload = function() {
+    var oinput = document.getElementsByClassName("item-select-input");
+    var oul = document.getElementsByClassName("select-content");
+    for (var k = 0; k < oinput.length; k++) {
+        selectItem(oinput[k], oul[k]);
+    }
+};
+
+function selectItem(oinput, oul) {
+    var changing_opacity = false;
+    var oli = oul.getElementsByTagName("li");
+
+    oinput.onclick = function() {
+        if (!changing_opacity)
+            showOrHideSelect();
+    };
+
+    //显示选中的选项
+    for (var i = 0; i < oli.length; i++) {
+        oli[i].onclick = function(_i) {
+            return function() {
+                if (!changing_opacity) {
+                    oinput.setAttribute("value", oli[_i].getAttribute("title"));
+                    showOrHideSelect();
+                }
+            }
+        }(i);
+    }
+
+    //渐变地显示-消失列表项
+    function showOrHideSelect() {
+        changing_opacity = true;
+        var timer = null;
+        var now_opacity = 0;
+
+        //如果未显示则渐变显示
+        if (oul.style.display == "none") {
+            now_opacity = Number(oul.style.opacity);
+
+            oul.style.display = "block";
+            timer = setInterval(function() {
+                if ((1 - now_opacity) <= 0.1) {
+                    clearInterval(timer);
+                    oul.style.opacity = 1;
+                    changing_opacity = false;
+                } else {
+                    now_opacity = now_opacity + 0.1;
+                    oul.style.opacity = now_opacity;
+                }
+            }, 30);
+        }
+
+        //如果已经显示则渐变隐藏
+        else {
+            changing_opacity = true;
+            now_opacity = Number(oul.style.opacity);
+
+            timer = setInterval(function() {
+                if ((1 - now_opacity) >= 0.9) {
+                    clearInterval(timer);
+                    oul.style.opacity = 0;
+                    oul.style.display = "none";
+                    changing_opacity = false;
+                } else {
+                    now_opacity = now_opacity - 0.1;
+                    oul.style.opacity = now_opacity;
+                }
+            }, 30);
+        }
+    }
+}
+</script>
+
+<body>
+    <div class="select">
+        <input type="text" name="search-options" class="item-select-input isi-style-1" readonly data-id="1" value="选项1">
+        <ul class="select-content" style="display:none;opacity: 0;">
+            <li data-id="1" title="选项1">选项1</li>
+            <li data-id="2" title="选项2">选项2</li>
+            <li data-id="3" title="选项3">选项3</li>
+            <li data-id="4" title="选项4">选项4</li>
+        </ul>
+    </div>
+
+    <div class="select">
+        <input type="text" name="buyer" class="item-select-input isi-style-2" readonly data-id="1" value="选项1">
+        <ul class="select-content" style="display:none;opacity: 0;">
+            <li data-id="1" title="选项1">选项2</li>
+            <li data-id="2" title="选项2">选项2</li>
+            <li data-id="3" title="选项3">选项3</li>
+            <li data-id="4" title="选项4">选项4</li>
+        </ul>
+    </div>
+</body>
+
+</html>

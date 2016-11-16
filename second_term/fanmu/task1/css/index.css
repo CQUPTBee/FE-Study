@@ -1,0 +1,375 @@
+/*广告界面*/
+.index-banner {
+	background: url("../images/index-banner-bg.png");
+	height: 540px;
+	width: 1920px;
+	margin: 0 auto;
+}
+.index-banner .banner-arrow {
+	background: url("../images/index-banner-arrow.png");
+	width: 86px;
+	height: 68px;
+	position: relative;
+	top: 110px;
+	left: 348px;
+}
+
+.index-banner .banner-word {
+	margin-top: -68px;
+	width: 1920px;
+}
+
+.index-banner .banner-word .word-title {
+	line-height: 40px;
+	height: 40px;
+	width: 200px;
+	position: relative;
+    left: 462px;
+    top:  146px;
+    font-size: 40px;
+    color: #fff;
+}
+.index-banner .banner-word .word-content {
+	height: 18px;
+	margin-top: 162px;
+	margin-left: 464px;
+	font-size: 18px;
+    color: #fff;
+
+} 
+
+.index-banner .banner-detail {
+	width: 120px;
+	height: 41px;
+	position: relative;
+	top: 28px;
+	left: 460px;
+	background: url("../images/index-banner-detail.png");
+}
+.index-banner .banner-detail  li a{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 8px;
+    color: #fff;
+}
+
+.index-banner .banner-phone {
+	background: url("../images/index-banner-phone.png");
+	overflow: hidden;
+	width: 390px;
+	height: 463px;
+	margin-left: 1116px;
+	margin-top: -184px;
+}
+
+/*通用面板*/
+.index-panel {
+	width: 1920px;
+	height: 540px;
+	background-color: #fff;
+}
+
+.index-panel .panel-word {
+
+}
+
+.index-panel .panel-word .word-title {
+	color: #0a0b08;
+	font-size: 30px;
+	margin-top: 42px;
+	margin-left: 438px;
+}
+.index-panel .panel-word .word-title .title-white {
+	color: #fff;
+}
+
+.index-panel .panel-word .word-translate {
+	color: #a1a1a1;
+	font-size: 18px;
+	width: 186px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.index-panel .panel-word .word-title strong {
+	width: 1920px;
+}
+
+.index-panel .panel-botton {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #f4a221;
+	margin-left: 486px;
+	margin-top: 8px;
+	z-index: ;
+}
+.index-panel .panel-word .word-content-1 {
+	color: #999;
+	font-size: 12px;
+	margin-top: 30px;
+	text-align: center;
+}
+.index-panel .panel-word .word-content-2 {
+    color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+
+.index-panel .panel-botton .botton-icon {
+	display: inline-block;
+	background: url("../images/index-panel-botton.png");
+	width: 14px;
+	height: 8px;
+	margin-top: 12px;
+	margin-left: 8px; 
+}
+
+/*第一个面板*/
+.index-panel .panel-function .function-bg {
+	background: url("../images/index-panel-function-bg.png");
+	width: 122px;
+	height: 121px;
+	float: left;
+	margin-right: 170px;
+	margin-top: 96px;
+	overflow: hidden; 
+}
+.index-panel .panel-function .no_margin {
+	margin-right: 0; 
+}
+.index-panel .panel-function .function-bg .function-detail{
+    width: 54px;
+    height: 54px;
+    margin-left: 34px;
+    margin-top: 34px;
+}
+
+.index-panel .panel-function .function-content .content-word {
+	font-size: 16px;
+	float: left;
+	margin-top: 36px;
+	margin-right: 230px;
+}
+.index-panel .panel-function .function-content .no_padding {
+	margin-right: 0;
+}
+.index-panel .panel-function .function-content .function_left {
+	padding-left: 30px;
+}
+
+/*第二个面板*/
+.index-panel .panel-case {
+    background: url("../images/index-panel-case-bg.png");
+    width: 1920px;
+    height: 542px;
+    margin-top: -200px;
+    margin-left: -460px;
+}
+
+.index-panel .panel-case .case-0 {
+	width: 240px;
+	height: 140px;
+}
+
+/*第三个面板*/
+.index-panel .panel-leaders {
+    margin-left: -1px;
+    margin-top: -12px;
+}
+.index-panel .panel-leaders .leaders-bg {
+    background: url("../images/index-panel-leaders-bg.png");
+    width: 994px;
+    height: 368px;
+}
+
+/*第四个面板*/
+.index-panel .panle-detail4 {
+    margin-left: -460px;
+    margin-top: -228px;
+}
+.index-panel .panle-detail4 .detail4-bg {
+	background: url("../images/index-panel-bg4.png");
+	width: 1920px;
+	height: 540px;
+}
+
+
+.index-panel .panle-detail4 .detail4-nav {
+	background: url("../images/index-panel-detail4-nav.png") no-repeat;
+	width: 35px;
+	height: 329px;
+	margin-left: 944px;
+	margin-top: -294px;
+}
+
+.index-panel .panle-detail4 .detail4-word .word-title {
+	font-size: 14px;
+	color:#000;
+}
+
+
+.index-panel .panle-detail4 .detail4-word .word-title .title-1{
+    margin-left: 1000px;
+    margin-top: -328px;
+}
+.index-panel .panle-detail4 .detail4-word .word-title .title-2{
+    margin-left: 698px;
+    margin-top: 50px;
+}
+.index-panel .panle-detail4 .detail4-word .word-title .title-3{
+    margin-left: 1000px;
+    margin-top: 52px;
+}
+.index-panel .panle-detail4 .detail4-word .word-title .title-4{
+    margin-left: 628px;
+    margin-top: 54px;
+}
+
+.index-panel .panle-detail4 .detail4-word .word-content {
+	font-size: 12px;
+	color: #dddddd;
+}
+.index-panel .panle-detail4 .detail4-word .word-content .content-1{
+    margin-left: 1000px;
+    margin-top: -218px;
+    width: 550px;
+}
+.index-panel .panle-detail4 .detail4-word .word-content .content-2-1{
+    margin-left: 472px;
+    margin-top: 40px;
+}
+.index-panel .panle-detail4 .detail4-word .word-content .content-2-2{
+    margin-left: 724px;
+    margin-top: 2px;
+}
+.index-panel .panle-detail4 .detail4-word .word-content .content-3{
+    margin-left: 1000px;
+    margin-top: 40px;
+    width: 534px;
+}
+.index-panel .panle-detail4 .detail4-word .word-content .content-4{
+    margin-left: 680px;
+    margin-top: 60px;
+}
+
+/*第六个面板*/
+.index-panel .panel-joined {
+    background: url("../images/index-panel-joined-bg.png");
+    width: 1920px;
+    height: 548px;
+    margin-top: -220px;
+    margin-left: -264px;
+}
+.index-panel .panel-joined .joined-bg {
+	width:1920px;
+	height:540px;
+	background:#ffffff;
+	opacity:0.93;
+}
+
+/*第六个面板*/
+.index-panel .word-table {
+	width: 456px;
+	height: 300px;
+	background-color: #5bb3e2;
+	border: 0; 
+	margin-top: 32px;
+	overflow: hidden;
+} 
+.index-panel .word-table .table-word-1 {
+    font-size: 12px;
+    color: #e5e5e5;
+    height: 42px;
+}
+.index-panel .word-table .word-white { 
+	background-color: #fff;
+}
+.index-panel .word-table .table-word-1 .word-detail { 
+	position: relative;
+	top: 14px;
+}
+.index-panel .word-table .table-word-1 input{
+    border: 0;
+}
+.index-panel .word-table .table-word-1 .white-input {
+	background-color: #5bb3e2;
+}
+.index-panel .word-table .table-word-1 .white-input-2 {
+	background-color: #5bb3e2;
+	height: 130px;
+}
+.index-panel .word-table .table-word-2 {
+	background-color: #f29400;
+	font-size: 16px;
+	text-align: center;
+	height: 42px; 
+}
+.index-panel .word-table .table-word-2 a:hover {
+	color: #fff;
+	background-color: #fff;
+}
+
+.index-panel .panel-contect {
+	height: 300px;
+	width: 42px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.index-panel .panel-contect .contect-picture {
+	height: 42px;
+	width: 42px;
+}
+.index-panel .panel-contect .contect-picture-1 {
+    background: url("../images/contect/index-panel-about-address.png") no-repeat;
+    margin-top: -352px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-2 {
+    background: url("../images/contect/index-panel-about-phone.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-3 {
+    background: url("../images/contect/index-panel-about-phone.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-4 {
+    background: url("../images/contect/index-panel-about-fax.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-5 {
+    background: url("../images/contect/index-panel-about-email.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-6 {
+    background: url("../images/contect/index-panel-about-email.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-picture-7 {
+    background: url("../images/contect/index-panel-about-web.png") no-repeat;
+    margin-top: 1px;
+    margin-left: 502px;
+}
+.index-panel .panel-contect .contect-word {
+	margin-left: 568px;
+	margin-top: -317px;
+}
+.index-panel .panel-contect .contect-word .word-1 {
+    font-size: 12px;
+    color: #e5e5e5;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.index-panel .panel-contect .contect-bg {
+	background: url("../images/index-panel-contect-bg.png") no-repeat;
+	margin-top: -513px;
+	margin-left: -510px;
+	width: 1920px;
+	height: 540px;
+}

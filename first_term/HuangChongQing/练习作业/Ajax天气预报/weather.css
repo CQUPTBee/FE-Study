@@ -1,0 +1,190 @@
+* { padding: 0; margin: 0; }
+li { list-style: none; }
+
+
+.roll { 
+	width: 880px; 
+	height: 108px; 
+	margin: 50px auto 0; 
+	position: relative; }
+.btn_left { 
+	display: block; 
+	width: 68px; 
+	height: 68px; 
+	background: url(images/btn_weather.jpg) no-repeat -70px -69px; 
+	position: absolute; 
+	top: 60px; 
+	left: 1px; 
+	z-index: 1; }
+.btn_left:hover { 
+	background: url(images/btn_weather.jpg) no-repeat -70px 0; 
+}
+.btn_right { 
+	display: block; 
+	width: 68px; 
+	height: 68px; 
+	background: url(images/btn_weather.jpg) no-repeat 1px -69px; 
+	position: 
+	absolute; 
+	top: 60px; 
+	right: 0; 
+	z-index: 1; }
+.btn_right:hover { 
+	background: url(images/btn_weather.jpg) no-repeat 1px 0; }
+.roll .wrap { 
+	width: 739px; 
+	height: 200px; 
+	margin: 0 auto; 
+	position: relative; 
+	overflow: hidden; }
+.roll ul { 
+	position: absolute; 
+	top: 0; left: 0; 
+	 cursor: pointer;
+}
+.roll li { 
+	float: left; 
+	width: 182px; 
+	height: 200px; 
+	text-align: center;
+	background:#1dc3e6;
+	border:1px solid green; }
+.roll li a:hover { 
+	position: relative; 
+	top: 2px; }
+
+
+
+
+
+
+
+
+
+
+
+	#list .last{margin-right: 0;}
+  .active{background: #63bafa;}
+.day .time{
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	text-align:center;
+	margin-top:10px;
+}
+.day .weather{
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	margin-top:20px;
+}
+.day .temp{
+	height:20px;
+	width:177px;
+	font-size:18px;
+	line-height: 20px;
+	font-size:12px;
+	text-align:center;
+	margin-top:20px;
+}
+.min, .max{
+	width:38px;
+	height:20px;
+	font-size:12px;
+	display:inline-block;
+}
+.min:after{
+	content: "/";
+	display:inline-block;
+	width:4px;
+}
+
+.day .hum{
+	height:20px;
+	line-height: 20px;
+	margin-top:60px;
+	text-align: center;
+	font-size: 12px;
+}
+/*展示区，点击哪一天就展示哪一天的详情*/
+#show{
+	height:250px;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.show-main,.morn,.night{
+	float:left;
+	margin-right:4px;
+	height:248px;
+	border:1px solid #d4d4d4;
+	width:98px;
+}
+#show .show-main{width:258px;}
+#show .night{margin-right:0;}
+.showeve{
+	width:140px;
+	height:66px;
+
+	margin-left:20px;
+	font-size:36px;
+	color:#2d76b6;
+	padding-left:86px;
+	padding-top:68px;
+	position:relative;
+
+}
+.showdate{
+	position:absolute;
+	top:20px;
+	right:76px;
+	width:100px;
+	height:60px;
+	text-indent:10px;
+	color:#ccc;
+	font-size:16px;
+}
+.humidity{
+	width:116px;
+	height:16px;
+	line-height:16px;
+	padding-left:24px;
+
+	margin-top:17px;
+	margin-left:40px;
+}
+
+.morn h3,.night h3{
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+.tem1,.tem2{
+	height:48px;
+	line-height:48px;
+	font-size:24px;
+	color:#7f7f7f;
+	text-align:center;
+	margin-top:20px;
+}
+.cloud{
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	margin-top:20px;
+}
+.t{
+	height:18px;
+	width:74px;
+	line-height:18px;
+	padding-left:57px;
+	font-size:12px;
+	margin-top:10px;
+}
+span .eve{
+	margin-left: 12px;
+}
+#show li{}

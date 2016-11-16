@@ -1,0 +1,45 @@
+body, p, h1, h2, h3, h4, h5, h6, dl, dd { 
+	margin:0;
+}
+a { 
+	text-decoration: none;
+}
+ol, ul { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+}
+img {
+ 	border: none;
+}   
+
+#nav {
+	width: 600px;
+	height: 50px;
+}
+#nav {
+
+	width: 190px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	color: #bbb;
+	background: #ddd;
+	margin-right: 10px; 
+	cursor: pointer;
+}
+
+#box {
+	float: left;
+	margin-right: 10px; 
+	width: 190px;
+	height: 150px;
+}
+#box li {
+	display: none;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid #eecffd;
+}

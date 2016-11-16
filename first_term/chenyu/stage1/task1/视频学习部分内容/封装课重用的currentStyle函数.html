@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封装课重用的currentStyle函数</title>
+	<style type="text/css">
+		
+		#div1{
+			width:100px;
+			height:100px;
+			background: green;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function getStyle(obj,attr)//兼容google
+		{
+		if(obj.currentStyle)
+		{//IE
+				return obj.currentStyle[attr];
+		}else{//firefox
+
+			return getComputedStyle(obj,false)[attr];
+		}	
+		}
+
+		window.onload=function()
+		{
+			var oDiv=document.getElementById('div1');
+			alert(getStyle(oDiv,'width'));
+
+		}
+	</script>
+</head>
+<body>
+
+
+
+
+	<div id="div1"></div>
+</body>
+</html>

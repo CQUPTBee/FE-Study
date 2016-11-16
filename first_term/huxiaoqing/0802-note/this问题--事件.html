@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="">i
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+	function Bbb() {
+		var _this=this;
+		this.b=5;
+
+		document.getElementById('btn1').onclick=function () {
+			_this.show();
+		};
+	}
+
+	Bbb.prototype.show = function () {
+		alert(this.b);
+	};
+
+	window.onload=function () {
+		new Bbb();
+	}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="按钮">
+</body>
+</html>

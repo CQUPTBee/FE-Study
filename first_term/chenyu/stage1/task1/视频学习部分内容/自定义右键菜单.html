@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义右键菜单</title>
+	<style type="text/css">
+		#ul1{
+			height:100px;
+			width:100px;
+			background: red;
+			position: absolute;
+			display: none;
+
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<script type="text/javascript">
+		
+			document.oncontextmenu=function(ev){
+			var oUl=document.getElementById('ul1');
+			var oEvent=ev||event;
+			oUl.style.display="block";
+			
+			//点击右键，菜单随鼠标移动
+			var scrollLeft=document.documentElement.scrollLeft||document.body.scrollLeft;
+			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			oUl.style.left=oEvent.clientX+scrollLeft+'px';
+			oUl.style.top=oEvent.clientY+scrollTop+'px';
+			return false;
+		};
+		document.onclick=function(){
+			var oUl=document.getElementById('ul1');
+			oUl.style.display="none";
+		}
+
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>哈哈哈！</li>
+		<li>哈哈哈！</li>
+		<li>哈哈哈！</li>
+		<li>哈哈哈！</li>
+		<li>哈哈哈！</li>
+		<li>哈哈哈！</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,span {
+    margin: 0;
+    font-size: 12px;
+}
+ol,ul,td {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form,input,select {
+    padding: 0;
+    margin: 0;
+}
+table {
+	border-collapse: collapse;
+}
+a {
+	text-decoration: none; 
+}
+img {
+	border: none;
+}
+textarea {
+    margin: 0;
+	padding: 0;
+	resize: none;
+	outline: none;
+}
+body {
+	margin: 200px auto;
+	width: 70px;
+	height: 90px;
+}
+h3 {
+	height: 21px;
+	padding-left: 8px;
+}
+ul {
+	height: 69px;
+	border: 1px solid #000;
+	padding-left: 8px;
+	line-height: 23px;
+}
