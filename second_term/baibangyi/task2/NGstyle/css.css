@@ -1,0 +1,1475 @@
+/*NG*/
+body
+{
+	width: 1280px;
+	position: relative;
+	left: 50%;
+	margin-left: -640px;
+	font-weight: normal;
+}
+#header
+{
+	width:1280px;
+	height:56px;
+	position: relative;
+	background:#2189bf;
+}
+#header-logo/*头部的左边的图像*/
+{
+	width:37px;
+	height:37px;
+	position: absolute;
+	top: 10px;
+	left:50px;
+}
+#landing/*头部的右边的一块*/
+{
+	width: 378px;
+	height: 30px;
+	position: absolute;
+	top: 14px;
+	right: 95px;
+}
+#landing ul
+{
+	width: 378px;
+	height: 30px;
+	position: relative;
+}
+#landing li
+{
+	float: left;
+	font-family:"宋体" ;
+	font-size: 12px;
+	color: #ffffff;
+}
+.search-frame/*登陆搜索栏*/
+{
+	width: 312px;
+	height: 28px;
+	border: none;
+	background: url(../NGimages/frame-bg.png);
+}
+.search-frame a/*登陆搜索栏搜索图标*/
+{
+	position: absolute;
+	top: 5px;
+	left: 18px;	
+}
+.search-input/*登陆搜索栏输入域*/
+{
+	width: 264px;
+	height: 25px;
+	position: absolute;
+	top:1px;
+	left:35px;
+}
+.search-input input
+{
+    width: 264px;
+	height: 25px;
+	border: 0;
+}
+.landing-logo/*登陆的标志图像*/
+{
+	position: absolute;
+	top:7px;
+	left:334px;
+}
+.landing-text a/*登陆的字样*/
+{
+	position: absolute;
+	top:8px;
+	left: 351px;
+	font-family:"宋体" ;
+	font-size: 12px;
+	color: #ffffff;
+}
+.landing-text a:hover,a:active
+{
+	color: #f0f233;
+}
+#catalog/*右边黑篮色的目录块*/
+{
+	width: 260px;
+	height: 1208px;
+	position: relative;
+	background: #2a2e3d;
+}
+#ABC321/*目录最上面的圆形图和文字块*/
+{
+	width: 128px;
+	height: 57px;
+	position: absolute;
+	top:18px;
+	left: 46px;
+}
+#ABC321 span/*ABC123文字本子*/
+{
+	position: absolute;
+	top: 19px;
+	left: 82px;
+	font-family: "黑体";
+	font-size:16px;
+	color: #f6f5f5;
+}
+#collect/*目录中第二个收藏的块*/
+{
+	width: 24px;
+/*	height: 27px;*/
+	position: absolute;
+	top: 100px;
+	left: 63px;
+}
+#fans/*目录中收藏的块*/
+{
+	width: 24px;
+/*	height: 27px;*/
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+.collect-110,.fans-312/*收藏和粉丝块中的数字*/
+{
+	font-family: "黑体";
+	font-size:16px;
+	color: #6e8095;
+}
+.collect-txet,.fans-text/*收藏和粉丝块中的文字文本*/
+{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6e8095;
+}
+#personal-report/*个人报表那一个大块*/
+{
+	position: absolute;
+	top: 164px;
+	left: 46px;
+}
+#personal-report span
+{
+	font-family: "黑体";
+	font-size:12px;
+	color: #ededef;
+}
+.personal-logo img
+{
+	margin-right: 6px;
+}
+
+.PersonalReport-list1 img
+{
+	margin-top: 15px;
+	margin-left: 28px;
+}
+.PersonalReport-list1 a/*文件一、文件三文本*/
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #6e8095;
+}
+.PersonalReport-list1 a:hover
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+.PersonalReport-list2 img
+{
+	margin-top: 15px;
+	margin-left: 28px;
+	margin-right: 2px;
+}
+.PersonalReport-list2 a/*文件二*/
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+.PersonalReport-list2 a:hover
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+.PersonalReport-list3 img
+{
+	margin-top: 9px;
+	margin-left: 62px;
+}
+.PersonalReport-list3 a/*文档一*/
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+.PersonalReport-list3 a:hover
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+.PersonalReport-list4 img
+{
+	margin-top: 16px;
+	margin-left: 62px;
+}
+.PersonalReport-list4 a/*文档二*/
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #6e8095;
+}
+.PersonalReport-list4 a:hover
+{
+	font-family: "黑体";
+	font-size: 12px;
+	color: #ededef;
+}
+
+#catalog-message/*目录中除了个人报表下面的整块*/
+{
+	width: 88px;
+	position: absolute;
+	top:355px;
+	left: 46px;
+
+}
+#personal-collecting
+{
+	margin-bottom: 29px;
+}
+#personal-collecting img
+{
+	margin-right: 13px;
+}
+#personal-collecting a/*个人收藏，图库等*/
+{
+	font-family: "黑体";
+	font-size:12px;
+	color: #6e8095;
+}
+#personal-collecting a:hover
+{
+	font-family: "黑体";
+	font-size:12px;
+	color: #ededef;
+}
+#crumbs/*面包屑那块*/
+{
+	width: 1021px;
+	height: 30px;
+	position: absolute;
+	top:56px;
+	left: 260px;
+	background:#ffffff;
+}
+.crumbs-ul
+{
+	width: 200px;
+	height: 12px;
+	position: relative;
+	margin-left: 28px;
+	margin-top: 9px;
+}
+.crumbs-ul li/*c站字样*/
+{
+	height: 12px;
+	float: left;
+}
+.crumbs-li1 a
+{
+	position: absolute;
+	top:0;
+	left:0;
+	font-family:"黑体";
+	font-size: 12.5px;
+	color: #aaaaaa; 
+}
+.crumbs-li1 img
+{
+	position: absolute;
+	top:2px;
+	left:28px; 
+}
+.crumbs-li2 a/*面包屑中的个人报表字样*/
+{
+	position: absolute;
+	top:0;
+	left:39px;
+	font-family:"黑体";
+	font-size: 12.28px;
+	color: #aaaaaa; 
+}
+.crumbs-li2 img
+{
+	position: absolute;
+	top:2px;
+	left:92px;
+}
+.crumbs-li3 a/*面包屑中的文件一字样*/
+{
+	position: absolute;
+	top:0;
+	left:107px;
+	font-family:"黑体";
+	font-size: 12.28px;
+	color: #aaaaaa; 
+}
+.crumbs-li3 img
+{
+	position: absolute;
+	top:2px;
+	left:146px;
+}
+.crumbs-li4 a/*面包屑中的文档一字样*/
+{
+	position: absolute;
+	top:0;
+	left:156px;
+	font-family:"黑体";
+	font-size: 12.28px;
+	color: #6898c2; 
+}
+
+.crumbs-ul a:hover
+{
+	color: #6898c2;
+}
+#content/*面包屑下面的整体部分*/
+{
+	width: 1021px;
+	height: 1178px;
+	position: absolute;
+	top: 86px;
+	left: 260px;
+	background: #eeeded;
+}
+#search/*content顶部很多下拉表单的那块*/
+{
+	width: 890px;
+	height: 85px;
+	position:relative;
+	top:18px;
+	left: 60px;
+	background: #ffffff;
+}
+#inquire/*包含查询项，第一、第二项文本*/
+{
+	width: 128px;
+	height: 30px;
+	position: absolute;
+	top:15px;
+	left: 30px;
+}
+#inquire p
+{
+	float: left;
+	margin-top: 5px;
+	margin-right: 16px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa;
+}
+#inquire select/*查询项的下拉表单*/
+{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 70px;
+    height: 25px;
+    padding-left: 10px; 
+    font-family:  "黑体";
+    font-size: 12px;
+    color: #323333;
+    background: url(../NGimages/inquire.png);
+}
+#buyer-seller/*包含卖方买方那块*/
+{
+	width: 190px;
+	height: 60px;
+	position: absolute;
+	top:15px;
+	left: 189px;
+}
+#buyer-seller p/*卖方买方文本*/
+{
+	float: left;
+	margin-top: 5px;
+	margin-right: 16px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa;
+}
+#buyer-seller select
+{
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 120px;
+    height: 25px; 
+    margin-bottom: 4px;
+    padding-left: 6px;
+    font-family:  "黑体";
+    font-size: 12px;
+    color: #323333;
+    background: url(../NGimages/buyer.png);
+}
+#buyer-seller img
+{
+	position: absolute;
+	top:7px;
+	left: 160px;
+}
+#time-account/*包含日期，总耗时等文本的块*/
+{
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	top:15px;
+	left: 408px;
+}
+.date-people/*日期和人数文本*/ 
+{
+	margin-top: 5px;
+	margin-right: 16px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa; 
+}
+.hours-turnove/*总耗时和成交量文本*/
+{
+	margin-top: 5px;
+	margin-right: 10px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa;
+}
+#time-account input/*日期输入框*/
+{
+	display: inline-block;
+	width: 110px;
+	height: 23px;
+	border: 1px solid #535353;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #323333;
+	padding-left: 7px; 
+}
+#hours/*总耗时下拉表单*/
+{
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 70px;
+    height: 25px; 
+    margin-bottom: 4px;
+    padding-left: 7px;
+    font-family:  "黑体";
+    font-size: 12px;
+    color: #323333;
+    background: url(../NGimages/inquire.png);
+}
+#people/*人数下拉表单*/
+{
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 70px;
+    height: 25px; 
+    margin-bottom: 4px;
+    padding-left: 7px;
+    font-family:  "黑体";
+    font-size: 12px;
+    color: #323333;
+    background: url(../NGimages/inquire.png);
+}
+#turnover/*成交量下拉表单*/
+{
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width:120px;
+    height: 25px; 
+    margin-bottom: 4px;
+    padding-left: 7px;
+    font-family:  "黑体";
+    font-size: 12px;
+    color: #323333;
+    background: url(../NGimages/buyer.png);
+}
+#search-blue/*第一个（顶部）搜索文本块*/
+{
+	width: 51px;
+	height: 26px;
+	position: absolute;
+    top: 29px;
+	right: 108px;
+	background: url(../NGimages/blue-bg.png);
+}
+#search-blue a
+{
+	width: 26px;
+	height: 12px;
+	margin:0 25%;
+	line-height: 26px;
+	font-family:"黑体";
+	font-size: 12px;
+	color: #ffffff;
+}
+#search-blue a:hover,a:active
+{
+	color: #eef60e;
+}
+#history-record/*conttent第二个块*/
+{
+	width: 890px;
+	height: 66px;
+	position: absolute;
+	top:114px;
+	left: 60px;
+	overflow:hidden;
+}
+#prev
+{
+	width: 29px;
+	height: 65px;
+	float: left;
+	margin-right: 4px;
+	border-top: 1px solid #dadcde;
+	border-left: 1px solid #dadcde;
+	background: #ffffff;
+}
+#prev a
+{
+	width: 29px;
+	height: 65px;
+	display: inline-block;
+	text-align: center;
+    line-height: 65px;
+}
+#prev a:hover
+{
+	width: 27px;
+	height: 63px;
+	display: inline-block;
+	text-align: center;
+    line-height: 65px;
+    border:1px solid #ededf0;
+}
+#history-time
+{
+	width:686px;
+	height:65px;
+    position:absolute;
+    top:0;
+    left:34px;
+    overflow:hidden;
+}
+#time-record
+{
+	width:1380px;
+	height:65px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#time-record .active
+{
+	margin-left:0;
+}
+.am
+{
+	width: 110px;
+	height: 65px;
+	float: left;
+	margin-left: 4px;
+	border-top: 1px solid #dadcde;
+	border-left: 1px solid #dadcde;
+	background: #ffffff;	
+}
+#time-record .am:hover
+{
+	width: 110px;
+	height: 62px;
+	border-top: 3px solid #4388c8;
+}
+.time
+{
+	margin-top: 10px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color:#323333;
+}
+.money li
+{
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 21px;
+    color: #ec6500;
+}
+.money-li1
+{
+	margin-left: 28px;
+}
+#next
+{
+	width: 29px;
+	height: 65px;
+	position:absolute;
+	top:0;
+	left: 723px;
+	border-top: 1px solid #dadcde;
+	border-left: 1px solid #dadcde;
+	background: #ffffff;
+}
+#next a
+{
+	width: 29px;
+	height: 65px;
+	display: inline-block;
+	text-align: center;
+    line-height: 65px;
+}
+#next a:hover
+{
+	width: 27px;
+	height: 63px;
+	display: inline-block;
+	text-align: center;
+    line-height: 65px;
+    border:1px solid #ededf0;
+}
+
+#HistoryInquiry/*搜索历史那一块*/
+{
+	width: 130px;
+	height: 64px;
+	position: absolute;
+	top:0;
+	right:0;
+	border-top: 1px solid #dadcde;
+	border-left: 1px solid #dadcde;
+	background: #ffffff;
+	margin-left: 4px;
+}
+#HistoryInquiry a
+{
+	display: inline-block;
+	width: 131px;
+	height: 65px;
+}
+#HistoryInquiry a:hover
+{
+	background:#dadcde;
+}
+#HistoryInquiry img
+{
+	margin-top: 16px;
+	margin-left: 18px;
+	margin-right: 11px;
+}
+#HistoryInquiry span
+{
+	position: absolute;
+	top: 26px;
+	left: 60px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #535353;
+}
+#monthrecord2016/*2016年4月份统计字样*/
+{
+	position: absolute;
+	top:198px;
+	left:60px; 
+	font-family:  "微软雅黑";
+	font-size: 12px;
+	color:#323333;
+}
+#month-count
+{
+	width: 890px;
+	height:72px;
+	position: absolute;
+	top:218px;
+	left:60px;
+}
+#volume1/*第一个成交量*/
+{
+	width: 199px;
+	height: 70px;
+	float: left;
+	border: 1px solid #d3d4d8;
+	background: #ffffff;
+}
+.volume1div1
+{
+	width: 3px;
+	height: 70px;
+	border:none;
+	background: #43b29e;
+}
+.volume1p1
+{
+	position: absolute;
+	top:20px;
+	left: 8px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #323333;
+}
+.volume1p2
+{
+	position: absolute;
+	top:43px;
+	left: 12px;
+	font-family: "黑体";
+	font-size: 10px;
+	color: #aaaaaa;
+}
+.volume1div2
+{
+   width: 59px;
+   height: 46px;
+   position: absolute;
+   top: 11px;
+   left: 124px;
+   border: 1px solid #d3d4d8;
+   background: #44b29e;
+}
+#volume2/*第二个成交量*/
+{
+
+	width: 199px;
+	height: 70px;
+	position: absolute;
+    left: 229px;
+	border: 1px solid #d3d4d8;
+	background: #ffffff;
+}
+.volume2div1
+{
+	width: 3px;
+	height: 70px;
+	border:none;
+	background: #388ac1;
+}
+.volume2p1
+{
+	position: absolute;
+	top:20px;
+	left: 8px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #323333;
+}
+.volume2p2
+{
+	position: absolute;
+	top:43px;
+	left: 12px;
+	font-family: "黑体";
+	font-size: 10px;
+	color: #aaaaaa;
+}
+.volume2div2
+{
+   width: 59px;
+   height: 46px;
+   position: absolute;
+   top: 11px;
+   left: 124px;
+   border: 1px solid #d3d4d8;
+   background: #388ac1;
+}
+#volume3/*第三个成交量*/
+{
+	width: 199px;
+	height: 70px;
+	position: absolute;
+	left: 458px;
+	border: 1px solid #d3d4d8;
+	background: #ffffff;
+}
+.volume3div1
+{
+	width: 3px;
+	height: 70px;
+	border:none;
+	background: #d04b36;
+}
+.volume3p1
+{
+	position: absolute;
+	top:20px;
+	left: 8px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #323333;
+}
+.volume3p2
+{
+	position: absolute;
+	top:43px;
+	left: 12px;
+	font-family: "黑体";
+	font-size: 10px;
+	color: #aaaaaa;
+}
+
+.volume3div2
+{
+   width: 59px;
+   height: 46px;
+   position: absolute;
+   top: 11px;
+   left: 124px;
+   border: 1px solid #d3d4d8;
+   background: #d04b36;
+}
+#volume4/*第四个成交量*/
+{
+	width: 199px;
+	height: 70px;
+	position: absolute;
+	left: 692px;
+	border: 1px solid #d3d4d8;
+	background: #ffffff;
+}
+.volume4div1
+{
+	width: 3px;
+	height: 70px;
+	border:none;
+	background: #e1cc46;
+}
+.volume4p1
+{
+	position: absolute;
+	top:20px;
+	left: 8px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #323333;
+}
+.volume4p2
+{
+	position: absolute;
+	top:43px;
+	left: 12px;
+	font-family: "黑体";
+	font-size: 10px;
+	color: #aaaaaa;
+}
+
+.volume4div2
+{
+   width: 59px;
+   height: 46px;
+   position: absolute;
+   top: 11px;
+   left: 124px;
+   border: 1px solid #d3d4d8;
+   background:#e1cc46;
+}
+#project-list/*第一个项目整个块的样式*/
+{
+   width: 533px;
+   height: 358px;
+   position: absolute;
+   top: 300px;
+   left: 60px;
+   background: url(../NGimages/project-list-border.png);
+}
+#project-list p/*第一个项目字样的样式*/
+{
+	margin-top: 15px;
+	margin-left: 20px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa;
+}
+.project-bg/*第一个项目标题下面那一大块*/
+{
+	width: 529px;
+	height: 315px;
+	position: relative;
+	margin-top: 13px;
+	margin-left: 1px;
+	background: #ffffff;
+}
+#projectdiv/*项目一到五包括表格整块的样式*/
+{
+	width: 492px;
+	height: 279px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	background: url(../NGimages/project-list.png);
+}	
+.projectdiv-li1 a
+{
+	width: 85px;
+	height: 26px;
+	position: absolute;
+	top:1px;
+	left: 6px;
+    line-height: 26px;
+    text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #535353;
+}
+.projectdiv-li2 a
+{
+	width: 85px;
+	height: 26px;
+	position: absolute;
+	top:1px;
+	left: 88px;
+	line-height: 26px;
+    text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #535353;
+	background: url(../NGimages/project-bg.png);
+}
+.projectdiv-li2 a:visited
+{
+	background: white;
+}
+.projectdiv-li2 a:hover
+{
+	background: white;
+}
+.projectdiv-li3 a
+{
+	width: 85px;
+	height: 26px;
+	position: absolute;
+	top:1px;
+	left: 178px;
+	line-height: 26px;
+    text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #535353;
+	background: url(../NGimages/project-bg.png);
+}
+.projectdiv-li3 a:visited
+{
+	background: white;
+}
+.projectdiv-li3 a:hover
+{
+	background: white;
+}
+.projectdiv-li4 a
+{
+	width: 85px;
+	height: 26px;
+	position: absolute;
+	top:1px;
+	left: 268px;
+	line-height: 26px;
+    text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #535353;
+	background: url(../NGimages/project-bg.png);
+}
+.projectdiv-li4 a:visited
+{
+	background: white;
+}
+.projectdiv-li4 a:hover
+{
+	background: white;
+}
+.projectdiv-li5 a
+{
+	width: 85px;
+	height: 26px;
+	position: absolute;
+	top:1px;
+	left: 358px;
+	line-height: 26px;
+    text-align: center;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #535353;
+	background: url(../NGimages/project-bg.png);
+}
+.projectdiv-li5 a:visited
+{
+	background: white;
+}
+.projectdiv-li5 a:hover
+{
+	background: white;
+}
+#projectdiv table/*表格样式*/
+{
+     width: 403px;
+     height: 186px;
+     position: absolute;
+     top :54px;
+     left: 36px;
+     border: 1px solid #cecfcf;
+}
+#projectdiv td/*表格单元格样式*/
+{
+	width: 98px;
+	height: 15px;
+	border: 0.5px solid #cecfcf;	
+}
+.projectdiv-table a
+{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #535353;
+	text-align:center;
+}
+.projectdiv-table a:hover,a:active
+{
+	background: #f4f6f7;
+}
+#project-message/*第一个项目那一大块*/
+{
+	width: 354px;
+	height: 359px;
+	position: absolute;
+   top: 300px;
+   left: 600px;
+   background:url(../NGimages/project-message-border.png);
+}
+.p1/*第一个项目标题*/
+{
+	margin-top: 15px;
+	margin-left: 20px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #aaaaaa;
+}
+#project-messagediv/*第一个项目标题下面的那一大块*/
+{
+	width: 348px;
+	height: 315px;
+	position: relative;
+	margin-top: 13px;
+	margin-left: 1px;
+	background: #ffffff;
+}
+.p2/*标题*/
+{
+   position: absolute;
+   top: 16px;
+   left:50px;
+   font-family: "微软雅黑";
+   font-size: 12px;
+   color: #c3c2c2;  
+}
+.p3/*项目报表三*/
+{
+   position: absolute;
+   top: 36px;
+   left: 50px;
+   font-family: "微软雅黑";
+   font-size: 12px;
+   color: #535353;
+}
+.price/*价格栏*/
+{
+	width: 91px;
+	height: 42px;
+	position: absolute;
+	top: 57px;
+	left: 32px;
+	border-top: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+.price p/*价格字样*/
+{
+	margin-top: 4px;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #c3c2c2;
+}
+.p4/*158*/
+{
+	margin-top: 3px;
+	margin-left: 22px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #535353;
+}
+.leader/*负责人*/
+{
+	width: 184px;
+	height: 42px;
+	position: absolute;
+	top: 57px;
+    left: 124px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+.p5/*负责人字样*/
+{
+	margin-top: 4px;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #c3c2c2;
+}
+.p6/*小A*/
+{
+	margin-top: 3px;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #535353;
+}
+.p7/*详细描述*/
+{
+	position: absolute;
+	top:106px;
+	left: 49px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #c3c2c2;
+}
+.p8
+{
+	position: absolute;
+	top: 125px;
+	left: 49px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #535353;
+}
+#agreement/*遵守保密协议那一块*/
+{
+	width: 294px;
+	height: 50px;
+	position: absolute;
+	top: 247px;
+	left: 32px;
+	border-top: 1px solid #e7e7e7;
+}
+#agreement img
+{
+	position: absolute;
+	top: 11px;
+	left: 4px;
+}
+.p9/*遵守保密协议字样*/
+{
+	position: absolute;
+	top: 11px;
+	left: 25px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+   color: #c3c2c2;
+}
+#agreement a/*搜索字样*/
+{
+	width: 51px;
+	height: 26px;
+	position: absolute;
+    top: 5px;
+    left: 230px;
+    font-family: "黑体";
+    font-size: 12px;
+    color: #ffffff;
+    background: url(../NGimages/agreement-abg.png); 
+}
+#agreement a:hover,a:active
+{
+	color: #ebf057;
+}
+#agreement span
+{
+	position: absolute;
+	top :6px;
+	left: 12px;
+}
+#calendar/*整个日历部分*/
+{
+	width: 354px;
+	height: 359px;
+	position: absolute;
+	top: 664px;
+	left: 60px;
+	background: url(../NGimages/calendar-border.png);
+}
+.calendar-text/*日历的字样*/
+{
+	margin-top: 14px;
+	margin-left: 22px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.calendar-pull-down/*日历块中的下拉表单*/
+{
+	width: 310px;
+	height: 42px;
+	position: absolute;
+	top:40px;
+	left: 20px;
+	border-bottom: 1px solid #a9cfec;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #535353;
+}
+.calendar-pull-down select
+{
+	margin-top: 10px;
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    font-family: "黑体";
+	font-size: 12px;
+	color: #535353;
+}
+.calendar-pull-down input
+{
+	width:62px;
+	height:20px;
+	border: 1px solid #cdcecf;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #535353;
+	text-align: center; 
+}
+#year2016
+{
+	width: 64px;
+	height: 22px;
+	padding-left: 3px;
+	background: url(../NGimages/2016-bg.png);
+}
+#month4
+{
+	width: 85px;
+	height: 22px;
+	padding-left: 25px;
+	background: url(../NGimages/4month.png);
+}
+#labeldate
+{
+	width: 75px;
+	height: 22px;
+	padding-left: 4px;
+	background: url(../NGimages/labeldate.png);
+}
+.calendar-week/*日历块中的几个星期几的数字文本块*/
+{
+	width: 310px;
+	height: 29px;
+	position: absolute;
+	top:82px;
+	left: 20px;
+	border-bottom: 1px solid #e1e1e2;
+}
+.calendar-week ul
+{
+	width: 310px;
+	height: 18px;
+    position: absolute;
+    top:6px;
+    left: 15px;
+
+}
+.calendar-week li/*星期几的列项*/
+{
+	float:left;
+	margin-right: 32px;
+	font-family: "黑体";
+	font-size: 12px;
+    color: #535353;
+}
+.calendar-table/*日期那个表格*/
+{
+	width: 308px;
+	height: 219px;
+	position: absolute;
+	top:120px;
+	left: 20px;
+}
+.calendar-table a
+{
+	display:inline-block;
+	width: 38px;
+	height: 38px;
+	border:1px solid #ffffff;
+}
+.calendar-table a:hover
+{
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	border: 1px solid #f8d564;
+}
+.calendar-table td
+{
+	width: 38px;
+	height: 38px;
+	border:1px solid #ffffff;
+}
+.calendar-table p/*无特殊样式的日期*/
+{
+	font-family: "黑体";
+	font-size: 11.36px;
+    color: #323333;
+    text-align: center;
+}
+#special/*红色字样的日期*/
+{
+	color: #c9161d;
+}
+/*#number9,#number19/*第九个和第十九日期边框*/
+{
+	/*width: 36px;
+	height: 36px;
+	border: 1px solid #f8d564;*/
+}
+#number12/*第二个日期的框架*/
+{
+	/*width: 38px;
+	height:37px;
+	border-top: 1px solid #f8d564;
+    border-left: 1px solid #f8d564;
+    border-right: 1px solid #f8d564;
+    border-bottom:2px solid #f9dd80;*/
+}
+#car-charts/*汽车排行榜的整个块*/
+{
+	width: 535px;
+	height: 359px;
+    position: absolute;
+    top:666px;
+    left: 420px;
+    background: url(../NGimages/carcharts-border.png);
+}
+#car-charts-table/*汽车排行榜里的表格*/
+{
+	position: absolute;
+	top:58px;
+	left: 40px;
+}
+#car-charts-table a
+{
+	width: 457px;
+	height: 24px;
+}
+}
+#car-charts-table-tr1/*大众那一行的背景样式*/
+{
+	background: #f4f6f7;
+}
+.ranking/*排名下面那一列的样式*/
+{
+	width: 65px;
+	height:20px;
+	border: 0.5px solid #cbcbcb;
+	text-align: center;
+	font-family:  "黑体";
+	font-size:12px;
+	color: #323333;
+}
+.brand/*品牌下面那一列的样式*/
+{
+	width: 90px;
+	height:20px;
+	position: relative;
+	border: 0.5px solid #cbcbcb;
+	text-align: center;
+	font-family:  "黑体";
+	font-size:12px;
+	color: #323333;
+}
+.brand img
+{
+	position: absolute;
+	top:4px;
+	left: 64px;
+
+}
+.mark/*搜索指数下面那一列的样式*/
+{
+	width: 290px;
+	height:20px;
+	border: 0.5px solid #cbcbcb;
+	text-align: center;
+	font-family:  "黑体";
+	font-size:12px;
+	color: #323333;
+}
+.ranking-header/*排名文本的样式*/
+{
+	width: 65px;
+	height:23px;
+	border: 0.5px solid #cbcbcb;
+	text-align: center;
+	font-family:  "黑体";
+	font-size:13px;
+	color: #231815;
+}
+.brand-header/*品牌文本样式*/
+{
+	width: 90px;
+	height:23px;
+	border: 0.5px solid #cbcbcb;
+	text-align: center;
+	font-family:  "黑体";
+	font-size:13px;
+	color: #231815;
+}
+.mark-header/*搜索指数文本样式*/
+{
+	width: 290px;
+	height:23px;
+	border: 0.5px solid #cbcbcb;
+	font-family:  "黑体";
+	font-size:13px;
+	color: #231815;
+}
+.mark-header span
+{
+	margin-left: 20px;
+}
+.mark p/*数字文本样式*/
+{
+	width: 46px;
+	height: 10px;
+   display: inline-block;
+   margin-right: 22px;
+}
+.car-charts-header/*汽车行业排行榜文本字样*/
+{
+	position: absolute;
+	top:14px;
+	left: 20px;
+	font-family: "微软雅黑";
+	font-size:12px;
+	color:#aaaaaa;
+}
+.car-table tr:hover
+{
+	cursor: pointer;
+	background:#f4f6f7;
+
+}
