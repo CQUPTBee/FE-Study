@@ -1,0 +1,171 @@
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,form,input,textarea,select{
+		padding:0;
+		margin:0;
+		font-size:12px;
+		font-family: ;
+	}	
+	ol,ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+	}
+
+    a{
+     text-decoration:none;
+    }
+
+    img{
+   border:none;
+    }
+
+.forecast{
+
+	margin:50px auto;
+	width:500px;
+    height: 334px;
+    background-color: rgba(0,0,0,0.75);
+}
+.forecast .forecast_header{
+	padding-top: 3px;
+    height: 42px;
+
+}
+.forecast_header  h2{
+ 	display: inline;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #068894;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+.forecast_header span{
+	margin-left: 20px;
+	color:#aaa;
+	font-size: 12px;
+}
+.forecast .forecast_content{
+	margin-top: 20px;
+	position: relative;
+}
+
+.forecast_content .prev{
+	position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0px;
+    display: block;
+    width: 29px;
+    height: 57px;
+    cursor: pointer;
+    background: url(../images/prev.jpg) 0 0 no-repeat;
+}
+.forecast_content .next{
+	position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 0px;
+    display: block;
+    width: 29px;
+    height: 57px;
+    cursor: pointer;
+    background: url(../images/next.jpg) 0 0 no-repeat;
+}
+.forecast_content .content{
+	margin-top: 20px;
+	height:260px;
+	position: relative;
+	overflow: hidden;
+}
+.content ul{
+	position: absolute; 
+	top: 0; 
+	left:0;
+}
+.content li{
+	float: left;
+    width: 169px;
+    height: 240px;
+    border-right: 1px dotted rgb(87, 87, 84);
+    
+}
+
+.content .time{
+	display: block;
+	padding-top: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #cbcbcb;
+    text-align: center;
+}
+.content .day{
+	text-align: center;
+	margin-left: 66px;
+	color:#cbcbcb;
+
+}
+.content .weather_bg{
+	padding-top: 10px;
+    text-align: center;
+    height: 37px;
+    overflow: hidden;
+}
+.content img{
+	display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.content .day_night{
+	height: 24px;
+    line-height: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+.day_night span{
+	display: inline-block;
+    margin-right: 6px;
+    margin-left: 6px;
+    color: #cbcbcb;
+    font-size: 14px;
+}
+ .content .temperature{
+ 	display: block;
+	height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #cbcbcb;
+    text-align: center;
+    font-family: "arial";
+ }
+ .content .wind{
+ 	height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #cbcbcb;
+    text-align: center;
+ }
+
+.content .rank {
+	margin-top:10px;
+	height:40px;
+	background: #886512;
+	border-radius: 10px;
+	position: relative;
+}
+.content .rank ul{
+	height:40px;
+	position: absolute; 
+	
+}
+.content .rank li{
+	float: left;
+	width:40px;
+	height:40px;
+	margin-top: 10px;
+	margin-left: 40px;
+	border-right: none;
+	 color: #cbcbcb;
+    font-size: 14px;
+}

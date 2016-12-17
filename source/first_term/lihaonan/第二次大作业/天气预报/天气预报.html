@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>天气预报</title>
+			<script type="text/javascript" src="script/banner.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style/css.css">
+	</head>
+	<body>
+		<ul id="box">
+		<li class="wrap" style="opacity: 1;">
+			<div class="all_temp">
+				<h2 class="headline"></h2>
+				<span class="temp_number"></span>
+				<span class="bar"></span>
+				<div class="humidity"></div>
+				<div class="speed"></div>
+				<div class="deg"></div>
+			</div>
+			<div class="day_temp"></div>
+			<div class="night_temp"></div>
+		</li>
+		<li class="wrap">
+			<div class="all_temp">
+				<h2 class="headline"></h2>
+				<span class="temp_number"></span>
+				<span class="bar"></span>
+				<div class="humidity"></div>
+				<div class="speed"></div>
+				<div class="deg"></div>
+			</div>
+			<div class="day_temp"></div>
+			<div class="night_temp"></div>
+		</li>
+		<li class="wrap">
+			<div class="all_temp">
+				<h2 class="headline"></h2>
+				<span class="temp_number"></span>
+				<span class="bar"></span>
+				<div class="humidity"></div>
+				<div class="speed"></div>
+				<div class="deg"></div>
+			</div>
+			<div class="day_temp"></div>
+			<div class="night_temp"></div>
+		</li>
+		</ul>
+	</body>
+			<script>
+			//debugger;
+			 var aWrap = document.getElementsByTagName("li");
+			 var oBox = document.getElementById('box');
+			console.log("qianmiande :"+aWrap.length);
+			window.onload=function(){
+				function fn1(callback){
+				var oJson=null;
+				var xhr = new XMLHttpRequest();                    //创建Ajax对象
+				xhr.open('post','http://openweathermap.org/data/2.5/forecast/daily?id=1814906&appid=b1b15e88fa797225412429c1c50c122a',true);
+				xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");//post都要设置
+				xhr.onreadystatechange = function(){
+					    var XMLHttpReq = xhr;
+					    if (XMLHttpReq.readyState == 4) {
+					        if (XMLHttpReq.status == 200) {
+					            var text = XMLHttpReq.responseText;
+					 
+					          //alert(text);
+					          oJson =JSON.parse(text);
+					          // console.log(oJson);
+					          callback&&callback(oJson);
+
+					        }
+					    }
+					};
+					xhr.send();
+				}
+
+				fn1(function(data){
+					console.log(data);
+					var aTemp = document.getElementsByClassName('temp_number');//获取温度这个span标签
+					var aHeadline =document.getElementsByClassName('headline');//获取标题的h2标签
+					var aBar =document.getElementsByClassName('bar');
+					var aHumidity=document.getElementsByClassName('humidity');
+					var aSpeed=document.getElementsByClassName('speed');
+					var aDeg=document.getElementsByClassName('deg');
+					var aList=data.list;
+					//console.log(aBar);
+					// temp[0].innerHTML=aList[0].temp.max;
+					for(var i=0;i<3;i++){
+						var newTime = new Date(aList[i].dt*1000);//获取每天的标准时间
+						var oYear=newTime.getFullYear();
+						var oMonth=newTime.getMonth()+1;
+						var oDate=newTime.getDate();
+						var oPlace=data.city.name;
+						aBar[i].style.height=aList[i].temp.max*2+43+"px";
+						console.log(oYear);
+						aTemp[i].innerHTML=parseInt(aList[i].temp.max);
+						aHeadline[i].innerHTML=oPlace+"&nbsp&nbsp&nbsp"+oYear+"-"+oMonth+"-"+oDate;
+						aHumidity[i].innerHTML="相对湿度:&nbsp"+aList[i].humidity+"%";
+						aSpeed[i].innerHTML="风速:&nbsp"+aList[i].speed;
+						aDeg[i].innerHTML="DEG:&nbsp"+aList[i].deg;
+						// console.log(aList[i].temp.max);
+					}
+
+				})
+			//alert(oJson.city.id);
+			console.log("limiande:"+aWrap.length);
+			bannerMove();
+			var j=0;
+			 function bannerMove(){
+			 		setInterval(fade,3000);
+			 		
+				}
+				
+			function fade(){
+				
+				if (j>=2) {
+					setInterval(fadeOut(aWrap[2]),1000);
+					setInterval(fadeIn(aWrap[0]),1000);
+					j=0;
+				}else{
+					setInterval(fadeOut(aWrap[j]),1000);
+					setInterval(fadeIn(aWrap[j+1]),1000);
+					j++;
+				}
+			}
+
+		}
+
+	</script>
+</html>

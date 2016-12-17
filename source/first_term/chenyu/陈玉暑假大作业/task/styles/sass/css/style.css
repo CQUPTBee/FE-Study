@@ -1,0 +1,601 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+.header-tips {
+  height: 36px;
+  background-color: #f3f3f3;
+  width: 100%;
+  min-width: 1206px;
+  font-size: 12px;
+  transition: margin-top 0.3s;
+  overflow: hidden; }
+  .header-tips .header-tips-content {
+    position: relative;
+    width: 1206px;
+    height: 36px;
+    margin: 0 auto; }
+    .header-tips .header-tips-content .text {
+      display: inline;
+      line-height: 36px;
+      font-family: '黑体'; }
+    .header-tips .header-tips-content .more {
+      color: #21a557; }
+    .header-tips .header-tips-content .tips {
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 36px;
+      padding-left: 15px;
+      background: url(../../../images/close-ico.jpg) no-repeat 0 center;
+      cursor: pointer; }
+
+.header-top {
+  width: 1206px;
+  height: 88px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .header-top:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+
+.header-top-left {
+  float: left;
+  margin: 26px 0 0 0; }
+
+.logo {
+  display: inline-block;
+  margin-right: 34px; }
+
+.logo-letter {
+  font-size: 28px;
+  font-weight: bold;
+  color: #39a030; }
+
+.line {
+  margin: 0 14px;
+  font-size: 22px;
+  color: #39a030; }
+
+.logo-name {
+  font-size: 22px;
+  color: #333; }
+
+.login {
+  display: inline-block;
+  margin: 30px 0 0 0; }
+  .login .follow {
+    float: left;
+    margin-right: 14px;
+    width: 54px;
+    height: 20px;
+    background: #21a557;
+    font: 400 12px SimSun;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px; }
+    .login .follow .sym {
+      margin-right: 4px; }
+  .login .followed {
+    float: left;
+    width: 106px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-family: SimSun;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin: 0 10px; }
+    .login .followed .sym {
+      margin-right: 4px; }
+    .login .followed .txt {
+      font-size: 12px; }
+    .login .followed .sep {
+      color: #ccc;
+      font-size: 10px; }
+    .login .followed .concel {
+      color: #ccc;
+      font-size: 10px; }
+      .login .followed .concel:hover {
+        color: #21a557;
+        text-decoration: underline; }
+  .login .fans {
+    float: right;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #666;
+    margin-top: 4px; }
+
+.header-top-right {
+  float: right;
+  margin-top: 26px; }
+  .header-top-right ul {
+    height: 20px;
+    margin-top: 26px; }
+    .header-top-right ul li {
+      float: left;
+      margin-right: 54px; }
+      .header-top-right ul li a {
+        font-size: 16px;
+        color: #666; }
+        .header-top-right ul li a:hover {
+          color: #39a030; }
+    .header-top-right ul .search {
+      margin-right: 16px; }
+
+.header-middle {
+  position: relative;
+  width: 100%;
+  min-width: 1206px;
+  height: 460px;
+  overflow: hidden; }
+  .header-middle .banner-foot .nav {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -30px;
+    z-index: 9;
+    font-size: 0;
+    text-align: center; }
+    .header-middle .banner-foot .nav li {
+      display: inline-block; }
+      .header-middle .banner-foot .nav li a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        background-color: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; }
+      .header-middle .banner-foot .nav li .selected {
+        background-color: #000; }
+
+.header-bottom {
+  width: 1206px;
+  margin: 0 auto; }
+  .header-bottom ul {
+    height: 180px;
+    margin: 56px 14px 58px 4px; }
+    .header-bottom ul li {
+      display: inline-block;
+      width: 344px;
+      height: 180px;
+      margin-right: 72px; }
+      .header-bottom ul li .product-bg {
+        display: inline-block;
+        width: 84px;
+        height: 84px;
+        background: #39a030;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 20px;
+        float: left; }
+        .header-bottom ul li .product-bg img {
+          margin: 20px 24px; }
+      .header-bottom ul li .product {
+        float: right; }
+      .header-bottom ul li h2 {
+        margin-bottom: 22px;
+        font-size: 22px;
+        font-family: "微软雅黑";
+        color: #676767;
+        width: 180px; }
+      .header-bottom ul li p {
+        width: 240px;
+        margin-bottom: 34px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #979797; }
+      .header-bottom ul li a {
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #77bd70; }
+        .header-bottom ul li a:hover {
+          text-decoration: underline; }
+    .header-bottom ul .li-style {
+      margin-right: 0; }
+
+.working-picture {
+  width: 100%;
+  min-width: 1206px; }
+  .working-picture img {
+    width: 264px; }
+
+.content-bg {
+  background: #f8f8f8;
+  width: 100%;
+  min-width: 1206px;
+  overflow: hidden; }
+  .content-bg:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+
+.content {
+  margin-top: 84px;
+  width: 1206px;
+  margin: 0 auto; }
+  .content .content-left {
+    float: left;
+    margin-top: 84px; }
+    .content .content-left .tab-top {
+      margin-bottom: 30px; }
+      .content .content-left .tab-top .products-design {
+        display: inline-block;
+        margin-right: -6px;
+        width: 200px;
+        height: 50px;
+        background: #39a030;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-family: '微软雅黑'; }
+      .content .content-left .tab-top .programming-language {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background: #fff;
+        text-align: center;
+        line-height: 50px;
+        color: #707070;
+        font-family: '微软雅黑'; }
+  .content .pager {
+    float: right;
+    margin: 30px 14px 120px 0; }
+    .content .pager a {
+      padding: 0 16px;
+      font-size: 14px;
+      font-family: "微软雅黑";
+      color: #666; }
+    .content .pager .prev, .content .pager .next {
+      background: #9dd8b1;
+      color: #fff; }
+      .content .pager .prev:hover, .content .pager .next:hover {
+        cursor: pointer; }
+    .content .pager .page:hover {
+      background: #9dd8b1;
+      color: #fff;
+      cursor: pointer; }
+
+.tab-content, .tab-content1 {
+  width: 962px; }
+  .tab-content .ul-style1, .tab-content1 .ul-style1 {
+    width: 956px;
+    height: 228px;
+    margin-right: 10px; }
+    .tab-content .ul-style1 li, .tab-content1 .ul-style1 li {
+      float: left;
+      width: 226px;
+      height: 228px;
+      -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+  .tab-content ul, .tab-content1 ul {
+    margin-top: 20px;
+    width: 956px;
+    height: 228px; }
+    .tab-content ul li, .tab-content1 ul li {
+      float: left;
+      width: 226px;
+      height: 228px;
+      border: 1px solid #eee;
+      margin-right: 10px;
+      background: #fff;
+      position: relative; }
+      .tab-content ul li img, .tab-content1 ul li img {
+        width: 224px;
+        height: 124px; }
+      .tab-content ul li p, .tab-content1 ul li p {
+        margin: 8px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-family: "微软雅黑";
+        color: #8d8d8d; }
+      .tab-content ul li span, .tab-content1 ul li span {
+        display: block;
+        margin: 0 0 6px 6px;
+        font-size: 8px;
+        font-family: "微软雅黑";
+        color: #ccc; }
+      .tab-content ul li .span-style, .tab-content1 ul li .span-style {
+        width: 38px;
+        height: 16px;
+        border: 1px solid #ddd;
+        background: url(../../../images/tab-ico.jpg) no-repeat 0 center;
+        text-indent: 16px; }
+      .tab-content ul li .span-color, .tab-content1 ul li .span-color {
+        color: #ff3f00; }
+
+.content-right {
+  float: right;
+  margin-top: 84px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+  .content-right .organization-introduction {
+    width: 224px;
+    height: 230px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    background: #fff; }
+    .content-right .organization-introduction h1 {
+      height: 55px;
+      line-height: 55px;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-family: "微软雅黑";
+      color: #5c5c5c; }
+    .content-right .organization-introduction .text {
+      padding: 20px 23px 9px;
+      color: #666; }
+    .content-right .organization-introduction .play-video {
+      position: relative;
+      padding: 0 22px; }
+  .content-right .hottest-ranking {
+    background: #fff;
+    margin-top: 26px;
+    height: 780px;
+    width: 224px;
+    overflow: hidden; }
+    .content-right .hottest-ranking h1 {
+      height: 55px;
+      line-height: 55px;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-family: "微软雅黑";
+      color: #5c5c5c; }
+    .content-right .hottest-ranking .hottest-list .item a {
+      display: block;
+      padding: 20px 20px 0 20px;
+      overflow: hidden; }
+      .content-right .hottest-ranking .hottest-list .item a img {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        float: left; }
+      .content-right .hottest-ranking .hottest-list .item a p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-left: 14px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #595959; }
+      .content-right .hottest-ranking .hottest-list .item a span {
+        display: block;
+        margin: 10px 0 0 60px;
+        height: 18px;
+        line-height: 18px;
+        padding-left: 16px;
+        font-size: 12px;
+        color: #999;
+        background: url(../../../images/tab-ico.jpg) no-repeat 0 center;
+        text-indent: 6px; }
+    .content-right .hottest-ranking .hottest-list .item:after {
+      content: '.';
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+
+.footer-bg {
+  background: #2c3339;
+  width: 100%;
+  min-width: 1206px; }
+  .footer-bg:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+
+.footer {
+  width: 1206px;
+  height: 262px;
+  margin: 0 auto; }
+  .footer .footer-left {
+    float: left; }
+    .footer .footer-left .logo {
+      margin: 90px 0 28px 50px; }
+      .footer .footer-left .logo .logo-name {
+        color: #39a030; }
+    .footer .footer-left p {
+      margin-left: 56px;
+      margin-bottom: 12px;
+      font-size: 12.5px;
+      font-family: "微软雅黑";
+      color: #8b8f92; }
+
+.footer-right {
+  float: right;
+  margin: 84px 206px 0 0; }
+  .footer-right ul li {
+    float: left; }
+    .footer-right ul li h3 {
+      margin-bottom: 16px;
+      font-size: 12.5px;
+      font-family: "微软雅黑";
+      color: #8b8f92; }
+    .footer-right ul li a {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-family: "微软雅黑";
+      color: #8b8f92; }
+      .footer-right ul li a:hover {
+        text-decoration: underline; }
+    .footer-right ul li .weibo-bg img {
+      margin-left: 18px; }
+  .footer-right ul .li-style1 {
+    margin-right: 94px; }
+  .footer-right ul .li-style2 {
+    margin-right: 70px; }
+
+.appear-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../images/login-bg.jpg);
+  z-index: 10; }
+  .appear-login .login-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 387px;
+    height: 288px;
+    margin-left: -192px;
+    margin-top: -144px;
+    background-color: #fff; }
+    .appear-login .login-bg h2 {
+      font-size: 18px;
+      font-family: "微软雅黑";
+      color: #666;
+      margin: 10px 0 20px 20px; }
+    .appear-login .login-bg div {
+      margin: 0 0 20px 20px;
+      font-size: 12px;
+      font-family: "微软雅黑";
+      color: #666; }
+    .appear-login .login-bg .username {
+      margin-left: 10px;
+      width: 200px;
+      height: 30px; }
+    .appear-login .login-bg .password {
+      margin-left: 20px;
+      width: 200px;
+      height: 30px; }
+    .appear-login .login-bg .username-password {
+      margin-left: 10px;
+      margin-right: 6px; }
+    .appear-login .login-bg .sub {
+      border: none;
+      background: none;
+      width: 60px;
+      height: 30px;
+      line-height: 30px;
+      background: #21a557;
+      color: #fff;
+      outline: none;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      margin-left: 120px;
+      margin-bottom: 0; }
+    .appear-login .login-bg .close {
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      font-size: 20px; }
+
+.focus {
+  border: none;
+  background: none;
+  outline: none;
+  background: rgba(33, 165, 55, 0.2); }
+
+.fail, .success {
+  width: 200px;
+  color: red;
+  height: 80px; }
+
+.appear-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../images/login-bg.jpg);
+  z-index: 10; }
+  .appear-video .video-bg {
+    position: relative;
+    margin: 0 auto;
+    width: 890px;
+    height: 616px;
+    padding: 30px;
+    background-color: #fff; }
+  .appear-video h2 {
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #666;
+    margin: 10px 0 20px 20px; }
+  .appear-video .close1 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    color: #666;
+    font-size: 40px; }
+
+.big-li {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 464px;
+  height: 228px;
+  background: #fff; }
+  .big-li img {
+    width: 224px;
+    height: 124px;
+    float: left;
+    margin: 20px; }
+  .big-li .big-li-right {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px; }
+    .big-li .big-li-right h2 {
+      color: #666;
+      margin-bottom: 18px;
+      font-size: 16px; }
+    .big-li .big-li-right span {
+      display: block;
+      margin-bottom: 10px;
+      color: #8d8d8d; }
+  .big-li .big-li-bottom {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    width: 400px;
+    overflow: visible;
+    white-space: normal;
+    font-size: 14px; }

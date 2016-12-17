@@ -1,0 +1,22 @@
+form,input,select {
+	padding: 0;
+	margin: 0;
+}
+table {
+	width: 180px;
+	border-collapse: collapse;
+	text-align: center;
+}
+input {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#text {
+	width: 193px;
+	text-align: right;
+	padding-right: 15px;
+	font-size: 16px;
+}

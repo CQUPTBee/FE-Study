@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运动-div移动</title>
+	<style type="text/css">
+		#div1{
+			width:100px;
+			height:100px;
+			background: red;
+			position: absolute;
+			left:0;
+			top:40px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var timer=null;
+			var oDiv=document.getElementById('div1');
+			var oBtn=document.getElementById('btn1');
+			oBtn.onclick=function(){
+				clearInterval(timer);
+		//每点一次按钮，则开一次定时器，执行一次函数，则会加快div的速度，解决办法，把点按钮之前的定时器清除
+				timer=setInterval(function(){
+					
+					if(oDiv.offsetLeft>=300){//是否到达终点
+					clearInterval(timer);//到达终点
+				}
+				else{
+					oDiv.style.left=oDiv.offsetLeft+5+'px';//运动进行中
+				}
+				},30);
+			}
+		};
+
+
+	</script>
+</head>
+<body>
+<div id="div1"></div>
+<input type="button" id="btn1" value="点击div移动"/>
+	
+</body>
+</html>

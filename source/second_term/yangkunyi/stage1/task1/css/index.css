@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	font-family: 微软雅黑;
+}
+a{text-decoration: none;}
+li{float: left;}
+body{
+	width: 1920px;
+	margin: 0 auto;
+}
+
+/*导航*/
+.header{
+	width: 1920px;
+	height: 60px;
+	background-color: #0a0b08;
+}
+.logo{
+	float: left;
+	margin: 10px 0 0 460px;
+}
+.nav ul{
+	float: left;
+	margin: 0 0 0 320px;
+}
+.nav li{
+	width: 90px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	text-align: center;
+	overflow:hidden;
+}
+.nav li a{
+	color: #0290c1;
+	font-size: 16px;
+}
+.nav li.select{background-image: url(../images/bg-nav.png);}
+.nav li:hover{
+	background-image: url(../images/bg-nav.png);
+	background-repeat: no-repeat;
+
+}
+/*导航结束*/
+
+/*首页*/
+.banner,
+.smarthome,
+.case,
+.news,
+.joined,
+.fcreate,
+.contact{
+	width: 1920px;
+	height: 540px;
+	float: left;
+}
+/*首页结束*/
+
+/*智能家居*/
+.smart-word{
+	width: 444px;
+	height: 151px;
+	margin: 42px 0 0 735px;
+	text-align: center;
+	color: #999;
+}
+.smart-word span{
+	font-size: 30px;
+	color: #0a0b08;
+}
+.smart-word img{margin: 12px 0 0 0;}
+.smart-home {font-size: 18px;}
+.future{margin: 20px 0 0 0;}
+.smart-photo{
+	width: 1000px;
+	height: 174px;
+	margin: 130px 0 0 460px;
+}
+.smart-photo ul{margin: 0 0 0 -170px;}
+.smart-photo li{margin: 0 0 0 170px;}
+.smart-photo p{
+	text-align: center;
+	font-size: 16px;
+	color: #0a0b08;
+	margin: 20px 0 0 0;
+}
+.smart-photo a{font-weight: bolder;}
+/*智能家居结束*/
+
+/*案例展示*/
+.case{background-image: url(../images/bg-case1.png);}
+.black{
+	width: 1920px;
+	height: 540px;
+	position: absolute;
+	background-color: rgba(0,0,0,0.93);
+}
+.case .smart-word span{color: #fff;}
+.case-photo{
+	width: 1000px;
+	height: 293px;
+	margin: 45px 0 0 460px;
+}
+.case-photo ul{
+	height: 310px;
+	margin: -13px 0 0 -13px;
+}
+.case-photo li{margin: 10px 0 0 10px;}
+.case-photo li:hover{
+	border: 1px solid #fff;
+	margin: 8px 0 0 8px;
+}
+/*案例展示结束*/
+
+/*智创能源*/
+.fcreate{background-image: url(../images/bg-fcreate.png);}
+/*智创能源结束*/
+
+/*前沿资讯*/
+.news{background-image: url(../images/bg-news.png);}
+.news span a{
+	font-size: 14px;
+	color: #000;
+}
+.news .smart-word span{color: #fff;}
+.news .pright span:hover{text-decoration: underline;}
+.news .pleft span:hover{text-decoration: underline;}
+.news .future{color: #fff;}
+.news li{
+	clear: left;
+	float: bottom;
+	margin: -15px 0 0 0;
+}
+.news-photo{
+	width: 990px;
+	height: 290px;
+	color: #fff;
+	margin: 48px 0 0 205px;
+}
+.pright{margin: 0 0 0 10px;text-align: left;}
+.news-photo p{
+	width: 460px;
+	height: 70px;
+	float: left;
+}
+.news-photo span{
+	font-size: 14px;
+	color: #000;
+	font-weight: bolder;
+}
+.pleft{
+	margin: 0 0 0 -505px;
+	text-align: right;
+}
+/*前沿资讯结束*/
+
+/*加盟合作*/
+.joined{background-image: url(../images/bg-joined.png);}
+.joined li{position: absolute;}
+.joined ul li p{text-align: center;}
+.joined ul li a{color: #000;}
+.joined ul li a:hover{text-decoration: underline;}
+.circle1{margin: -15px 0 0 440px;}
+.circle2{margin: 0 0 0 700px;}
+.circle3{margin: 130px 0 0 565px;}
+.circle4{margin: 180px 0 0 895px;}
+.circle5{margin: 60px 0 0 1055px;}
+.circle6{margin: 145px 0 0 1240px;}
+.circle7{margin: -10px 0 0 1420px;}
+/*加盟合作结束*/
+
+/*联系我们*/
+.contact{background-image: url(../images/bg-contact.png);}
+.contact .smart-home span{color: #fff;}
+.contact .future{color: #fff;}
+.contact li{clear: left;}
+.contact-left{
+	position: absolute;
+	margin: 30px 0 0 460px;
+}
+.contact-left input{
+	width: 436px;
+	height: 42px;
+	border: none;
+	margin: 2px 0 0 0;
+	padding: 0 0 0 20px;
+	color: #fff;
+	background-color: #5bb3e2;
+}
+.contact-left input:hover{
+	color: #bbb;
+	background-color: #fff;
+}
+.contact-left .submit input:hover{
+	background-color: #f29400;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.mail input{
+	height: 130px;
+	line-height: 80px;
+}
+.submit input{
+	width: 456px;
+	padding: 0;
+	background-color: #f29400;
+	font-size: 16px;
+}
+.contact-right{margin: 30px 0 0 1010px;}
+.contact-right li{margin: -1px 0 0 0;}
+.contact-right p{
+	float: left;
+	line-height: 42px;
+	color: #fff;
+	margin: 0 0 0 20px;
+}
+.contact-right span{
+	font-size: 14px;
+	font-weight: bolder;
+}
+/*联系我们结束*/
+
+.footer{
+	float: left;
+	width: 1920px;
+	height: 40px;
+	background-color: #0a0b08;
+	color: #fff;
+	line-height: 40px;
+}
+.footer p{
+	width: 410px;
+	margin: 0 auto;
+}

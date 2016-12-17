@@ -1,0 +1,568 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nick",
+				"nickname"
+			],
+			[
+				"oC",
+				"onclick"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"etxa",
+				"text-align"
+			],
+			[
+				"bac",
+				"backface-visibility"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"tim",
+				"timer2"
+			],
+			[
+				"time",
+				"timer1"
+			],
+			[
+				"ti",
+				"timer1"
+			],
+			[
+				"o",
+				"oForm"
+			],
+			[
+				"t",
+				"transition"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"tans",
+				"transform"
+			],
+			[
+				"bacc",
+				"background-color"
+			],
+			[
+				"mag",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"p",
+				"padding-bottom"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"txe",
+				"textarea	Tag"
+			],
+			[
+				"met",
+				"meta	Tag"
+			],
+			[
+				"li",
+				"oLi"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"n",
+				"initial"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"st",
+				"column-rule-style"
+			],
+			[
+				"oul",
+				"outline-style"
+			],
+			[
+				"bar",
+				"border-radius"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"ou",
+				"outline-color"
+			],
+			[
+				"outlin",
+				"outline-offset"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"style",
+				"outline-style"
+			],
+			[
+				"boder",
+				"border-radius"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"texa",
+				"text-align"
+			],
+			[
+				"offset",
+				"offsetWidth"
+			],
+			[
+				"aD",
+				"aDay2"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"am",
+				"aMax"
+			],
+			[
+				"aw",
+				"aWind"
+			],
+			[
+				"fs",
+				"font-size"
+			],
+			[
+				"fos",
+				"font-size"
+			],
+			[
+				"weathe",
+				"aWeather"
+			],
+			[
+				"fo",
+				"forecast"
+			],
+			[
+				"getElementB",
+				"getElementByClassName"
+			],
+			[
+				"im",
+				"iMonth"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"clo",
+				"color"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"bd",
+				"border"
+			],
+			[
+				"BACC",
+				"background-color"
+			],
+			[
+				"get",
+				"getByClass"
+			],
+			[
+				"fw",
+				"font-weight"
+			],
+			[
+				"doc",
+				"documentElement"
+			],
+			[
+				"do",
+				"documentElement"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"off",
+				"offsetLeft"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"iN",
+				"iNow"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Karen/web/0824-note/sass/ex.css",
+		"/E/Karen/web/0824-note/sass/ex.scss",
+		"/E/Karen/web/0824-note/css/ex.css",
+		"/E/Karen/requireJS/m.js",
+		"/E/Karen/web/0826-note/sass/ex.scss",
+		"/E/Karen/r.js",
+		"/E/Karen/web/0826-note/gulpfile.js",
+		"/E/Karen/前端/0824-note/style/ex.scss",
+		"/E/Karen/前端/0823-note/jQuery.js",
+		"/E/Karen/前端/0816-note/fn.js",
+		"/E/Karen/前端/0802-note/this问题.html",
+		"/E/Karen/前端/ex.js",
+		"/E/Karen/万磊组/index.html",
+		"/E/Karen/前端/model/html.html",
+		"/E/Karen/万磊组/css/hxq_form.css",
+		"/C/Users/asus/Desktop/Cmd Markdown.exe",
+		"/C/Users/asus/Desktop/作品/index.html",
+		"/C/Users/asus/Desktop/作品/css/hxq_form.css",
+		"/E/Karen/作品/js/hxq_form.js",
+		"/E/Karen/作品/css/hxq_form.css",
+		"/C/Users/asus/Desktop/ajax函数.js",
+		"/E/Karen/作品/index.html",
+		"/E/Karen/hxq_网站表单/html/hxq_form.html",
+		"/E/Karen/hxq_网站表单/css/hxq_form.css",
+		"/E/Karen/hxq_网站表单/js/hxq_form.js",
+		"/E/Karen/新建文件夹/新建文件夹/表单验证/index.html",
+		"/E/Karen/新建文件夹/Validform_v5.3.2/demo/css/style.css",
+		"/E/Karen/新建文件夹/Validform_v5.3.2.js",
+		"/E/Karen/前端/js作业/选项卡/exercise-5.html",
+		"/E/Karen/新建文件夹/Validform_v5.3.2/demo/plugin/datePicker/datePicker-min.css",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.884.2722/HZ$D.884.2727/ux_1470939948_2435503/demo.css",
+		"/E/Karen/前端/js作业/轮播图/轮播图.js",
+		"/E/Karen/门户网站/css/hxq_form.css",
+		"/E/Karen/门户网站/html/hxq_form.html",
+		"/E/Karen/门户网站/js/hxq_jQuery.js",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.552.1177/HZ$D.552.1179/ux_1470815215_698741/iconfont.css",
+		"/E/Karen/门户网站/hxq_form.html",
+		"/E/Karen/门户网站/style/hxq_form.css",
+		"/E/Karen/门户网站/js/validate.js",
+		"/E/Karen/门户网站/js/validate.min.js",
+		"/E/Karen/门户网站/js/hxq_form.js",
+		"/C/Users/asus/Desktop/功能：验证电话号码格式是否正确",
+		"/E/Karen/前端/js作业/下拉菜单/下拉菜单.js",
+		"/E/Karen/前端/0808-note/图片切换.html",
+		"/E/Karen/前端/js作业/下拉菜单/下拉菜单.html",
+		"/E/Karen/前端/js作业/天气预报/Weather Forecast .js",
+		"/C/Users/asus/Desktop/自动提示.html",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.646.2082/HZ$D.646.2087/20140720002_68design.net/FONT+HTML+CSS/style.css",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.646.2088/lte-ie7.js",
+		"/E/Karen/门户网站/style/reset.css",
+		"/E/学习视频/6.AJAX课程/01.AJAX原理和封装/lesson1/6.form.html",
+		"/E/学习视频/6.AJAX课程/01.AJAX原理和封装/lesson1/1.get.php",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.934.988/cookie结合拖拽.html",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.934.989/记住用户名.html",
+		"/E/Karen/前端/js作业/天气预报/Weather Forecast.html",
+		"/E/Karen/前端/js作业/天气预报/Weather Forecast Ajax.js",
+		"/E/Karen/前端/js作业/天气预报/Weather Forecast.css",
+		"/C/Users/asus/Desktop/前端/js作业/天气预报/Weather Forecast .js",
+		"/C/Users/asus/Desktop/前端/js作业/天气预报/Weather Forecast.css",
+		"/C/Users/asus/Desktop/前端/js作业/天气预报/Weather Forecast Ajax.js",
+		"/C/Users/asus/Desktop/前端/js作业/天气预报/Weather Forecast.html",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.766.3756/cookie结合拖拽.html",
+		"/C/Users/asus/Desktop/前端/js作业/轮播图/轮播图.js",
+		"/C/Users/asus/Desktop/前端/js作业/轮播图/轮播图.html",
+		"/C/Users/asus/Desktop/前端/js作业/轮播图/轮播图.css",
+		"/C/Users/asus/Desktop/前端/js作业/计算器/calculater.css",
+		"/C/Users/asus/Desktop/前端/js作业/计算器/calculater.html",
+		"/C/Users/asus/Desktop/前端/js作业/计算器/calculater.js",
+		"/C/Users/asus/Desktop/前端/js作业/选项卡/exercise-5.html",
+		"/H/前端/天气预报/jswork.js",
+		"/C/Users/asus/Desktop/前端/js作业/倒计时/倒计时.html",
+		"/C/Users/asus/Desktop/前端/js作业/倒计时/倒计时.css",
+		"/H/天气预报/try.html",
+		"/H/天气预报/jswork.js",
+		"/C/Users/asus/Desktop/前端/model/Ajax.js",
+		"/C/Users/asus/Desktop/前端/js作业/倒计时/倒计时.js",
+		"/C/Users/asus/Desktop/前端/0805-note/js/Weather Forecast Ajax.js",
+		"/C/Users/asus/Desktop/前端/0805-note/style/Weather Forecast.css",
+		"/C/Users/asus/Desktop/前端/model/获取class.js",
+		"/C/Users/asus/Desktop/前端/0805-note/js/Weather Forecast .js",
+		"/C/Users/asus/Desktop/前端/0805-note/Weather Forecast.html",
+		"/C/Users/asus/Desktop/前端/0802-note/js/倒计时.js",
+		"/C/Users/asus/Desktop/前端/0802-note/倒计时.html",
+		"/C/Users/asus/Desktop/前端/js作业/下拉菜单/下拉菜单.css",
+		"/C/Users/asus/Desktop/前端/0728-note/style/下拉菜单.css",
+		"/C/Users/asus/Desktop/前端/js作业/下拉菜单/下拉菜单.html",
+		"/E/学习视频/01.JS10-日期对象、网页时钟、倒计时/课件及作业/1-系统时间.html",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.194.2706/new_ajax.js",
+		"/C/Users/asus/Desktop/前端/0805-note/Weather Forecast.css",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.855.1251/ajax.js",
+		"/C/Users/asus/Desktop/前端/0803-note/style/calculater.css",
+		"/C/Users/asus/Desktop/前端/0803-note/calculater.html",
+		"/C/Users/asus/Desktop/前端/0803-note/js/calculater.js",
+		"/H/Karen/网页设计/网页设计实验八/sy8-12.html",
+		"/C/Users/asus/Desktop/前端/0803-note/js/ajax.js",
+		"/C/Users/asus/AppData/Local/Temp/HZ$D.422.3229/HZ$D.422.3230/ux_1470310664_8496182/demo.css",
+		"/C/Users/asus/Desktop/前端/0802-note/calculater.html",
+		"/C/Users/asus/Desktop/前端/0729-note/ws.html",
+		"/C/Users/asus/Desktop/前端/0729-note/js/ws.js",
+		"/C/Users/asus/Desktop/前端/0727-note/exercise-5.html",
+		"/C/Users/asus/Desktop/前端/0802-note/js/Ajax.js",
+		"/C/Users/asus/Desktop/前端/0802-note/style/calculater.css",
+		"/C/Users/asus/Desktop/前端/0803-note/js/scroll.js",
+		"/C/Users/asus/Desktop/前端/0802-note/轮播图.html",
+		"/C/Users/asus/Desktop/前端/0802-note/style/轮播图.css",
+		"/C/Users/asus/Desktop/前端/0802-note/js/轮播图.js",
+		"/H/轮播图/2.html",
+		"/H/轮播图/css8.css",
+		"/C/Users/asus/Desktop/前端/0802-note/style/倒计时.css",
+		"/C/Users/asus/Desktop/前端/0802-note/this问题--事件.html",
+		"/C/Users/asus/Desktop/前端/0802-note/this问题.html",
+		"/C/Users/asus/Desktop/前端/0802-note/面向对象---选项卡.html",
+		"/C/Users/asus/Desktop/前端/0802-note/js/面向对象----选项卡.js",
+		"/C/Users/asus/Desktop/前端/0727-note/exercise-4.html",
+		"/C/Users/asus/Desktop/前端/model/css reset.css",
+		"/C/Users/asus/Desktop/前端/0801-note/style/e1.css",
+		"/C/Users/asus/Desktop/前端/0801-note/js/e1.js",
+		"/C/Users/asus/Desktop/前端/0728-note/js/下拉菜单.js"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"();\n",
+			"form",
+			"hxq_ul_1\n",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 81.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
