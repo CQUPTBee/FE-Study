@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css"></style>
+<script type="text/javascript">
+window.onload=function(){
+function prime(){
+    var str="";
+    for(var i=1; i<=100; i++){
+        var m=0; //质数
+        for(var j=2; j<i; j++){
+            if(i%j==0){
+                m=1; //非质数
+                break;
+            }
+        }
+        if(m==0 && i!=1){
+            str=str + i + "，";
+        }
+    }
+    window.document.write("<p>1-100间的质数有：" + str +"</p>");
+}
+prime();
+}
+</script>
+</head>
+<body>
+</body>
+</html>

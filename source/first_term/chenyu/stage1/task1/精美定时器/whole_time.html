@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>精美定时器</title>
+	<script type="text/javascript">
+	function toDouble(num){
+			if(num<10){
+				return '0'+num;//将其转化为两位数字
+			}else{
+				return ''+num;//必须加上''将其转化为字符串
+
+			}
+
+
+	}
+			window.onload=function(){
+				var aImg=document.getElementsByTagName('img');
+				var i=0;
+
+
+				function updateTime()
+				{
+					var ODate=new Date();
+					var str=toDouble(ODate.getHours())+toDouble(ODate.getMinutes())+toDouble(ODate.getSeconds());
+						for(i=0;i<aImg.length;i++){
+
+								aImg[i].src='images/'+str.charAt(i)+'.png';
+									//str.charAt(i)获取str的i位置上的值
+
+						}
+
+				};
+
+ 				setInterval(updateTime,1000);
+ 				updateTime();//应该立即调用此函数，否则页面刷新就会变成00:00:00
+
+			};
+
+
+
+		</script>
+
+</head>
+<body style="color:red;background:pink;">
+
+	<img src="images/0.png"/>
+	<img src="images/0.png"/>
+	时
+	<img src="images/0.png"/>
+	<img src="images/0.png"/>
+	分
+	<img src="images/0.png"/>
+	<img src="images/0.png"/>
+	秒
+	
+</body>
+</html>

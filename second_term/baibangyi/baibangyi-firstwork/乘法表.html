@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css"></style>
+<script type="text/javascript">
+	window.onload=function(){
+		function  multiplicationTable(){
+			var x = 9;
+			var y = 9;
+			document.write("<table border='1'>");
+			for(i = 1; i <= x; i++){				
+				document.write("<tr>");
+				for (j = 1; j <= y; j++){		    
+					if (j <= i){
+						document.write("<td>"+ i + "*" + j  + "=" + i*j + "</td>");
+					}else{
+						document.write("<td> </td>");
+					}
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		}
+		multiplicationTable()
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

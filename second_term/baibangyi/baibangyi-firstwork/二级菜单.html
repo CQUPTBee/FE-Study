@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#nav{
+	    overflow: hidden;
+	    width: 70%;
+		margin: 0 auto;
+	}
+	ul ,li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: #000;
+		text-align:center;
+	}
+	#nav>ul>li{
+		float:left;
+		margin-right: 30px;
+		background: pink;
+	}
+	#nav>ul>li>div{
+		position: absolute;
+	}
+	#nav>ul>li:hover{
+		background: red;
+	}
+	a{
+		display: block;
+		padding: 5px 10px;
+		font-size: 20px;
+		width: 90px;
+	}
+	.headChild li{width: 110px;}
+	.headChild li:hover{
+		background: green;
+	}
+	.headChild{
+		display: none;
+	}
+	.nav-headActive .headChild{
+		display: block;
+	}
+</style>
+<script type="text/javascript">
+	window.onload=function () {
+		var aLi=document.getElementsByClassName('nav-head');
+		var aDiv=document.getElementsByClassName('headChild');
+		var i=null;
+		for(var i=0;i<aLi.length;i++)
+		{
+			aLi[i].onmouseover=function(){
+				this.className='nav-headActive';
+			}
+			aLi[i].onmouseout=function(){
+				this.className='nav-head';
+			}
+		};
+	};
+</script>
+</head>
+<body>
+<div id="nav">
+	<ul>
+		<li class="nav-head">
+			<a href="#">李钟硕</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">胡歌</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>			
+				</ul>
+			</div>
+
+		</li>
+		<li class="nav-head">
+			<a href="#">霍建华</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">王凯</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">靳东</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">吴亦凡</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">沙溢</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">邓超</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-head">
+			<a href="#">张一山</a>
+			<div class="headChild">
+			<ul>
+				<li><a href="#">国籍</a></li>
+				<li><a href="#">身高</a></li>
+				<li><a href="#">粉丝量</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

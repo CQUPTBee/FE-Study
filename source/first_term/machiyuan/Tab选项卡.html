@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab选项卡切换</title>
+	<style type="text/css">
+/*	.nav{
+		background: white;
+		font-size: 18px;
+		color: #000;
+		text-align: center;}*/
+	li {
+		float: left;;
+		width: 80px;
+		list-style: none;
+		background:#eae9e9;
+		height: 24px;
+		border: 1px solid #d8d6d6;
+		text-align: center;;
+		}
+	ul {padding-left: 0;
+		width: 246px;
+		height: 24px;
+		margin: auto;}
+	a {
+		text-decoration: none;
+		display: block;
+		height:24px;
+		line-height: 24px;
+		color: #000; }
+	.active {background: white;
+		border-bottom: none;}
+	.box{
+		width: 244px;
+		height: 200px;
+		background: white;
+		border-width: 0 1px 1px 1px;
+		border-color:#d8d6d6;
+		border-style: solid;
+		margin: auto;
+		display: none;
+	}
+
+	</style>
+	<script type="text/javascript">
+window.onload=function ()
+{
+	var aA=document.getElementsByTagName('li');
+	var aBox=document.getElementsByTagName('div');
+	var i=0;
+	for ( i = 0; i < aA.length; i++)
+	{
+		aA[i].index=i;
+		aA[i].onclick=function ()
+		{
+			for ( i = 0; i < aA.length; i++)
+			{
+				aA[i].className='';
+				aBox[i].style.display='none';
+
+			};
+			this.className='active';
+			aBox[this.index].style.display='block';
+		}
+	};
+
+}
+	</script>
+
+</head>
+<body>
+
+		<ul>
+			<li class="active"><a href="#">当当图书</a></li>
+			<li><a href="#">创意文具</a></li>
+			<li><a href="#">礼品卡</a></li>
+
+		</ul>
+	<div class="box"  style="display:block">aaa</div>
+	<div class="box">bbb</div>
+	<div class="box">cccdddddddeeee</div>
+</body>
+</html>

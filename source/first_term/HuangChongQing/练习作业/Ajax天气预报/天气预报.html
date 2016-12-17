@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气预报</title>
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<script type="text/javascript" src="onload插件.js"></script>
+	<script type="text/javascript" src="slid.js"></script>
+
+</head>
+<body>
+	<div class="roll" id="roll">
+    <a href="javascript:void(0);" class="btn_left"></a>
+    <a href="javascript:void(0);" class="btn_right"></a>
+    <div class="wrap">
+        <ul id="list">
+           <li class="day active">
+			<h2 class="time">1日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day">
+			<h2 class="time">2日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day">
+			<h2 class="time">3日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day">
+			<h2 class="time">4日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day last">
+			<h2 class="time">5日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day ">
+			<h2 class="time">6日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day ">
+			<h2 class="time">7日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day ">
+			<h2 class="time">8日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day ">
+			<h2 class="time">9日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span</p>
+			<p class="hum">湿度：</p>
+		</li>
+		<li class="day last">
+			<h2 class="time">10日</h2>
+			<p class="weather"></p>
+			<p class="temp"><span class="min"></span><span class="max"></span></p>
+			<p class="hum">湿度：</p>
+		</li>
+        </ul>
+        </ul>
+	<ul id="show">
+		<li class="show-main">
+				<p class="showeve"><span class="showdate">日期</span> <span class="eve">33</span></p>
+				<p class="humidity">相对湿度：</p>
+		</li>
+		<li class="morn">
+			<h3>日间</h3>
+			<p class="tem1"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日出：06:13</p>
+		</li>
+		<li class="night">
+			<h3>夜间</h3>
+			<p class="tem2"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日落：19:46</p>
+		</li>
+		<li class="show-main">
+				<p class="showeve"><span class="showdate">日期</span> <span class="eve">33</span></p>
+				<p class="humidity">相对湿度：</p>
+		</li>
+		<li class="morn">
+			<h3>日间</h3>
+			<p class="tem1"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日出：06:13</p>
+		</li>
+		<li class="night">
+			<h3>夜间</h3>
+			<p class="tem2"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日落：19:46</p>
+		</li>
+		<li class="show-main">
+				<p class="showeve"><span class="showdate">日期</span> <span class="eve">33</span></p>
+				<p class="humidity">相对湿度：</p>
+		</li>
+		<li class="morn">
+			<h3>日间</h3>
+			<p class="tem1"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日出：06:13</p>
+		</li>
+		<li class="night">
+			<h3>夜间</h3>
+			<p class="tem2"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日落：19:46</p>
+		</li>
+		<li class="show-main">
+				<p class="showeve"><span class="showdate">日期</span> <span class="eve">33</span></p>
+				<p class="humidity">相对湿度：</p>
+		</li>
+		<li class="morn">
+			<h3>日间</h3>
+			<p class="tem1"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日出：06:13</p>
+		</li>
+		<li class="night">
+			<h3>夜间</h3>
+			<p class="tem2"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日落：19:46</p>
+		</li>
+		<li class="show-main">
+				<p class="showeve"><span class="showdate">日期</span> <span class="eve">33</span></p>
+				<p class="humidity">相对湿度：</p>
+		</li>
+		<li class="morn">
+			<h3>日间</h3>
+			<p class="tem1"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日出：06:13</p>
+		</li>
+		<li class="night">
+			<h3>夜间</h3>
+			<p class="tem2"></p>
+			<p class="cloud">微风</p>
+			<p class="t">日落：19:46</p>
+		</li>
+	</ul>
+    </div>
+</div>
+
+
+	<script type="text/javascript" src="new_ajax.js"></script>
+	<script type="text/javascript" src="js天气.js"></script>
+</body>
+</html>

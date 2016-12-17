@@ -1,0 +1,28 @@
+input,p{margin:0;padding:0;border:0;}
+.wrap{
+	width:200px;
+	height:200px;
+	color:#ccc;
+	.topset-wrap{
+		overflow:hidden;
+		height:32px;
+	}
+	.set{
+		width:58px;
+		height:38px;
+		border:1px solid #ccc;
+		float:left;
+	}
+	.start{
+		width:40px;
+		height:40px;
+		float:right;
+	}
+	p{
+		width:196px;
+		height:120px;
+		border:2px solid #ccc;
+		text-align:center;
+		font-size:100px;
+	}
+}

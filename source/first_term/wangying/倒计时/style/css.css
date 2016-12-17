@@ -1,0 +1,22 @@
+#count{
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:45%;
+	top:30%;
+	font-size:100px;
+	font-family:"微软雅黑";
+	color:#eae825;
+}
+p{width:400px;
+	height:200px;
+	position:absolute;
+	left:40%;
+	top:30%;
+	font-size:64px;
+	font-family:"宋体";
+	color:red;
+	display:none;
+	line-height:center;
+	font-weight:bold;
+}

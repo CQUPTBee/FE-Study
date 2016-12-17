@@ -1,0 +1,167 @@
+
+/*适用于任何页面，通用重置样式（css reset）*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+	margin:0;
+	padding: 0;
+}/*不使用“*”，性能差*/
+ol,ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+img{
+	border:none;
+}
+
+li{
+	list-style: none;
+}
+
+input,select,textarea{
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*清浮动，各种方法的优缺点*/
+.clearfix{
+	*zoom:1;/*ie6,7	*/
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	color:white;
+}
+h1 { 
+	text-align: center; 
+	line-height: 80px;
+	color:black;
+}
+#container{
+	width: 600px;
+	height: 400px;
+	background: url(images/bcg1.png) 0 0 repeat-x;
+	margin: 40px auto;	
+}
+.roll { 
+	width: 580px; 
+	height: 250px;
+    margin: 10px auto 0; 
+    position: relative; 
+}
+.btn_left { 
+	border: solid 1px yellow;
+	display: block; 
+	width: 38px; 
+	height: 68px; 
+	background: url(images/btn.jpg) no-repeat -70px -69px; 
+	position: absolute; 
+	top: 90px; 
+	left: 36px; 
+	z-index: 1; 
+}
+.btn_left:hover { 
+	background: url(images/btn.jpg) no-repeat -70px 0; }
+.btn_right { 
+	border: solid 1px yellow;
+	display: block; 
+	width: 38px; 
+	height: 68px; 
+	background: url(images/btn.jpg) no-repeat 1px -69px; 
+	position: absolute; 
+	top: 90px; 
+	right: 35px; 
+	z-index: 1; 
+}
+.btn_right:hover { 
+	background: url(images/btn.jpg) no-repeat 1px 0; 
+}
+.roll .wrap { 
+	width: 428px; 
+	height: 250px; 
+	margin: 0 auto; 
+	position: relative; 
+	overflow: hidden;
+	 }
+.roll ul { 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	height:250px; 
+}
+.roll li { 
+	float: left; 
+	width:  428px; 
+	height: 250px; 
+	text-align: center;
+	background: url("images/weather-widget_01.png") 0 0 no-repeat;
+}
+.roll li a:hover { 
+	position: relative; 
+	top: 2px; 
+}
+
+.detail{
+	width: 400px;
+	height: 238px;
+	padding: 6px 14px;
+}
+
+.top {
+	height:180px;
+	width: 386px;
+	position: relative;
+}
+.date {
+	display: block;
+	position: absolute;
+	left:12px;
+}
+.temp {
+	position:absolute;
+	color:#fff;
+	top: 50px;
+	left: 20px;
+	font-size: 50px;
+}
+.temp:after {
+	content:"℃";
+	font-size: 40px;
+}
+.right {
+	position:absolute;
+	top: 20px;
+	right:20px
+}
+.right dd{
+	text-align: left;
+	height: 24px;
+}
+.weather {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+.weather span {
+	display: block;
+	width:  100px;
+	float: left;
+	text-align: left;
+}
+
+.bottom {
+	margin-top:10px;
+	width: 380px;
+	height: 60px;
+	margin-left: 10px;
+}
+.bottom p {
+	text-align: left;
+	font-size: 14px;
+	color:#000223;
+}

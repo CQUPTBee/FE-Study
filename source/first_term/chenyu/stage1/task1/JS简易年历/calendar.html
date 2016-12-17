@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//h2D XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/h2D/xhtml1-transitional.h2d">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript简易日历</title>
+<link href="calendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var aDatas=[
+'加油1',
+'加油2',
+'加油3',
+'加油4',
+'加油5',
+'加油6',
+'加油7',
+'加油8',
+'加油9',
+'加油10',
+'加油11',
+'加油12'
+];
+window.onload=function()
+{
+    var aLi=document.getElementsByTagName('li');
+    var oTxt=document.getElementById('tab').getElementsByTagName('div')[0];
+    var i=0;
+
+    for(var i=0;i<aLi.length;i++)
+    {      aLi[i].index=i;
+        aLi[i].onmouseover=function()
+        {
+            for(var i=0;i<aLi.length;i++)
+            {
+                aLi[i].className=' ';
+            }
+            this.className='active';
+
+            oTxt.innerHTML='<h2>'+(this.index+1)+'月活动</h2><p>'+aDatas[this.index]+'</p>';
+        };
+
+    }
+
+};
+
+</script>
+</head>
+
+<body>
+
+<div id="tab" class="calendar">
+
+    <ul>
+        <li class="active"><h2>1</h2><p>JAN</p></li>
+        <li><h2>2</h2><p>FER</p></li>
+        <li><h2>3</h2><p>MAR</p></li>
+        <li><h2>4</h2><p>APR</p></li>
+        <li><h2>5</h2><p>MAY</p></li>
+        <li><h2>6</h2><p>JUN</p></li>
+        <li><h2>7</h2><p>JUL</p></li>
+        <li><h2>8</h2><p>AUG</p></li>
+        <li><h2>9</h2><p>SEP</p></li>
+        <li><h2>10</h2><p>OCT</p></li>
+        <li><h2>11</h2><p>NOV</p></li>
+        <li><h2>12</h2><p>DEC</p></li>
+    </ul>
+    
+    <div class="text">
+        <h2>1月活动</h2>
+        <p>哈哈哈～</p>
+    </div>
+
+</div>
+
+</body>
+</html>

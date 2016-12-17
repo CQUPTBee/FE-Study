@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡(tab标签/tab切换)</title>
+<style type="text/css">
+	input{
+		background: #fff;
+
+	}
+	.active{
+		background: red;
+	}
+
+	div{
+		width:100px;
+		height:100px;
+		background: green;
+		display: none;
+	}
+</style>
+<script type="text/javascript">
+		window.onload=function()
+	{	
+	 	var aBtn=document.getElementsByTagName('input');
+	 	var aDiv=document.getElementsByTagName('div');
+	  	var i=0;
+
+	  	for(i=0;i<aBtn.length;i++)
+	  	{			
+	  			aBtn[i].index=i;
+	  			aBtn[i].onclick=function()
+	  			{
+	  				for(i=0;i<aBtn.length;i++)
+	  			   	{
+	  				aBtn[i].className=' ';
+	  				aDiv[i].style.display='none';
+	  				}
+	  				
+	  				aDiv[this.index].style.display='block';
+	  				this.className='active';
+	  				
+	  			};
+	  	}
+
+	};
+
+</script>
+</head>
+<body>
+	
+	<input class="active" type="button" value="1"/>
+	<input type="button" value="2"/>
+	<input type="button" value="3"/>
+	<input type="button" value="4"/>
+	<div style="display:block;">1111</div>
+	<div>2222</div>
+	<div>3333</div>
+
+</body>
+</html>

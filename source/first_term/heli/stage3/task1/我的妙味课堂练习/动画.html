@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style>
+	
+		#div1{
+			width:100px;
+			height: 100px;
+			background: #ccc;
+			position: absolute;
+			left: 0;
+
+		}
+		#div1 span{
+			width: 20px;
+			height: 60px;
+			line-height: 20px;
+			text-align:center;
+			position: absolute;
+			top:70px;
+			left: 100px;
+			background-color: yellow;
+		}
+	</style>
+	<script type="text/javascript">
+		//运动框架
+		var timer = null;
+		function startMove(){
+			var odiv = document.getElementById('div1');
+			clearInterval(timer);//防止多个计时器同时存在，而加快速度
+			timer = setInterval(function(){
+				var ispeed = 1;
+				//加if，else是为了防止到达位置后再点击还会运动
+				if(odiv.offsetLeft >= 300){
+					clearInterval(timer);
+				} else {
+					odiv.style.left = odiv.offsetLeft+ispeed+'px';
+				}
+			},30);		
+		}
+		var odiv = getElementById('div1');
+		//滑动侧边栏
+		//淡入淡出图片
+		//缓冲运动
+		//多物体运动框架
+		//任意值运动框架
+		//不取行间样式currentStyle()
+		//关于小数
+		//做一个接口
+		//根据学习的知识实现示例的效果
+		//链式运动框架
+		//完美运动框架
+		//多图片展开（布局转换）
+		//星浪微博，链式运动
+		//无缝滚动
+		//弹性运动（加速运动，减速运动）
+		//碰撞运动
+		clearInterval(timer);
+	</script>
+
+</head>
+<body>
+	<div id="div1">
+		<span>分享到</span>
+	</div>
+</body>
+</html>
