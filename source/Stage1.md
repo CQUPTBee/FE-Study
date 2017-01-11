@@ -1,6 +1,6 @@
 # Level 1 前端初窥
 
-## 任务0 如何提问
+## TASK01 如何提问
 
 + [知乎-如何优雅地向前辈或者高手请教技术问题？][1]
 + [张鑫旭-如何提问才能进阶成为前端大神？][2]
@@ -41,7 +41,7 @@
   [10]: http://www.ui.cn/detail/20957.html
   [11]: http://www.jianshu.com/p/05289a4bc8b2
 
-## 任务2   markdown	
+## 任务2   markdown
 + 根据参考资料，学习Markdown的基本语法并熟练应用。
 + 参考资料
 	- [Markdown——入门指南](http://www.jianshu.com/p/1e402922ee32/)
