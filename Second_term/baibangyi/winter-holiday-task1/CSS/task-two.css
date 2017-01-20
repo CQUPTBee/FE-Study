@@ -1,0 +1,1049 @@
+/*BBY homework */
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select
+{padding:0;margin:0;font-family:'微软雅黑';}
+li{list-style: none;}
+img{border:none;}
+a{text-decoration: none;font-family:'微软雅黑';}
+a:hover{text-decoration: none;}
+body{
+	width:1100px;
+	margin:0 auto;
+}
+.topNav{
+	width:100%;
+	height:41px;
+	border-top:3px solid #ff8500;      /*顶部导航栏*/
+	border-bottom:1px solid #edeef0;
+	line-height:41px;
+}
+.topNavL{
+	float:left;         /*导航栏左边的列表*/
+	margin-left:68px;
+}
+.topNavL>li{
+	float:left;
+	margin-right:36px;
+}
+.topNavL>li>a,.topNavR>li>a{
+    font-size:12px;           /*列表项中的链接*/   
+    color:#4c4c4c;
+}
+.topNavL>li>a:hover,.topNavR>li>a:hover{
+	color:#ff8500;
+}
+.needBg>select{
+	appearance:none;
+    -moz-appearance:none;       /*列表项中的下拉表单*/
+    -webkit-appearance:none;
+    border:none;
+    outline:none;
+}
+.topIco{
+	display:inline-block;    /*下拉表单中的图标*/
+	margin-left:9px;
+}
+.topNavR{
+	float:right;               /*导航栏右边的列表*/
+	margin-right:90px;
+}
+.topNavR>li{
+	float:left;
+	margin-right:35px;
+}
+.type{
+	width:1000px;        /*有新浪网logo和各个内容选项的区域*/
+	margin:0 auto;
+}
+.type-top{
+	width:1000px;     /*logo，搜索栏，天气预报区域*/
+	height:66px;
+}
+.logo{
+	float:left;
+	margin-top:16px;     /*新浪网logo图*/
+	margin-left:122px;
+}
+.search{
+	position: relative;
+	width:442px;
+	height:36px;
+	background:url(../IMAGES/task2/search.png);    /*搜索栏*/
+	float:left;
+	margin-top:25px;
+	margin-left:23px;
+}
+.text{
+	width:372px;
+	height:30px;
+	border:none;        
+	margin-top:3px;
+	margin-left:1px;
+	outline:none;
+}
+.search-ico{
+	position: absolute;
+	top:3px;
+	right:0;
+	width: 66px;
+	height:30px;	
+}
+.search-ico a:hover{
+	cursor:auto;
+}
+.typeR{
+	width:284px;
+	height:50px;      /*天气预报*/
+	float:right;
+	margin-top:16px;
+}
+.typeR>li{
+	float:left;
+	font-family:'宋体';
+	font-size:12px;
+	color:#797874;
+}
+.beijing{
+	margin-top:20px;
+	margin-right:6px;
+}
+.sunny{
+    margin: 20px 67px 0 4px;   /*天气预报的温度*/
+}
+.sunico{
+	margin-top:20px;
+}
+.control{
+	float:right;
+}
+.choose{
+	width:992px;
+	height:70px;
+	padding-top:16px;      /*各个内容选项的区域*/
+	padding-left:8px;
+}
+.choose>div{
+	width:140px;
+	height:70px;
+	border-right:1px solid #f5efe3;   /*选项区域中各个小块*/
+	float:left;
+	text-align:center;
+}
+.needP{
+	padding:4px 9px;     /*小块中的第2行*/
+}
+.notT{
+   padding:0 9px 4px 9px;
+   margin-top:-2px;        /*小块中的第一行*/
+}
+.notB{
+	padding:4px 9px 0 9px;    /*小块中的第三行*/
+}
+.choose a{
+	font-size:12px;    
+	color:#000;
+}
+.choose a:hover{
+	color:#ff8400;
+}
+.ad{
+	width:1000px;
+	height:140px;         /*3G，4G网广告区域*/
+	padding-top:32px;
+	margin:0 auto 48px;
+}
+.ul-one{
+	width:972px;
+	height:12px;
+	padding-left:28px;   /*广告图片上边的列表*/
+	margin-bottom:12px;
+}
+.ul-one>li,.ul-two>li{
+	height:12px;
+	float:left;
+	font-size:12px;
+	font-family:'宋体';
+	color:#656766;
+}
+.ul-two{
+	width:1000px;
+	height:12px;
+	padding-left:15px;   /*广告图片下边的列表*/
+	margin-top:12px;
+}
+.ul-two>li{
+	margin-right:29px;
+}
+.content{
+    width:1000px;
+    height:814px;
+    margin:0 auto 18px;    /*第一个大块的内容*/
+}
+.content-L{
+	float:left;          /*第一个大块中的左边侧栏*/
+	width:242px;
+}
+.earth{
+    width:240px;
+    height:47px;
+    display:block;
+}
+.dream{
+	width:240px;
+	height:350px;
+	margin:12px 0;
+	display:block;
+}
+.leftDiv{
+	width:242px;
+	height:160px;
+	border-top:3px solid #ff8400;
+	border-right:1px solid #e3e6ed;     /*新浪的分类*/
+	border-left:1px solid #e3e6ed;
+	border-bottom:1px solid #e3e6ed;
+}
+.leftDiv>p{
+	width: 226px;
+	height:35px;
+	border-bottom:1px solid #e3e6ed;
+	font-size:16px;
+	color:#000000;
+	line-height:35px;
+	padding-left:12px;
+}
+.icoXL{
+	width:58px;
+	height:58px;     /*新浪产品图标*/
+	float:left;
+	margin-left:18px;
+	margin-top:6px;
+}
+.xinlangUl1{
+	width:232px;
+	height:58px;          /*图标下面的列表*/
+	padding-left:6px;
+}
+.xinlangUl1>li{
+    width:75px;
+    height:28px;
+    float:left;
+    text-align:center;
+    line-height:28px;
+}
+.needB{
+	border-bottom:1px dashed #e3e6ed;
+}
+.xinlangUl1>li>a{
+	font-size:12px;
+	color:#666666;
+}
+.xinlangUl1>li>a:hover{
+	color:#000000;
+}
+.forgner{
+	width:238px;
+	height:213px;
+	border:1px solid #e3e6ed;
+	margin-top:10px;
+}
+.xinlangUl2{
+	width:238px; 
+	height:37px;
+	border-bottom:1px solid #e3e6ed;
+}
+.xinlangUl2>li{
+	width:58px;
+	height:37px;
+	background:#f9f9f9;
+	float:left;
+	text-align:center;
+	line-height:37px;
+	border-right:1px solid #e3e6ed;
+}
+.xinlangUl2 .selectedF{
+	width:58px;
+	height:36px;
+	border-top:3px solid #ff8400;
+	text-align:center;
+	line-height:36px;
+	background:#fff;
+}
+.xinlangUl2 .selectedF>a{
+	font-weight:bold;
+	color:#000000;
+}
+.xinlangUl2>li>a{
+	display:block;
+	width:58px;
+	height:36px;
+	font-size:14px;
+	font-family:'宋体';
+	color:#666666;
+}
+.xinlangUl2>li:hover{
+	width:58px;
+	height:36px;
+	border-top:3px solid #ff8400;
+	text-align:center;
+	line-height:36px;
+	background:#fff;
+}
+.xinlangUl2>li>a:hover{
+	font-weight:bold;
+	color:#000000;
+}
+.party{
+	display:block;
+	width:232px;
+	height:115px;        /*中国教育盛典图片*/
+	margin:2px auto
+}
+.xinlangUl3{
+	width:230px;
+	height:36px;
+	padding-left:8px;         /*中国教育盛典图片下面的文字*/
+	margin-top:10px;
+}
+.xinlangUl3>li{
+	width:204px;
+	height:14px;
+	padding-left:10px;
+	margin-bottom:11px;
+	background:url(../IMAGES/task2/Ul3li.png);
+}
+.xinlangUl3>li>a{
+	display:block;
+	width:204px;
+	height:12px;
+	font-size:12px;
+	font-family:'宋体';
+	color:#666666;
+}
+.xinlangUl3>li>a:hover{
+	color:#000;
+}
+.content-M{
+	width:360px;
+    float:left;          /*第一个大块中的中间一部分*/
+    margin:0 18px;
+}
+.moive{
+	width:361px;
+	height:36px;             /*中间部分的第一个列表*/
+	margin-bottom:25px;
+}
+.moive>li{
+	width:288px;
+	height:34px;
+	border:1px solid #dcdddf;     
+	background:#f7f7f7;
+	padding-left:14px;
+	line-height:34px;
+	float:left;
+}
+.moive>li:hover{
+	background:#ffffff;     
+}
+.moive .moiveSelected{
+	width:57px;
+	height:34px;
+	border-top:3px solid #ff8400;
+	border-bottom: none;
+	border-left:none;
+	border-right:none;
+	background:#fff;
+	text-align:center;
+	padding:0;
+}
+.moive>li>a{
+	font-size:16px;
+	color:#000;
+}
+.moive>li>a:hover{
+	color:#ff8400;
+}
+.video{
+	width:360px;
+	height:120px;             /*上边有视频图片的块*/
+	margin-bottom:18px;
+}
+.video-img{
+	width:125px; 
+	height:119px;
+	margin-right:15px;
+	float:left;
+}
+.video-list{
+   width:216px;
+   height:120px;
+   float:left;
+}
+.video-list>li{
+	width:182px;
+	height:15px;
+	margin-bottom:10px;
+	padding-left:32px;
+	line-height:15px;
+	background:url(../IMAGES/task2/videoLiBg.png);
+}
+.video-list>li>a,.underVideo>li>a{
+    font-size:14px;
+    font-family:'宋体';
+    color:#122e67;
+}
+.video-list>li>a:hover,.underVideo>li>a:hover{
+   color:#e66100;
+}
+.underVideo{
+	width:360px;
+	height:170px;         /*视频下边的列表*/
+	margin-bottom:23px;
+}
+.underVideo>li{
+	width:327px;
+	height:15px;
+	margin-bottom:11px;
+	padding-left:33px;
+	line-height:15px;
+	background: url(../IMAGES/task2/underVLB.png);
+}
+.underVideo>li>a>span{
+	color: #e66100;
+}
+.favor{
+	width:360px;         /*“猜你喜欢”*/
+	height:38px;
+}
+.favor>li{
+	width:180px;
+	height:34px;
+	border:1px solid #dcdddf;
+	line-height:34px;
+	padding-left:14px;
+	background:#f9f9f9;
+	float:left;
+}
+.favor>li:hover{
+	background:#ffffff;
+}
+.favor>li>p,.favorSeleted>a{
+    font-size:16px;
+    color: #000;
+    float:left;
+    margin-right:44px;
+}
+.favor>li>span{
+	font-size:12px;
+	font-family:'宋体';
+	color: #7a7a7a;
+	float:left;
+}
+.favor .favorSeleted{
+	width:150px;
+	height:33px;
+	border-top:3px solid #ff8400;
+	border-bottom: none;
+	border-left:none;
+	border-right:none;
+	background:#fff;
+	padding-left:13px;
+	line-height:33px;
+	float:left;
+}
+.favorSeleted>a{
+	width:65px;
+	height:16px;
+	margin-right:6px;
+	float:left;
+}
+.favorSeleted>a:hover{
+	color:#ff8400;
+}
+.favorSeleted>img{
+	margin-top:6px;
+	float:left;
+}
+.favorList{
+	width:360px;          /*“猜你喜欢”下边的列表*/
+	margin-top:16px;
+}
+.favorList>li{
+	width:360px;
+    height:16px;
+	margin-bottom:9px;
+}
+.favorList>li>a{
+	font-size:14px;
+    font-family:'宋体';
+	color:#122e67;
+    line-height:16px;
+}
+.favorList>li>a:hover{
+	color:#ff8400;
+}
+.favorList>li>a>img{
+	float:left;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+.favorList>li>a>span{
+	color:#ff8400;
+}
+.favorList .speical1{
+	border-top:1px solid #e9e9e9;
+}
+.favorList .speical1>a{
+	margin-left:10px;
+    color:#596a7b;
+}
+.favorList .speical1>a:hover{
+	color:#000;
+}
+.content-R{
+	width:360px;      /*每个大块的右边部分*/
+	float: right;
+}
+.opt>li>p{
+    float:left;
+    margin-right:28px;        
+}
+.opt>li>span{
+	font-family:'宋体';
+	font-size:12px;
+	color:#7a7a7a;
+	float:right;
+	margin-right:11px;
+}
+.R-list2,.R-list3{
+	margin-top:22px;
+}
+.R-list2>li,.R-list3>li{
+	margin-bottom:10px;
+}
+.favorList .speicalico{
+    margin:7px 7px 0 0;
+}
+.secondL{
+	width:240px;
+	height:210px;     /*“代言中国“的图片*/
+	display:block;
+	margin-bottom:6px;
+}
+.middleTop{
+	width:360px;                /*每个有左边图片的小块*/
+	height:92px;
+	margin-bottom:16px;
+}
+.middleTop>a{
+	width:105px;
+	height:90px;
+	float:left;
+	margin-top:5px;
+	margin-right:16px;
+}
+.middleTopUl{
+	width:236px;
+	height:92px;
+	float:left;
+	margin-top:0;
+}
+.middleTopUl>li{
+	width:236px;
+}
+.speical2{
+	font-size:14px;
+}
+.secondC{
+	height:426px;
+	margin-bottom:26px;
+}
+.ad2{
+	width:1000px;
+	height:90px;           /*中间很长广告图片的块*/
+	margin:0 auto 30px;
+}
+.ad2>a{
+	display:block;
+	width:1000px;
+	height:90px;
+}
+.leftList{
+	width:228px;
+	height:84px;            /*乐库下边的列表*/
+	margin-left:9px;
+	margin-top:15px;
+}
+.leftList>li{
+	width:228px;
+	height: 12px;
+}
+.leftList>li>a{
+	font-size:12px;
+	color: #666666;
+}
+.leftList>li>a>span{
+	color: #ff8400;
+}
+.tianmao{
+	width:240px;
+	height:200px;         /*天猫图片广告*/
+	display:block;
+	margin-top:16px;
+}
+.share{
+	display:block;
+	width:24px;
+	height:34px;
+	border-left: 1px solid #dcdddf;       /*搜股票的样式*/
+	float:right;
+	margin-right:3px;
+	text-align:right;
+	line-height:34px;
+}
+.thirdC{
+	height:390px;
+	margin-bottom:26px;     /*第三个大块*/
+}
+.lookPicture{
+    width: 1000px;           /*我爱看图的块*/
+    height:34px;
+    margin: 0 auto;
+}
+.lookPicture .pictureSelected{
+	width:86px;
+}
+.lookPicture>li{
+	width:890px;
+}
+.Carousel{
+	width:1000px;
+	height:162px;            /*我爱看图的轮播图*/
+	position:relative;
+	margin:20px auto 48px;
+}
+.Carousel-list{
+	width:1000px;
+	height:162px;	
+}
+.Carousel-list>li{
+    width:198px;
+    height:162px;
+    float:left;
+    margin-right:2px;
+}
+.Carousel-list>li>a{
+	width:198px;
+    height:162px;
+}
+.pictureLeft{
+    width:29px;
+    height:43px;          /*轮播图向左标志*/
+    position:absolute;
+    top: 58px;
+    left: 0;
+    background:url(../IMAGES/task2/left-right.png) no-repeat 0 0;
+}
+.pictureRight{
+	width:29px;
+    height:43px;              /*轮播图向右标志*/
+    position:absolute;
+    top: 58px;
+    right: 0;
+    background:url(../IMAGES/task2/left-right.png) no-repeat 0 -47px;
+}
+.Carousel>div{
+	width:10px;
+	height:10px;
+	border:1px solid #dcdddf;
+	float:left;
+	margin-right:10px;
+	margin-top:10px;
+	border-radius:50%;
+}
+.gray{
+	background:#eadfd9;
+}
+.orige{
+	background:#e77800;        /*轮播图下边的小圆点*/
+}
+.speical3>a{
+    margin-left:11px;
+}
+.famous{
+	margin-left:20px;       /*”知名编剧。。。“*/
+	margin-bottom:32px;
+}
+.famous>a{
+	font-size: 12px;
+	color:#666666;
+	font-family: '宋体';
+}
+.famous>a:hover{
+	color:#ff8400;
+}
+.fourthC{
+	height:392px;         /*第四个快*/
+	margin-bottom:26px;
+}
+.fifthC{
+	height: 346px;          /*第五个快*/
+	margin-bottom:26px;
+}
+.wolf-list{
+	height:340px;        /*狼图片下边的列表*/
+}
+.wolf{
+	width:218px;         
+	height:188px;
+	margin:7px auto 0;
+}
+.wolf>li{
+    width:218px;
+    height:160px;
+    margin-bottom:9px;
+}
+.wolf>li>a{
+    width:218px;
+    height:160px;
+    display:block;
+}
+.wolf .speical4{
+	width:228px;
+	height:12px;
+	margin-bottom:7px;
+}
+.wolf .speical4>a{
+	width:218px;
+	height:12px;
+	display:block;
+	font-size:12px;
+	color: #666666;
+	font-family:'宋体';
+	line-height:16px;
+}
+.wolf .speical4>a:hover{
+	color: #ff8400;
+}
+.wolf .speical4>a>img{
+	margin-right:8px;
+}
+.soft-list{
+    width:360px;              /*第六个块中的有关游戏的列表*/
+    height:36px;
+    margin-bottom:22px;
+}
+.soft-list>li{
+    width: 74px;
+    height:34px;
+    float:left;
+    background:#f6f6f6;
+    line-height:34px;
+    border-top: 1px solid #dcdddf;
+    border-bottom:1px solid #dcdddf;
+    border-right: 1px solid #dcdddf;
+    text-align:center;
+}
+.soft-list>li:hover{
+	background:#ffffff;
+}
+.soft-list>li>a{
+	font-size:14px;
+	font-family:'宋体';
+	color:#596a7b;
+}
+.soft-list>li>a:hover{
+	color: #ff8400;
+}
+.soft-list .softSelected{
+	width:56px;
+	height:35px;
+	border-top: 1px solid #dcdddf;
+	border-left:1px solid #dcdddf;
+	border-right: 1px solid #dcdddf;
+	border-bottom:none;
+	background:#ffffff;
+	line-height:35px;
+}
+.softSpeical>li{
+	width:72px;
+}
+.sixthC{
+	height:172px;
+	margin-bottom:26px;      /*第六个快*/
+}
+.chunyun{
+	height: 170px;
+}
+.oldPicture{
+    width: 220px;
+    height: 108px;
+    margin:10px auto 0;
+    position:relative;
+}
+.oldPicture>a{
+	display:block;
+	width: 180px;
+	height:108px;
+	margin:0 auto;
+}
+.oldPicture .oldLeft{
+	width: 15px;
+	height:26px;
+	position:absolute;
+	top:35px;
+	left:0;
+	background:url(../IMAGES/task2/oldLR.png) no-repeat 0 0;
+}
+.oldPicture .oldRight{
+    width: 15px;
+	height:26px;
+	position:absolute;
+	top: 35px;
+	right:0;
+	background:url(../IMAGES/task2/oldLR.png) no-repeat 0 -44px;
+}
+.outdoor{
+	width:240px;
+	height:170px;
+	display:block;          
+	margin-top:22px; 
+}
+.seventhC{
+	height: 362px;
+	margin-bottom:26px;
+}
+.caeer{
+	height:168px;
+}
+.eighthC{
+	height: 362px;
+	padding-top:26px;          /*第八个块*/
+	margin-bottom:26px;
+}
+.early-teach{
+	width: 240px;
+	height:170px;
+	display:block;
+	margin-top:15px;
+}
+.ninthC{
+	height:292px;             /*第九个块*/
+	margin-bottom:26px;
+}
+.hot{
+	height:286px;               /*热点微关注*/
+}
+.hot-list{
+	margin-top:10px;
+	height:230px;
+}
+.hot-list>li{
+	margin-bottom: 12px;
+}
+.speical5{
+	margin-left:11px;
+}
+.tenthC{
+	height:362px;               /*第十个块*/
+	margin-bottom:30px;
+}
+.eleventhC{
+	height:362px;            
+	padding-top:12px;                /*第十一个块*/
+	margin-bottom:30px;
+}
+.class-little{
+	position:relative;           /*英国女王2013圣诞致辞*/
+	height:167px;
+}
+.queen{
+	width: 87px;
+	height:59px;
+	display:block;
+	margin-top:18px;
+	margin-left: 12px;
+}
+.speak{
+	font-size:12px;
+	font-family:'宋体';
+	color: #666666;
+	position:absolute;
+	top: 56px;
+	right:8px;
+}
+.class-little .more-class{
+	width:69px;
+	height:23px;
+	display:block;              /*更多课程的确认键*/
+	position: absolute;
+	top:90px;
+	right:58px;
+}
+.class-little .more-class>input{
+	width:69px;
+	height:23px;
+	background:#ff8400;
+	border:none;
+	font-size:12px;
+	font-family:'宋体';
+	color:white;
+	text-align:center;
+	outline:none;
+}
+.fo{
+	height:326px;
+	position: relative;
+}
+.fo-study{
+	width:65px;
+	height:65px;
+	display:block;
+}
+.fo-tittle{
+	font-size:14px;
+	font-family:'宋体';
+	color:#e66100;             /*中国现存古代大佛*/
+	position: absolute;
+	top: 50px;
+	left:90px;
+}
+.foC{
+	font-size:12px;
+	font-family:'宋体';
+	color: #666666;
+	position:absolute;
+	top: 104px;
+	left:90px;
+}
+.result{
+	top:80px;
+}
+.food{
+	margin-bottom:12px;
+}
+.food>li{
+	width:254px;
+}
+.food .long{
+	width:90px;
+}
+.lucky{
+	margin-bottom:12px;
+}
+.twelfthC{
+	height:330px;
+	margin-bottom:26px;           /*第十二个块*/
+}
+.area{
+	width:998px;
+	height:54px;
+	border:1px solid #666666;            /*新浪城市*/
+	margin:0 auto;
+}
+.area>p{
+   width:120px;
+   height:54px;
+   background:#fffcf1;
+   text-align:center;
+   line-height:54px;
+   font-size:16px;
+   color:#e66100;
+   float:left;
+   margin-right:36px;
+}
+.area>ul{
+	width:829px;
+	height: 34px;
+	margin-top:8px;
+	float:left;
+}
+.area>ul>li{
+	height:12px;
+	margin-bottom:9px;
+	float:left;
+	margin-right:12px;
+}
+.area>ul>li>a{
+	font-size:12px;
+	font-family:'宋体';
+	color:#596976;
+}
+.area>ul>li>a:hover{
+	color:#e66100;
+}
+.hot-area{
+	height:33px;               /*投资热区*/
+	border-top: none;
+	margin-bottom:26px;
+}
+.hot-area>p{
+	height:33px;
+	line-height:33px;
+}
+.hot-area>ul{
+	height:12px;
+}
+.introduce{
+	width: 1000px;
+	height:24px;
+	padding-top:10px;             /*新浪简介的列表*/
+	background:#f7f7f7;
+	margin:0 auto;
+}
+.introduce>ul{
+    width:640px;
+    height:14px;
+    margin-left:182px;
+}
+.introduce>ul>li{
+	float:left;
+}
+.introduce>ul>li>a{
+	font-size:12px;
+	font-family:'宋体';
+	color:#75839d;
+}
+.introduce>ul>li>a:hover{
+	color:#ff8400;
+}
+.sina{
+	width:1000px;
+	height:12px;
+	margin:15px auto 0;
+	text-align:center;           
+	line-height: 12px;
+	font-size:12px;
+	font-family:'宋体';
+	color:#939393;
+}
+.lastUl{
+	width:1000px;
+	height:52px;
+	margin:14px auto 0;          /*各部门监管的图标列表*/
+}
+.lastUl>li{
+	float:left;
+	margin-left:1px;
+}
+.footer{
+	width:1000px;
+	height:132px;
+	margin:10px auto 126px;
+	text-align:center;
+}
+.footer>p{
+	font-size:12px;
+	font-family:'宋体';
+	color: #939393;
+	margin-bottom: 6px;
+}
+.footer .speical6{
+	margin-bottom:24px;
+}
+.speical6>a{
+	font-size:12px;
+	font-family:'宋体';
+	color: #939393;
+}
+.speical6>a:hover{
+    color:#ff8400;
+}
