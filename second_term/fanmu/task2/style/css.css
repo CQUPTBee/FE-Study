@@ -292,6 +292,9 @@ color: #ededef;
 	width: 71px;
 	height: 26px;
 }
+.search .select option {
+	margin-left: 4px;
+}
 
 
 .inquire {
@@ -324,8 +327,8 @@ color: #ededef;
 .mess {
 	width: 300px;
 	position: relative;
-	left:405px;
-	top:-54px;
+	left:404px;
+	top:-96px;
 }
 .line1 {
     height: 26px;
@@ -361,9 +364,19 @@ color: #ededef;
     background: #388ac1;
     color: #fff;
     border-radius: 1px;
-    position: absolute;
-    margin: -14px 0 0 29px;
+    position: relative;
+    top: -56px;
+    left: 22px;
 }
+.change {
+	width: 28px;
+	height: 38px;
+	background: url(../images/change.png);
+	position: relative;
+	left: 356px;
+	top: -34px;
+}
+
 /*路径*/
 .path {
 	height: 30px;
@@ -406,7 +419,9 @@ color: #ededef;
     background-position: -42px -33px;
     margin: 24px 0 0 11px;
 }
-.next i {background-position: -57px -33px;}
+.next i {
+	background-position: -57px -33px;
+}
 .tenAm i,
 .elevenAm i,
 .twelveAm i,
@@ -415,26 +430,20 @@ color: #ededef;
 .threePm i{
     width: 11px;
     height: 12px;
-    background-position: -89px -17px;
+    background: url(../images/money.png);
     margin: 16px 0 0 32px;
-}
-.his i {
-    width: 32px;
-    height: 32px;
-    background-position: -41px -60px;
-    margin: 17px 0 0 19px;
 }
 .history {
     width: 890px;
     height: 65px;
-    font-family: 微软雅黑;
-    margin-top: -32px;
+    margin-top: -94px;
     font-size: 12px;
 }
 .history p {
     color: #323333;
     padding-top: 15px;
     text-align: center;
+    font-family: "Microsoft YaHei";
 }
 .history li {
     float: left;
@@ -443,31 +452,44 @@ color: #ededef;
     margin-left: 4px;
     background: #fff;
     box-shadow: -1px -1px 1px 0 rgba(131,138,149,.6);
-}
-#prev,
-#next {width: 30px;}
-#prev {margin-left: 0;}
-#his {width: 130px;}
-.his p {
-    color: #535353;
-    line-height: 65px;
-    padding: 0;
+    font-family: "Microsoft YaHei";
 }
 .history span {
     font-size: 21px;
     color: #ec6500;
     line-height: 38px;
 }
+#prev, #next {
+	width: 30px;
+}
+
+#prev {
+	margin-left: 0;
+}
+#his {
+	width: 130px;
+}
+.his p {
+    color: #535353;
+    line-height: 65px;
+    padding: 0;
+}
+.his .his-bg {
+    width: 32px;
+    height: 32px;
+    background: url(../images/his-bg.png);
+    margin: 17px 0 0 19px;
+}
 #selected:hover{
 	background: url(../images/time_bg.png);
 }
+
 /*统计*/
 .statistics {
 	height: 115px;
-	margin-top: -6px;
+	margin-top: -14px;
 }
 .statistics h5 {
-    font-family: 微软雅黑;
     color: #323333;
     padding: 21px 0 6px 0;
 }
@@ -475,12 +497,13 @@ color: #ededef;
     color: #323333;
     padding: 20px 0 0 8px;
     display: inline-block;
+    font-size: 12px;
 }
 .statistics span {
     font-size: 10px;
     color: #aaa;
     display: block;
-    padding-top: 11px;
+    padding-top: 10px;
 }
 .statistics li {
     float: left;

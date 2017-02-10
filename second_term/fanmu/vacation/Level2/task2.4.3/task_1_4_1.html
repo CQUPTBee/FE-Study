@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task_1_4_1</title>
+</head>
+<body>
+	<div class="rectangle">
+		<section class="round first"></section>
+		<section class="round second"></section>
+	</div>
+</body>
+<style type="text/css">
+
+	/* 定位的第一种方法：设置页面宽高，使得长方形能垂直居中 
+	html,body {
+		width: 100%;
+		height: 100%;
+		padding: 0;  使得页面不出现滚动条
+		margin: 0;
+	}
+
+	长方形定位 一
+	.rectangle {
+		margin: auto;    水平居中
+		height: 200px;
+		width: 400px;
+		background-color: #ccc;
+		overflow: hidden;
+		position: relative;         定位到页面中央
+		top: 50%;
+		transform: translateY(-50%);   css3属性，y轴上移动自身的50%
+	}*/
+
+	/*定位的第二种方法：长方形绝对定位*/
+	.rectangle {
+	 	height: 200px;
+		width: 400px;
+		background-color: #ccc;
+		overflow: hidden;
+		position: absolute;         /*定位到页面中央*/
+		top: 50%;
+		left: 50%;
+		margin-top: -100px;  
+		margin-left: -200px;       /*使得长方形到达中央*/
+	}
+
+/*设置圆的第一种方法,设置全圆,定位后超出隐藏*/
+/*设置圆的第二种方法,设置四分之一圆,定位
+ 坐上角的圆:boder-bottom-right-radius:50px;
+*/	
+	/*圆的属性*/
+	.round {
+		width:100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: #fc0;
+	}
+	/*圆的定位*/
+	.first {
+		position: relative;
+		top: -50px;
+		left: -50px;
+	}
+	.second {
+		position: relative;
+		top: 50px;
+		left: 350px;
+	}
+
+</style>
+</html>
