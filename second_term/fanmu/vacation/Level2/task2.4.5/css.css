@@ -1,0 +1,298 @@
+ /*重置样式*/
+ 
+ body,
+ a,
+ li,
+ div,
+ ul,
+ dl,
+ dt,
+ dd,
+ h1,
+ h2,
+ h3,
+ form,
+ p,
+ input {
+     font-family: 'Microsoft YaHei';
+     margin: 0;
+     padding: 0;
+ }
+ 
+ ol,
+ ul,
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     color: #fff;
+ }
+ 
+ img {
+     border: none;
+ }
+ 
+ .clearfloat {
+     overflow: hidden;
+     zoom: 1;
+ }
+ /*页面大小*/
+ 
+ html,
+ body {
+     width: 980px;
+     height: 1386px;
+     margin: 0 auto;
+ }
+ /*头部*/
+ 
+ header {
+     width: 892px;
+     height: 62px;
+     border-bottom: 2px solid #938e8c;
+ }
+ /*头部红色方块*/
+ 
+ header section {
+     width: 110px;
+     height: 62px;
+     background-color: #d45d5c;
+ }
+ /*方块网址*/
+ 
+ header section p {
+     margin: 46px 18px 0 0;
+     color: #fff;
+ }
+ /*头部日期*/
+ 
+ header p {
+     font-family: 'SimHei';
+     font-size: 12px;
+     float: right;
+     margin-top: -16px;
+     color: #d45d5c;
+ }
+ /*第一个横栏*/
+ 
+ .first {
+     width: 892px;
+     height: 300px;
+     margin-top: 34px;
+ }
+ /*大图*/
+ 
+ .first .first-banner {
+     display: inline-block;
+     width: 641px;
+     height: 301px;
+     background-image: url('./images/banner.png');
+ }
+ /*绿色阴影*/
+ 
+ .first .first-banner .banner-first {
+     float: left;
+     width: 191px;
+     height: 301px;
+     opacity: 0.5;
+     background-color: #a0c5ac;
+ }
+ 
+ .first .first-banner .banner-second {
+     float: right;
+     width: 191px;
+     height: 301px;
+     opacity: 0.5;
+     background-color: #e5babf;
+ }
+ /*第一个横栏右侧*/
+ 
+ .first-side {
+     float: right;
+     width: 203px;
+     height: 301px;
+     border-top: 2px solid #cc8091;
+ }
+ /*第一二段文字*/
+ 
+ .first-side .side-first {
+     padding-top: 6px;
+ }
+ 
+ .first-side .side-first p {
+     font-size: 24px;
+     line-height: 30px;
+     margin-top: 7px;
+ }
+ 
+ .first-side .side-first p span {
+     font-size: 34px;
+ }
+ 
+ .first-side .side-first .about {
+     width: 90px;
+     border-bottom: 2px solid #555;
+ }
+ 
+ .first-side .side-first .ech {
+     width: 166px;
+     border-bottom: 2px solid #555;
+ }
+ /*第三四段文字*/
+ 
+ .first-side .side-second {
+     margin-top: 4px;
+     margin-bottom: 48px;
+ }
+ 
+ .first-side .side-second p {
+     font-family: 'KaiTi';
+     font-size: 12px;
+     color: #676767;
+ }
+ /*大700*/
+ 
+ .first-side .side-third {
+     font-size: 116px;
+     line-height: 96px;
+     display: block;
+     width: 202px;
+     margin-top: -30px;
+     color: #75b86d;
+     font-style: italic;
+ }
+ /*css*/
+ 
+ .first-side .side-fourth .fourth-number {
+     font-size: 55px;
+     display: inline-block;
+     color: #cc8091;
+ }
+ 
+ .first-side .side-fourth .fourth-word {
+     font-size: 21px;
+     display: inline-block;
+     color: #cc8091;
+     position: relative;
+     top: -10px;
+ }
+ 
+ .first-side .side-fourth .fourth-word2 {
+     font-size: 12px;
+     position: relative;
+     top: -30px;
+     left: 83px;
+     display: inline-block;
+     color: #bcbbba;
+ }
+ /*第二个横栏*/
+ 
+ .second {
+     height: 170px;
+     width: 892px;
+     margin-top: 40px;
+ }
+ /*what*/
+ 
+ .second .second-what {
+     width: 230px;
+     height: 170px;
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 28px;
+ }
+ 
+ .second .second-what .what {
+     color: #418c59;
+     text-decoration: underline;
+     font-size: 16px;
+     font-family: "Mycrosoft YaHei";
+     margin-bottom: 10px;
+ }
+ 
+ .second .second-what p {
+     font-size: 12px;
+     color: #767777;
+     line-height: 16px;
+     font-family: "SimSun";
+ }
+ /*when*/
+ 
+ .second .second-when {
+     width: 230px;
+     height: 170px;
+     display: inline-block;
+     margin-right: 28px;
+     font-family: "Mycrosoft YaHei";
+ }
+ 
+ .second .second-when .when {
+     color: #d2994f;
+     text-decoration: underline;
+     font-size: 16px;
+     margin-bottom: 10px;
+ }
+ 
+ .second .second-when p {
+     font-size: 12px;
+     color: #767777;
+     line-height: 16px;
+     font-family: "SimSun";
+ }
+
+ /*how*/
+ .second .second-how {
+     width: 230px;
+     height: 170px;
+     display: inline-block;
+     vertical-align: top;
+ }
+ 
+ .second .second-how .how {
+     color: #cc7680;
+     text-decoration: underline;
+     font-size: 16px;
+     font-family: "Mycrosoft YaHei";
+     margin-bottom: 10px;
+ }
+ 
+ .second .second-how p {
+     font-size: 12px;
+     color: #767777;
+     line-height: 16px;
+     font-family: "SimSun";
+ }
+
+.second .second-how .how-what {
+	font-size: 12px;
+	color: #231815;
+	line-height: 20px;
+	opacity: 0.7;
+	font-family: "Mycrosoft YaHei";
+	margin-left: 4px;
+}
+.second .second-how .how-what span {
+	color: #cd4a48;
+}
+.second .second-how .how-1 {
+	margin-top: 36px;
+}
+
+/*第三个横栏*/
+.third {
+	margin-top: 76px;
+	height: 606px;
+	width: 892px;
+}
+
+/*左侧标题*/
+.third .third-left {
+	width: 456px;
+	border-bottom: 2px solid #10456b;
+}
+
