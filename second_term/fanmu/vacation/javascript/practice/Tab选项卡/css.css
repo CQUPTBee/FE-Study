@@ -1,0 +1,195 @@
+/*重置样式*/
+
+body,
+a,
+li,
+div,
+ul,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+form,
+p,
+input {
+    padding: 0;
+    margin: 0;
+    font-family: SimSun;
+}
+ol,
+ul,
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+    background-color: #f0fcff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    border: none;
+    display: inline-block;
+}
+
+.clearfloat {
+    zoom: 1;
+    overflow: hidden;
+}
+
+
+/*居中公共样式*/
+
+.center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* 栏目公共样式 */
+
+.column {
+    display: inline-block;
+    width: 362px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.sm-nav {
+    height: 34px;
+    border: 1px solid #dcdddf;
+    background-color: #f6f6f6;
+}
+
+.sm-nav>a {
+    height: 34px;
+    width: 58px;
+    font-size: 16px;
+    color: #000;
+    line-height: 36px;
+    text-align: center;
+}
+
+.sm-nav .active {
+    background: url(./images/ahover.png) repeat-x;
+}
+
+.sm-nav .nav-word {
+    color: #7a7a7a;
+}
+
+.sm-nav .nav-word:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.sm-nav p span {
+    float: left;
+    display: block;
+    width: 1px;
+    height: 34px;
+    background-color: #dcdddf;
+    margin-right: 10px;
+}
+
+.sm-nav p img {
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+
+
+/*导航部分*/
+
+.content-sm-img {
+    float: left;
+    margin-right: 14px;
+    margin-top: 1px;
+    height: 80px;
+    width: 105px;
+    cursor: pointer;
+}
+
+.content-sm-img p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    width: 105px;
+    margin-top: -20px;
+}
+
+.content-sm-img p a {
+    color: #fff;
+}
+
+.content-sm-img a:hover {
+    color: #ff0000;
+}
+
+.content-sm-img span {
+    background-color: #000;
+    display: inline-block;
+    width: 105px;
+    height: 20px;
+    margin-top: -2px;
+}
+
+.content-word {
+    margin-top: 20px;
+}
+
+li {
+    background: url(./images/point.png) 0 50% no-repeat;
+}
+
+.content .no-point {
+    background: none;
+}
+
+.content li {
+    line-height: 20px;
+}
+
+.content li a {
+    color: #122e67;
+    font-size: 13px;
+    margin-left: 8px;
+    line-height: 20px;
+}
+
+.content li .content-focus {
+    color: #e66100;
+}
+
+.content li a:hover {
+    color: #ff0000;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.content li a span {
+    display: inline-block;
+    width: 16px;
+    height: 9px;
+    margin-right: 8px;
+    background: url(./images/video.png) 0 50% no-repeat;
+}
+
+
+/*财经一栏*/
+
+.money {
+    font-size: 0;
+}
+
+.news-1 {
+    display: none;
+}
