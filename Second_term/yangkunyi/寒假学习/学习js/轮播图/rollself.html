@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>roll</title>
+	<style type="text/css">
+		body,img,ul,li,div,button{margin: 0;padding: 0;}
+		ul{list-style: none;width: 2000px;position: absolute;}
+		li{float: left;}
+		#oDiv{width: 500px;height: 300px;margin: 0 auto;margin-top: 50px;position: relative;}
+		#roll{width: 400px;overflow: hidden;height: 300px;position: relative;margin-left: 50px;}
+		#bu1{position: absolute;margin-top: 110px;width: 50px;height: 80px;margin-left: -10px;}
+		#bu2{position: absolute;margin-top: 110px;width: 50px;height: 80px;margin-left: 460px;}
+	</style>
+</head>
+<body>
+
+<div id="oDiv">
+	<button id="bu1">上一张</button>
+	<button id="bu2">下一张</button>
+
+	<div id="roll">
+		<ul>
+			<li><img src="img/1.jpg"></li>
+			<li><img src="img/2.jpg"></li>
+			<li><img src="img/3.jpg"></li>
+			<li><img src="img/4.jpg"></li>
+			<li><img src="img/5.jpg"></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="addLoadEvent.js"></script>
+<script type="text/javascript" src="rollself.js"></script>
+</body>
+</html>

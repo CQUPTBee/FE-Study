@@ -1,0 +1,236 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 黑体;
+	font-size: 16px;
+	background-color: #bebebe;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.head{
+	height: 60px;
+	width: 100%;
+	background-color: #333;
+	margin: 0 auto;
+}
+.head img{
+	width: 8%;
+	margin: 10px 0 0 50px;
+}
+.head ul{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.head ul li{
+	float: right;
+	margin: 0 5px 0 25px;
+}
+.head ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+.head ul li a:hover{color:#666;}
+
+
+.essay1,.essay2{
+	margin: 20px;
+	width: 65%;
+	background-color: #fff;
+	height: 600px;
+	box-shadow: 2px 2px 3px #888;
+}
+.essay2{height: 600px;}
+.essay1 h1,.essay2 h1{padding: 40px 0 0 30px;}
+.essay1 p,img{padding: 0 0 0 30px;}
+.essay2 p,img{padding: 0 0 0 30px;}
+.essay1 h2,.essay1 h6,
+.essay2 h2,.essay2 h6{
+	color: #888;
+	padding: 20px 0 0 30px;
+}
+.essay1 p,.essay2 p{
+	text-indent: 2em;
+	width: 96%;
+}
+.essay1 img,.essay2 img{width: 25%;}
+.essay2 ul{
+	list-style: none;
+	padding: 20px 0 0 50px;
+}
+
+
+.picture{
+	margin: 20px;
+	width: 65%;
+	background-color: #fff;
+	height: 1720px;
+	box-shadow: 2px 2px 3px #888;
+}
+.picture h1{padding: 40px 0 0 30px;}
+.picture img{
+	width: 150px;
+
+}
+.picture ul{list-style: none;}
+.picture ul li{
+	width: 192px;
+	height: 140px;
+	border: 1px solid #666;
+	margin: 20px 0 0 40px;
+}
+.picture ul li p{margin: 10px 0 0 -30px;}
+.picture ul  li img{margin: 0 0 0 -10px;}
+.picture ul li p{text-align: center;}
+
+
+.lastessay{
+	margin: 20px;
+	width: 65%;
+	background-color: #fff;
+	height: 420px;
+	box-shadow: 2px 2px 3px #888;
+}
+.lastessay h1{padding: 40px 0 0 30px;}
+.lastessay h2,h6{
+	padding: 20px 0 0 30px;
+	color: #888;
+}
+.lastessay ol{padding: 5px 0 0 90px;}
+.lastessay p{padding: 0 0 0 30px;}
+.lastessay table{
+	margin: 5px 0 0 30px;
+	border: 1px solid #ccc;
+	width: 740px;
+	border-collapse: collapse;
+}
+.lastessay table th,tr,td{border: 1px solid #ccc;}
+.lastessay table th{
+	background-color: #333;
+	text-align: left;
+	color: #fff;
+	font-size: 14px;
+	height: 25px;
+}
+.lastessay table td{
+	height: 25px;
+	font-size: 14px;
+}
+.lastessay table .sum{
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+
+.sidebar{
+	margin: 20px;
+	width: 30%;
+	background-color: #fff;
+	height: 520px;
+	box-shadow: 2px 2px 3px #888;
+	margin: 20px 20px 0 0 ;
+	float: right;
+}
+.sidebar h3 span{
+	width: 3px;
+	height: 38px;
+	display: inline-block;
+	float: left;
+	background-image: url(2.png);
+	margin: 0 10px 0 0;
+}
+.sidebar h3{
+	padding: 20px 0 10px 20px;
+	line-height: 38px;
+}
+.sidebar form{
+	width: 1300px;
+	height: 430px;
+	font-size: 14px;
+	margin: 10px 0 0 -220px;
+}
+.sidebar form .address{
+	width: 300px;
+	height: 60px;
+	margin: 0 0 0 258px;
+}
+.sidebar form .address p{
+	font-size: 12px;
+	color: #ccc;
+	margin: 5px 0 0 118px;
+}
+.sidebar form .address input{margin: 0 0 0 20px;}
+.sidebar form .password{
+	width: 300px;
+	height: 90px;
+	margin: 0 0 0 286px;
+}
+.sidebar form .password input{margin: 0 0 0 20px;}
+.sidebar form .password span{
+	display: inline-block;
+	margin: 10px 0 0 -28px;
+}
+.sidebar form .password p{
+	font-size: 12px;
+	color: #ccc;
+	margin: 5px 0 0 90px;
+}
+.sidebar form .sex{
+	width: 300px;
+	height: 25px;
+	margin: 0 0 0 328px;
+}
+.sidebar form .sex input{margin: 0 0 0 20px;}
+.sidebar form .city{
+	width: 300px;
+	height: 30px;
+	margin: 0 0 0 328px;
+}
+.sidebar form .city select{margin: 0 0 0 12px;}
+.sidebar form .hobby{
+	width: 300px;
+	height: 25px;
+	margin: 0 0 0 328px;
+}
+.sidebar form .hobby input{margin: 0 0 0 12px;}
+.sidebar form .person{
+	width: 700px;
+	height: 150px;
+	margin: 0 auto;
+}
+.sidebar form .person textarea{
+	width: 210px;
+	height: 110px;
+	margin: -15px 0 0 75px;
+	font-size: 21px;
+	font-family: 黑体;
+}
+.sidebar form .submit input{
+	width: 330px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #3355d0;
+	border-color: #3355d0;
+	font-size: 18px;
+	font-family: 黑体;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	margin: 0 0 0 260px;
+}
+
+
+.footer{
+	height: 70px;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	line-height: 70px;
+	text-align: center;
+}

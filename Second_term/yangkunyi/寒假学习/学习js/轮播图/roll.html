@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>roll</title>
+	<style type="text/css">
+		body,div,ul,li,a,img,button{margin: 0;padding: 0;}
+		li{float: left;}
+		ul{list-style: none;}
+		button{border: none;height: 100px;width: 30px;margin-top: 100px;cursor: pointer;}
+		.roll{width: 360px;height: 400px;margin: 0 auto;margin-top: 30px;}
+		.left{position: absolute;margin-left: -50px;}
+		.right{position: absolute;margin-left: 420px;}
+		.roll_images{width: 400px;height: 300px;overflow: hidden;position: relative;}
+		.images{width: 2000px;height: 300px;position: relative;}
+		.buttons li a{display: block;height: 10px;width: 10px;border-radius: 10px;background-color: #666;margin-left: 20px;}
+		.buttons{margin-left: 120px;margin-top: 10px;}
+	</style>
+</head>
+<body>
+
+<div class="roll">
+	<button class="left"><</button>
+	<button class="right">></button>
+	<div class="roll_images">
+		<ul class="images">
+			<li><a href="#"><img src="img/1.jpg"></a></li>
+			<li><a href="#"><img src="img/2.jpg"></a></li>
+			<li><a href="#"><img src="img/3.jpg"></a></li>
+			<li><a href="#"><img src="img/4.jpg"></a></li>
+			<li><a href="#"><img src="img/5.jpg"></a></li>
+		</ul>
+	</div>
+	<ul class="buttons">
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="addLoadEvent.js"></script>
+<script type="text/javascript" src="roll.js"></script>
+</body>
+</html>
