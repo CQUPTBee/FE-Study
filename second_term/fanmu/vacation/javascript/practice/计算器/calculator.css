@@ -1,0 +1,70 @@
+input,
+span,
+button,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*整个计算器及背面样式*/
+
+body {
+    background-color: #f0fcff;
+    font-size: 0;
+}
+
+.calculator {
+    margin: 0 auto;
+    width: 484px;
+}
+
+input {
+    height: 100px;
+    width: 484px;
+    background-color: #fa6f13;
+    border: none;
+    font-size: 46px;
+    color: #fff;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}
+
+span {
+    width: 240px;
+    height: 110px;
+    display: inline-block;
+    background-color: #303233;
+    border: 1px solid #5a5c5d;
+}
+
+button {
+    width: 121px;
+    height: 112px;
+    background-color: #303233;
+    font-size: 42px;
+    color: #fff;
+    border: 1px solid #5a5c5d;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.equal {
+    background-color: #fa6f13;
+}
+
+.equal:active {
+    border: 2px solid #fa6f13;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    border: 1px solid #303233;
+}
+

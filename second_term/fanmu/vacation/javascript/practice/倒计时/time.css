@@ -1,0 +1,43 @@
+body {
+    background-color: #f0fcff;
+    font-size: 50px;
+}
+
+input {
+    height: 30px;
+    background-color: #303233;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 98px;
+    margin-right: 10px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #303233;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: -10px;
+}
+button:hover{
+     background-color: #ff0000;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+     background-color: #ccc;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 20px;
+}
