@@ -1,0 +1,82 @@
+.content{
+	height:500px;
+	width: auto;
+	background-color: #eee;
+	margin: 20px;
+	border: 1px solid #a3a3a3;
+	overflow: auto;
+}
+.team{
+	width: 200px;
+	height: 122px;
+	border: 1px solid #a3a3a3;
+	background-color: #fff;
+	margin: 20px;
+	float: left;
+}
+.team .teamlogo{
+	height: 80px;
+	width: 80px;
+	background-color: #eee;
+	border: 1px solid #a3a3a3;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.team .teamlogo p{
+	text-align: center;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	margin-top: 20px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.team span{
+	margin-top: 20PX;
+	vertical-align: top;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.introduce{
+	/*width: 68.5%;*/
+	/*height: 410px;*/
+	border: 1px solid #a3a3a3;
+	background-color: #fff;
+	margin-top: 20px;
+	margin-left: 240px;
+	margin-right: 160px;
+	/*display: inline-block;*/
+}
+.introduce p{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 微软雅黑;
+}
+
+.person{
+	width: 120px;
+	height: 420px;
+	float: right;
+	border: 1px solid #a3a3a3;
+	background-color: #fff;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.person ul,.person ul li{padding: 0;margin: 0;}
+.person ul{list-style: none;}
+.person ul li{
+	height: 78px;
+	width: 78px;
+	background-color: #eee;
+	border: 1px solid #a3a3a3;
+	margin: 20px;
+}
+.person ul li p{
+	text-align: center;
+	font-size: 12px;
+	font-family: 微软雅黑;
+	margin-top: 20px;
+	font-weight: bold;
+}

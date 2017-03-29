@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rolling</title>
+	<style type="text/css">
+		body,div,ul,li,a,img{margin: 0;padding: 0;}
+		li{list-style: none;float: left;}
+		img{
+			width: 200px;
+			height: 150px;
+		}
+		.left{position: absolute;z-index: 2;margin-left: -50px;}
+		.right{position: absolute;margin-left: 1070px;z-index: 2;}
+		button{
+			height: 150px;
+			border: none;
+			font-size: 30px;
+			cursor: pointer;
+		}
+		.rollingpic{height: 150px;width: 900px; position: relative;margin-left: 150px; margin-top: 30px;}
+		.center{position: absolute;width: 1050px;height: 150px;overflow: hidden;}
+		.center li{width: 200px;height: 150px;margin-left: 10px;}
+		.center li:hover{margin-top: -2px;}
+		.roll{width: 1040px;height:150px;overflow: hidden;position: relative;}
+	</style>
+</head>
+<body>
+
+<div class="rollingpic">
+	<button class="left"><</button>
+	<button class="right">></button>
+	<div class="roll">
+	<ul class="center">
+		<li><a href="#"><img src="img/1.jpg"></a></li>
+		<li><a href="#"><img src="img/2.jpg"></a></li>
+		<li><a href="#"><img src="img/3.jpg"></a></li>
+		<li><a href="#"><img src="img/4.jpg"></a></li>
+		<li><a href="#"><img src="img/5.jpg"></a></li>
+	</ul></div>
+</div>
+
+<script type="text/javascript" src="addLoadEvent.js"></script>
+<script type="text/javascript" src="rolling.js"></script>
+</body>
+</html>

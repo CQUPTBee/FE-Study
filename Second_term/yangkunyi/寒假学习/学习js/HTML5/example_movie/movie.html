@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Video</title>
+	<link rel="stylesheet" type="text/css" href="styles/player.css">
+</head>
+<body>
+	<div class="video-wrapper">
+		<video id="movie" control>
+			<source src="movie.mov">
+			<source src="movie.Webm" type='video/ogg; codecs="vp8,vorbis"'>
+			<source src="movie.ogv" type='video/ogg; codecs="theora,vorbis"'>
+			<p>Download movie as
+				<a href="movie.mp4">MP4</a>,
+				<a href="movie.webm">WebM</a>,
+				<a href="movie.ogv">Ogg</a>.
+			</p>
+		</video>
+	</div>
+
+	<script type="text/javascript" src="player.js"></script>
+</body>
+</html>

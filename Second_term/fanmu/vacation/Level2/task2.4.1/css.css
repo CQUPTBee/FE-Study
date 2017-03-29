@@ -1,0 +1,207 @@
+/*重置样式*/
+body,a,div,li,ul,ol,p,h1,h2,h3,table,input,section,aside,img {
+	padding: 0;
+	margin: 0;
+}
+
+li,ol,ul {
+	list-style: none;
+}
+
+/*页面样式*/
+body {
+	background-color: #dedede;
+}
+p,li {
+	font-weight: bold;
+}
+h2 {
+	font-size: 26px;
+}
+
+
+/*顶栏样式*/
+header {
+	height: 80px;
+	background-color: #333;
+	overflow:hidden; 
+}
+
+/*百度logo样式*/
+header img {
+	width: 100px;
+	height: 60px;
+	margin-right: 0; 
+	padding-top: 12px;
+	margin-left: 40px;
+}
+
+/*导航样式*/
+header nav {
+	float: right;
+	width: 450px;
+	margin-top: 30px;
+}
+header li {
+	float: left;
+	list-style-type: disc;
+	width: 110px;
+}
+header li a {
+	width: 80px;
+	color: #fff;
+	margin-left: -18px;
+	text-decoration: none;
+}
+header li .color{
+	color: #9c979b;
+}
+
+
+/*通用文章样式*/
+/*文章及侧边样板*/
+section,aside {
+	display: block;
+	box-shadow: 3px 3px #848484;
+	background-color: #fff;
+	padding: 20px 20px 40px 20px;
+	width: 1400px;
+	margin: 20px auto 20px auto;	
+}    
+section,aside p{
+	line-height: 28px;
+}
+.article-title-1st {
+	color: #6b6267;
+	font-size: 18px;
+	line-height: 40px;
+}    
+.article-detail {
+	color: #58626c;
+	font-size: 14px;
+}      
+.first-paragraph {
+	text-indent: 28px;
+}    
+
+/*照片样式*/
+.third .images {
+	border: 2px solid #cbcbcb;
+	width: 230px;
+	text-align: center;
+	margin: 30px 0 0 20px;
+}
+.third .images p {
+	line-height: 40px;
+	height: 20px;
+}
+
+/*排序样式*/
+.fourth ol li{
+	list-style-type: decimal;
+	padding-left: 40px;
+	list-style-position: inside;
+}
+
+/*表格样式*/
+.fourth table {
+	border: 1px solid #c8c8c6;
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 22px;
+}
+.fourth table th {
+	border: 1px solid #c8c8c6;
+}
+
+.fourth .table-first {
+	width: 500px;
+	background-color: #333;
+	color: #fff;
+}
+.fourth .table-second {
+	width: 200px;
+	background-color: #333;
+	color: #fff;
+}
+.fourth .table-third {
+	background-color: #ccc;
+	font-family: blod;
+	font-weight: 700px;
+}
+
+/*侧边栏样式*/
+aside {
+	width: 1370px;
+	margin-left: 40px;
+}
+
+aside h2 {
+	border-left: 4px solid #ccc;
+	line-height: 50px;
+	font-size: 18px;
+	text-indent: 16px;	
+}
+
+.side{
+	line-height: 40px;
+}
+.side p {
+	font-size: 12px;
+	color: #ccc;
+}
+form {
+	font-weight: bold;
+}
+
+.inqure input{
+	width: 1200px;
+	background-color: #3355d0;
+	line-height: 40px;
+	color: #000;
+	font-size: 20px;
+	border-radius: 12px;
+}
+
+/*问答区样式*/
+aside .side .all {
+	width: 1000px;
+	padding-top: 10px;
+}
+aside .side .all p{
+	float: left;
+	text-align: right;
+	width: 42%;
+	color: #000;
+	font-size: 16px;
+	padding-top: 8px;
+
+}
+aside .side .all input,select,textarea {
+	text-indent: 6px;
+	line-height: 20px;
+	margin-left: 24px;
+}
+
+aside .side .remarks {
+	font-size: 12px;
+	color: #ccc;
+	margin-left: 444px;
+}
+
+aside .side textarea {
+	width: 400px;
+	height: 200px;
+}
+
+/*底栏样式*/
+footer {
+	background-color: #000;
+	height: 80px;
+	text-align: center;
+}
+footer p {
+	font-family: "Mycrosoft YaHei";
+	color: #fff;
+	line-height: 80px;
+}
