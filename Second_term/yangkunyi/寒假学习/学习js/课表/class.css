@@ -1,0 +1,81 @@
+body,div,ul,li,a,textarea,img{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial;
+	font-size: 16px;
+
+}
+ul{
+	float: left;
+	list-style: none;
+}
+#classes{
+	margin-top: 30px;
+}
+.nav>li{
+	width: 124px;
+	border: 1px solid #666;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: -1px;
+}
+.nav{margin-left: 20px;}
+.content>li{
+	width: 750px;
+	border: 1px solid #666;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: -1px;
+}
+.content>li>a{
+	color: #000;
+	text-decoration: none;
+}
+.oDiv{
+	position: relative;
+	float: left;
+	width: 752px;
+	height: 530px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.move{
+	position: relative;
+	width: 1504px;
+}
+.nav .nav_description,
+.content .description{
+	height: 90px;
+	line-height: 90px;
+}
+.content .description{
+	line-height: 12px;
+	font-size: 14px;
+	text-align: left;
+}
+.content .description textarea{
+	width: 750px;
+	height: 90px;
+	margin-left: -1px;
+	margin-top: -1px;
+	border-color: #666;
+	color: #000;
+	outline: none;
+}
+.button{
+	position: absolute;
+	margin-top: 540px;
+	margin-left: 780px;
+}
+.button button{
+	margin-right: 50px;
+}
+.nav .nav_smallPhotoUrl,
+.content .smallPhotoUrl{
+	height: 80px;
+	line-height: 80px;
+}

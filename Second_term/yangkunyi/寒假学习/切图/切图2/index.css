@@ -1,0 +1,126 @@
+body,ul,li,a,p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 微软雅黑;
+	font-size: 12px;
+}
+ul{list-style: none;}
+li{float: left;}
+a{text-decoration: none;}
+.main{
+	height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #66ccff;
+	border-top: 3px solid #ff8500;
+}
+.top{
+	height: 40px;
+	border-bottom: 1px solid #edeef0;
+}
+.top_page{
+	margin-left: -19px;
+	margin-top: 10px;
+	height: 23px;
+	line-height: 23px;
+	float: left;
+}
+.top_login{
+	float: right;
+	height: 23px;
+	margin-top: 10px;
+	line-height: 23px;
+}
+.top_page li,
+.top_login li{margin-left: 37px;}
+.top_page li a,
+.top_login li a{
+	color: #4c4c4c;
+}
+.top_page li a span,
+.top_login li a span{
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	background-image: url(img/icon_down.png);
+	background-position: 0 3px;
+}
+.top_login li button{
+	height: 23px;
+	width: 56px;
+	border: none;
+	cursor: pointer;
+	background-image: url(img/header_close.png);
+}
+
+/*header*/
+.header{
+	width: 880px;
+	height: 80px;
+	margin: 0 auto;
+}
+.header .logo{
+	float: left;
+	margin-top: 16px;
+}
+.header ul{
+	float: left;
+	margin-top: 22px;
+	margin-left: 23px;
+}
+.header ul li input{
+	width: 372px;
+	height: 32px;
+	border: 1px solid #c1c1c1;
+}
+.header ul li button{
+	float: left;
+	height: 36px;
+	width: 66px;
+	background-image: url(img/header_search.png);
+	border: none;
+}
+.header ul li{
+	font-size: 12px;
+	font-family: 宋体;
+	color: #797874;
+	line-height: 12px;
+}
+.header ul li p{
+	float: left;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+.header ul li span:after{content: url(img/header_sun.png);}
+.header .supervision{
+	float: right;
+	margin-top: 15px;
+}
+
+/*nav*/
+.nav{
+	height: 70px;
+	width: 963px;
+	margin: 0 auto;
+}
+.nav>ul>li{clear: left;}
+.nav>ul{float: left;}
+.nav .nav_between:after{
+	content: url(img/nav.png);
+	margin-left: 17px;
+}
+.nav .nav_last:after{content: "";}
+.nav>ul>li>ul>li{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.nav>ul>li>ul>li a{
+	font-size: 12px;
+	font-family: 微软雅黑;
+	color: #000;
+}
