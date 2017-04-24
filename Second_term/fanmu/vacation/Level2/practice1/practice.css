@@ -1,0 +1,691 @@
+/*重置样式*/
+body,a,li,div,ul,dl,dt,dd,h1,h2,h3,form,p,input {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+.clearfloat {
+	zoom:1;
+	overflow: hidden;
+}
+
+/*整个页面背景*/
+body {
+	background: url(./images/background.png) repeat-x;
+}
+
+/*头部高度*/
+header {
+	height: 172px;
+	width: 960px;
+	margin: 0 auto;
+}
+/*head背景*/
+header .head {
+	background: url(./images/header/background.png);
+	height: 100px;
+}
+
+/*top左上的文字*/
+header .top {
+	height: 30px;
+}
+
+header .top .about {
+	width: 570px;
+	height: 30px;
+	display: inline-block;
+	font-size: 0;
+}
+header .top .about a {
+	color: #c0c0c0;
+	display: inline-block;
+	margin-right: 32px;
+	line-height: 30px;
+	font-size: 13px;
+}
+header .top .about a:hover {
+	color: #ffcc00;
+	text-decoration: underline;
+}
+header .top .about li {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background: url(./images/header/point.png);
+	position: relative;
+	left: -15px;
+	top: -1px;
+}
+/*top右国旗*/
+header .top .flags {
+	float: right;
+}
+header .top .flags img {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 12px;
+	cursor: pointer;
+}
+/*top右上联系方式*/
+header .top .contact {
+	display: inline-flex;
+	width: 250px;
+	float: right;
+}
+header .top .contact .phone {
+	margin-top: 4px;
+	width: 18px;
+	height: 22px;
+	margin-right: 10px;
+}
+header .top .contact .wechat {
+	margin-top: 6px;
+	width: 30px;
+	height: 20px;
+	margin-left: 38px;
+	margin-right: 8px;
+}
+header .top .contact a {
+	color: #fff;
+	margin-top: 8px;
+	font-size: 13px;
+}
+
+/*head口袋部分*/
+header .head .head-check {
+	width: 254px;
+	display: inline-block;
+}
+header .head .head-check img,p {
+	display: inline-block;
+}
+header .head .head-check .bag {
+	vertical-align: top;
+	font-size: 20px;
+	margin-top: 28px;
+	color: #fff;
+}
+header .head .head-check .check {
+	display: inline-block;
+	margin-left: -154px;
+	font-size: 15px;
+	width: 114px;
+	height: 22px;
+	background-color: #b20e00;
+	text-align: center;
+	border-radius: 8px;
+	vertical-align: top;
+	margin-top: 60px;
+}
+header .head .head-check .check a {
+	color: #ffc200;
+	line-height: 22px;
+}
+/* headlogo部分 */
+header .head .logo {
+	width: 232px;
+	height: 94px;
+	background: url(./images/header/logo.png);
+	float: right;
+	position: relative;
+	left: -50px;
+	top: 4px;
+}
+/*head搜索框*/
+.head form {
+	display: inline-block;
+	float: right;	
+	background: url(./images/header/search.png);
+	width: 292px;
+	height: 30px;
+	margin-top: 34px;
+}
+.head form .text {
+	width: 225px;
+	height: 30px;
+	font-size: 13px;
+	color: #666;
+	vertical-align: top;
+	margin-left: 20px;
+}
+.head form .btn {
+	width: 42px;
+	height: 30px;
+	cursor:pointer;
+}
+.head form input {
+	outline:none;
+	border: none;
+	background: none;
+}
+
+/*导航栏*/
+header nav {
+	height: 42px;
+	padding-top: 8px;
+	margin: 0 auto; 
+}
+header nav li {
+	float: left;
+	height: 28px;
+	border-radius: 2px;
+}
+header nav a{
+	float: left;
+	height: 28px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+}
+header nav strong {
+	float: left;
+	height: 28px;
+	font-weight: normal;	
+}
+header nav span {
+	float: left;
+	height: 28px;
+	padding: 0 16px;
+}
+header nav a:hover {
+	background: url(./images/header/nav.png) repeat-x 0 -56px;
+}
+header nav a strong:hover {
+	background: url(./images/header/nav.png) no-repeat;
+}
+header nav a strong span:hover {
+	background: url(./images/header/nav.png) no-repeat right -28px;
+}
+
+/*主要内容*/
+.main {
+	background: url(./images/main/background.png);
+	margin: 0 auto;
+	width: 1000px;
+	height: 1324px;
+	margin-top: 2px;
+}
+
+/*banner*/
+.main-banner {
+	background: url(./images/main/banner-bg.png);
+	width: 960px;
+	height: 323px;
+	margin: 0 auto;
+	position: relative;
+	top: 24px;
+}
+.main-banner section {
+	background-color: #333;
+	opacity: 0.8;
+	width: 940px;
+	height: 56px;
+	margin: 0 auto;
+	position: relative;
+	top: 258px;
+}
+.main-banner .banner-title {
+	float: left;
+	font-size: 25px;
+	color: #ffc600; 
+	margin-top: 18px;
+	margin-left: 34px;
+}
+.main-banner .banner-detail {
+	font-size: 13px;
+	color: #ffcccc;
+	width: 628px;
+	margin-left: 36px;
+	margin-top: 16px;
+}
+
+/*主面板侧栏部分*/
+aside {
+	float: left;
+	width: 210px;
+	height: 950px;
+	margin-top: 46px;
+	margin-left: 30px;
+}
+/*主面板侧栏导航部分*/
+.aside-nav {
+	background-color: #ffeeb7;
+	border-radius: 10px 10px 7px 7px;
+} 
+.aside-nav-title {
+	background-color: #ffeeb7;
+}
+.aside-nav h1 {
+	background: url(./images/main/aside/nav-title.png);
+	width: 209px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 15px;
+}
+.aside-nav-first {
+	width: 194px;
+	height: 46px;
+	font-size: 12px;
+	border-bottom: 1px solid #fff;
+	margin-left: 8px;
+}
+.aside-nav-first  a {
+	color: #434343;
+	display: block;
+	margin-top: 24px;
+	margin-left: 32px;
+}
+.aside-nav-p {
+	width: 194px;
+	height: 28px;
+	font-size: 12px;
+	border-bottom: 1px solid #fff;
+	margin-left: 8px;
+}
+.aside-nav-p  a {
+	color: #434343;
+	display: block;
+	margin-top: 8px;
+	margin-left: 32px;
+}
+.aside-nav  a:hover {
+	color: #b20e00;
+}
+.aside-nav-last {
+	background-color: #ffeeb7;
+	height: 16px;
+	width: 194px;
+}
+
+/*join部分*/
+.aside-join {
+	width: 210px;
+	height: 332px;
+	background-color: #f5f5f2;
+	border: 1px solid #e8e8e3;
+	border-radius: 6px; 
+	margin-top: 14px;
+}
+.aside-join h1 {
+	width: 180px;
+	height: 32px;
+	font-size: 15px;
+	color: #666;
+	margin-top: 16px;
+	margin-left: 14px;
+}
+.aside-put {
+	width: 176px;
+	height: 26px;
+	border-top:1px solid #9c9c9c;
+	border-left: 1px solid #c0c0c0;
+	margin-top: 12px;
+	margin-left: 16px;
+	margin-right: 16px;
+} 
+.aside-btn {
+	width: 88px;
+	height: 25px;
+	background: url(./images/main/aside/btn-bg.png);
+	border: none;
+	margin-top: 8px;
+	margin-left: 60px;
+	color: #fff;
+	font-size: 15px;
+
+}
+.btn-bottom {
+	margin-top: 14px;
+}
+.aside-join div {
+	width: 194px;
+	height: 42px;
+	border-top: 1px solid #fff;
+	margin-left: 6px;
+
+}
+.aside-join div img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-top:8px;
+	margin-left: 10px;
+} 
+.aside-join div p {
+	font-size: 13px;
+	color: #434343;
+	margin-top: 10px;
+	margin-left: 20px;
+} 
+
+/*aside银行卡部分*/
+.aside-information {
+	width: 184px;
+	height: 174px;
+	margin-top: 32px;
+	margin-left: 20px;
+}
+.information-pay {
+	width: 179px;
+	height: 56px;
+	margin-left: 2px;
+	background: url(./images/main/aside/pay-bg.png);
+}
+.information-pay a {
+	display: inline-block;
+	margin-top: 26px;
+	margin-left: 5px;
+}
+.information-google {
+	width: 182px;
+	height: 44px;
+	background: url(./images/main/aside/google-bg.png);
+	margin-top: 12px;
+}
+.information-google a {
+	display: inline-block;
+	margin-top: 16px;
+	margin-left: 6px;
+}
+.information-secure {
+	width: 98px;
+	height: 59px;
+	background: url(./images/main/aside/secure.png);
+	margin-top: 8px;
+	margin-left: 46px;
+}
+
+/*content*/
+.content {
+	width: 706px;
+	height: 934px; 
+	margin-left: 265px;
+	margin-top: 46px;
+}
+.conent-head {
+	font-size: 13px;
+}
+form {
+	width: 400px;
+	font-size: 0;
+	color: #747474;
+	display: inline-block;
+}
+form p {
+	font-size: 13px;
+}
+select {   
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/  
+  border: 1px solid #ccc;   
+  /*很关键：将默认的select选择框样式清除*/  
+  appearance:none;   
+  -moz-appearance:none;   
+  -webkit-appearance:none;   
+  /*在选择框的最右侧中间显示小箭头图片*/  
+  background: url(./images/main/content/arrow.png) no-repeat scroll right center;   
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/  
+  padding-right: 14px;  
+  margin-right: 12px;
+  color: #747474;
+  font-size: 12px;
+  width: 100px;
+  line-height: 19px;
+}  
+option {
+	font-size: 12px;
+}
+.head-time {
+	font-size: 12px;
+	color: #999;
+	float: right;
+}
+.head-time span {
+	color: #474747;
+	margin-left: 8px;
+}
+#time1 {
+	color: #b20e00;
+}
+
+/*12个产品*/
+.product {
+	margin-top: 28px;
+	font-size: 0;
+	color: #666;
+}
+.product h2 {
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.product div {
+	width: 158px;
+	height: 156px;
+	display: inline-block;
+	margin-right: 17px;
+}
+.pro-1 {
+	margin-bottom: 48px; 
+}
+.pro-2 {
+	margin-bottom: 40px; 
+}
+.pro-l {
+	margin-right: 0;
+}
+.product div h3 {
+	font-size: 15px;
+}
+.product div p {
+	font-size: 13px;
+	color: #333;
+}
+.product div a:hover {
+	color: #b20e00;
+}
+.product div span {
+	color: #b20e00;
+}
+
+
+/*页数目录*/
+.catalog {
+	width: 706px;
+	height: 26px;
+	margin-top: 46px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #cdcdc8;
+}
+.catalog a {
+	display: inline-block;
+	color: #b20e00;
+	line-height: 20px;
+}
+.asm {
+	width: 20px;
+	height: 20px;
+}
+.amd {
+	width: 60px;
+	height: 20px;
+}
+.catalog .active {
+	background: url(./images/main/content/active.png);
+	color: #fff;
+}
+
+/*推荐栏目*/
+.proom {
+	width: 704px;
+	height: 210px;
+	margin-top: 24px;
+	font-size: 0;
+}
+.proom h2 {
+	font-size: 18px;
+	color: #666;
+}
+.product-1 {
+	width: 704px;
+	height: 202px;
+	font-size: 0;
+	background: url(./images/main/product/bg.png);;
+}
+.product-1 input {
+	width: 35px;	
+	height: 43px;
+	border: none;
+	margin-top: 64px;
+	margin-left: 2px;
+}
+.product-1 .btn-left {
+	background: url(./images/main/product/btn-left.png);
+	float: left;
+}
+.product-1 .btn-right {
+	background: url(./images/main/product/btn-right.png);
+	float: right;
+}
+.product-1 div {
+	width: 148px;
+	height: 138px;
+	margin-top: 24px;
+	display: inline-block;
+	margin-left: 56px;
+	margin-top: 32px;
+}
+.product-1 .product-2 {
+	margin-left: 34px;
+}
+.product-1 div p{
+	font-size: 12px;
+	color: #660000;
+	line-height: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/*尾部*/
+footer {
+	background: url(./images/footer/background.png) repeat-x;
+	height: 300px;
+	position: relative;
+}
+.footer-search {
+	margin: 0 auto;
+	width: 960px;
+	height: 60px;
+}
+/*100% box及文字*/
+footer img,footer p{
+	display: inline-block;
+	float: left;
+}
+footer img {
+	margin-top: 6px;
+}
+.footer-search p {
+	font-size: 14px;
+	margin-left: 10px;
+}
+footer a {
+	color: #cbcbcb;
+}
+.box-1 {
+	margin-top: 12px;
+	margin-left: 26px;
+}
+.box {
+	display: inline-block;
+	line-height: 60px;
+	float: left;
+
+}
+/*搜索框*/
+.footer-search form {
+	margin-top: 20px;
+	float: right;
+} 
+
+/*more-information*/
+.more-information {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 0;
+	margin-top: 34px;
+}
+.more-information div {
+	float: left;
+}
+.more-information h3 {
+	font-size: 15px;
+	color: #fff;
+	line-height: 14px;
+	margin-bottom: 26px;
+	display: block;
+}
+.more-information p {
+	font-size: 13px;
+	color: #cfcfcf;
+	line-height: 20px;
+	display: block;
+}
+.more-information a {
+	display: block;
+}
+.more-information a:hover {
+	color: #ffcc00;
+	text-decoration: underline;
+}
+.more-information span {
+	color: #ffcc00;
+}
+.more-1 {
+	width: 152px;
+	margin-left: 22px;
+}
+.more-1 p{
+	width: 90px;
+}
+.more-2 {
+	width: 216px;
+}
+.more-2 p{
+	width: 140px;
+}
+.more-3 {
+	width: 194px;
+}
+.more-3 p{
+	width: 120px;
+}
+.more-5 {
+	width: 182px;
+}
+.more-5 p{
+	width: 170px;
+}
+.more-6 {
+	margin-top: 22px;
+}

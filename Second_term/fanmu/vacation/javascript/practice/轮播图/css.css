@@ -1,0 +1,76 @@
+.all {
+    margin-top: 50px;
+    margin-left: 450px;
+    position: relative;
+    width: 620px;
+    overflow: hidden;
+    height: 450px;
+}
+.all:hover .btn button{
+    display: inline;
+}
+
+.carousel {
+    height: 450px;
+}
+
+section {
+    font-size: 0;
+    width: 2790px;
+    height: 450px;
+    position: absolute;
+}
+
+img {
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin-right: 10px;
+}
+
+button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+    border: none;
+    opacity: 0.7;
+}
+
+button:focus {
+    outline: none;
+}
+.left {
+    position: relative;
+    top: -250px;
+    left: 60px;
+}
+
+.right {
+    position: relative;
+    top: -250px;
+    left: 466px;
+}
+.point {
+    position: absolute;
+    top: 424px;
+    left: 282px;
+    width: 80px;
+    display: inline-block;
+    outline: none;
+}
+span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #303233;
+    cursor: pointer;
+    border: 1px solid #5a5c5d;
+}
+.span-hover {
+    background-color: #fa6f13;
+}
