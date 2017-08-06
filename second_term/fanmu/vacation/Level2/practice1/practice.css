@@ -24,7 +24,7 @@ img {
 	overflow: hidden;
 }
 
-/*整个页面背景*/
+/*整个头部页面背景*/
 body {
 	background: url(./images/background.png) repeat-x;
 }
@@ -93,6 +93,7 @@ header .top .contact .phone {
 	width: 18px;
 	height: 22px;
 	margin-right: 10px;
+	cursor: pointer;
 }
 header .top .contact .wechat {
 	margin-top: 6px;
@@ -100,6 +101,7 @@ header .top .contact .wechat {
 	height: 20px;
 	margin-left: 38px;
 	margin-right: 8px;
+	cursor: pointer;
 }
 header .top .contact a {
 	color: #fff;
@@ -176,40 +178,39 @@ header .head .logo {
 }
 
 /*导航栏*/
-header nav {
+nav {
 	height: 42px;
 	padding-top: 8px;
 	margin: 0 auto; 
 }
-header nav li {
+nav li {
 	float: left;
 	height: 28px;
-	border-radius: 2px;
 }
-header nav a{
+nav a{
 	float: left;
 	height: 28px;
 	color: #fff;
 	font-size: 16px;
 	line-height: 28px;
 }
-header nav strong {
+nav strong {
 	float: left;
 	height: 28px;
 	font-weight: normal;	
 }
-header nav span {
+nav span {
 	float: left;
 	height: 28px;
 	padding: 0 16px;
 }
-header nav a:hover {
+nav a:hover {
 	background: url(./images/header/nav.png) repeat-x 0 -56px;
 }
-header nav a strong:hover {
+nav a:hover strong {
 	background: url(./images/header/nav.png) no-repeat;
 }
-header nav a strong span:hover {
+nav a:hover span {   
 	background: url(./images/header/nav.png) no-repeat right -28px;
 }
 
@@ -394,6 +395,13 @@ aside {
 	margin-top: 26px;
 	margin-left: 5px;
 }
+.pay-1 {
+	margin-left: 4px;
+	margin-right: -2px;
+}
+.pay-4 {
+	margin-left: -2px;
+}
 .information-google {
 	width: 182px;
 	height: 44px;
@@ -442,7 +450,7 @@ select {
   /*在选择框的最右侧中间显示小箭头图片*/  
   background: url(./images/main/content/arrow.png) no-repeat scroll right center;   
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/  
-  padding-right: 14px;  
+  padding-left: 4px;  
   margin-right: 12px;
   color: #747474;
   font-size: 12px;
@@ -471,6 +479,9 @@ option {
 	font-size: 0;
 	color: #666;
 }
+.product a {
+	width: 102px;
+}
 .product h2 {
 	font-size: 18px;
 	line-height: 18px;
@@ -497,7 +508,7 @@ option {
 }
 .product div p {
 	font-size: 13px;
-	color: #333;
+	color: #333
 }
 .product div a:hover {
 	color: #b20e00;
@@ -549,7 +560,7 @@ option {
 	width: 704px;
 	height: 202px;
 	font-size: 0;
-	background: url(./images/main/product/bg.png);;
+	background: url(./images/main/product/bg.png);
 }
 .product-1 input {
 	width: 35px;	
@@ -557,6 +568,7 @@ option {
 	border: none;
 	margin-top: 64px;
 	margin-left: 2px;
+	cursor: pointer;
 }
 .product-1 .btn-left {
 	background: url(./images/main/product/btn-left.png);
