@@ -10,6 +10,10 @@
  + [Level3 渐入佳境传送门](/source/Stage3.md)
  + [Level4 得心应手传送门](/source/Stage4.md)
  + [Level5 玩转自如传送门](/source/Stage5.md)
+ + 2017暑假学员计划
+
+ 	+ [JavaScript基础一](/source/Vacation2017/暑假第一次任务JavaScript基础（7-26-8-1,7月30周日放假）.md)
+ 	+ [JavaScript基础二](/source/Vacation2017/暑假第二次任务JavaScript基础.md)
 
 ## 部署说明
 
