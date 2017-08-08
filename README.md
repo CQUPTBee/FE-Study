@@ -14,6 +14,7 @@
 
  	+ [JavaScript基础一](/source/Vacation2017/暑假第一次任务JavaScript基础（7-26-8-1,7月30周日放假）.md)
  	+ [JavaScript基础二](/source/Vacation2017/暑假第二次任务JavaScript基础.md)
+ 	+ [jQuery基础](/source/Vacation2017/第三次任务jQuery基础-四天（周三-周六）8-9---8-12.md)
 
 ## 部署说明
 
