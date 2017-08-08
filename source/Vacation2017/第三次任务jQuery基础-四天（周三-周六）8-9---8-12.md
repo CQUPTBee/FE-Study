@@ -37,6 +37,7 @@
 ２. 表单及表单验证
 
 ３. 用Ajax请求数据，做一个重庆天气预报
+
 	* 接口 ：http://www.sojson.com/open/api/weather/json.shtml?city=%E9%87%8D%E5%BA%86
 	* 以列表的形式展现，并根据温度进行排序
 
@@ -46,7 +47,8 @@
 	1.点击某一时间节点可以显示事件，日期
 	2.可拖拽滚动
 	3.点击某一日期可以时间轴可以滑动定位到该日期的时间节点处
-	＊　可参考以下实例
+
+	+ 可参考以下实例
 	![mark](http://ojmcn9nlw.qnssl.com/blog/20170808/202440605.png)
 	![mark](http://ojmcn9nlw.qnssl.com/blog/20170808/202518388.png)
 
