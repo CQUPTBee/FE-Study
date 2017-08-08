@@ -5,18 +5,20 @@
 
 >本周主要结合视频和js高级教程学习，大家一起加油
 
-## 参考书籍（有机会可以先看 JavaScript DOM编程艺术，其次 JavaScript高级程序设计）
+## 参考书籍
 
 * JavaScript高级程序设计
     * 1-11章，其中第6章，9章暂时不用看
 
 * 你不知道的JavaScript上
-    * 可以下周再看
-    
-## 推荐视频（选看）
-+ [js基础视频][1] 
+    * 可以下次任务再看
+ 
++ 有机会可以先看 JavaScript DOM编程艺术，其次 JavaScript高级程序设计）
+  
+## 推荐视频
++ [js基础视频][1] （可从组长那拷）
++ [慕课网js入门视频](http://www.imooc.com/learn/36)（选看）
 
-+ 网速很皮的，也可以找各组长去拷
 
 ## 相关文章（参考）
 * [给JavaScript初学者的24条最佳实践][2] 
@@ -43,7 +45,7 @@
 
 * [任务十五：零基础JavaScript编码（三][6]）
 
-* [任务十六：零基础JavaScript编码（四）][7]
+
 
 * [任务十七：零基础JavaScript编码（五）][8]
 
@@ -63,7 +65,7 @@
 
 * 简易js计算器
 
-
+    + 使用HTML/CSS/Javascript制作一个简单的计算器，要求：具备两个数字（包括小数）的加减乘除，一个数字的求百分比功能；各种颜色和字体等样式都按照你的个人喜好来设计。[参考图](http://ww1.sinaimg.cn/large/74990035gw1edwkx6v8hjj208h08j3ym.jpg)[http://ww1.sinaimg.cn/large/74990035gw1edwkx6v8hjj208h08j3ym.jpg]
   
   
   
@@ -76,9 +78,6 @@
   
   
   
-
-
-  [92016/task/detail?taskId=20
 
 
   [1]: https://pan.baidu.com/s/1dF7uO4h
