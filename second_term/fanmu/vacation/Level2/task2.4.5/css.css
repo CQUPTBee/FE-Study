@@ -52,9 +52,9 @@
  /*头部*/
  
  header {
-     width: 892px;
      height: 62px;
      border-bottom: 2px solid #938e8c;
+     width: 892px;
  }
  /*头部红色方块*/
  
@@ -194,8 +194,8 @@
  
  .second {
      height: 170px;
-     width: 892px;
      margin-top: 40px;
+     width: 892px;
  }
  /*what*/
  
@@ -244,8 +244,8 @@
      line-height: 16px;
      font-family: "SimSun";
  }
-
  /*how*/
+ 
  .second .second-how {
      width: 230px;
      height: 170px;
@@ -267,32 +267,221 @@
      line-height: 16px;
      font-family: "SimSun";
  }
+ 
+ .second .second-how .how-what {
+     font-size: 12px;
+     color: #231815;
+     line-height: 20px;
+     opacity: 0.7;
+     font-family: "Mycrosoft YaHei";
+     margin-left: 4px;
+ }
+ 
+ .second .second-how .how-what span {
+     color: #cd4a48;
+ }
+ 
+ .second .second-how .how-1 {
+     margin-top: 36px;
+ }
+ /*第三个横栏*/
+ 
+ .third {
+     margin-top: 76px;
+     height: 606px;
+ }
+ /*左侧标题*/
+ 
+ .third .third-left {
+     width: 456px;
+     float: left;
+ }
+ /* 科技标题 */
+ 
+ .tec-head {
+     height: 160px;
+     border-bottom: 2px solid #11456b;
+ }
+ 
+ .tec-head p {
+     color: #11456b;
+     font-weight: bold;
+     font-family: "SimHei";
+     font-size: 42px;
+     line-height: 40px;
+ }
+ 
+ .tec-head span {
+     font-size: 72px;
+     color: #f5e327;
+     font-style: italic;
+     margin-right: 26px;
+ }
+ 
+ .tec-head p:first-child {
+     line-height: 60px;
+ }
+ 
+ .tec-head p:last-child {
+     font-size: 33px;
+     line-height: 46px;
+ }
+ /* 科技内容 */
+ 
+ .tec-artic {
+     padding: 24px 0 40px 0;
+ }
+ 
+ .tec-artic p {
+     font-size: 12px;
+     color: #767777;
+     font-family: "Simsun";
+     display: inline-block;
+     line-height: 16px;
+ }
+ 
+ .tec-artic span {
+     font-size: 70px;
+     color: #f5e327;
+     font-family: 'Microsoft YaHei';
+     float: left;
+     line-height: 70px;
+     margin-right: 14px;
+ }
+ /* 图片 */
+ 
+ .tec-artic img {
+     float: right;
+     margin: 22px 0 0 22px;
+ }
+ 
+ .third-right {
+     margin-left: 14px;
+     display: inline-block;
+ }
 
-.second .second-how .how-what {
-	font-size: 12px;
-	color: #231815;
-	line-height: 20px;
-	opacity: 0.7;
-	font-family: "Mycrosoft YaHei";
-	margin-left: 4px;
+/* 前端技术 */
+.com {
+     width: 458px;
+     height: 258px;
+     overflow: hidden;
+     margin-top: 6px;
 }
-.second .second-how .how-what span {
-	color: #cd4a48;
+.com-h>span{
+     height: 60px;
+     width: 458px;
+     display: block;
+     background-color: #9b9999;
+     opacity: 0.4;
+     position: relative;
+     top: -64px;
 }
-.second .second-how .how-1 {
-	margin-top: 36px;
+.com-h p {
+     font-size: 26px;
+     line-height: 44px;
+     margin-left: 38px;
+     border-left: 3px solid #72b16a;
+     padding-left: 12px;
+     position: relative;
+     top: -118px;
+}
+.com-h p span {
+     font-size: 12px;
+     color: #72b16a;
+     font-style: italic;
+     margin-left: 8px;
 }
 
-/*第三个横栏*/
-.third {
-	margin-top: 76px;
-	height: 606px;
-	width: 892px;
+/* 详情 */
+.det {
+     background-color: #eeedd6;
+     margin-top: 34px;
+}
+.det-h {
+     padding: 14px 0 14px 0;
+}
+.det-h p {
+     line-height: 42px;
+     background: url(./images/more.png) bottom left no-repeat;
+     padding-left: 18px;
+     background-position: 0px 20px;
+     margin-left: 32px;
+     font-size: 16px;
+     font-family: "Simsun";
+     color: #5a5b5b;
+}
+.det-h p span {
+     font-size: 12px;
+     font-style: italic;
 }
 
-/*左侧标题*/
-.third .third-left {
-	width: 456px;
-	border-bottom: 2px solid #10456b;
+.one {
+     background-color: #d45d5c;
+     padding-top: 40px;
+     width: 260px;
+     font-family: "Simhei";
+     display: inline-block;
+}
+.one>p:first-child {
+     font-size: 110px;
+     display: inline-block;
+     color: #fff;
+     padding-right: 8px;
+     border-right: 2px solid #fff;
+     line-height: 86px;
+     margin: 0 0 34px 14px;
+     font-family: 'Microsoft YaHei';
 }
 
+.one-m {
+     display: inline-block;
+     font-size: 18px;
+     color: #fff;
+     font-family: "SimHei";
+     line-height: 22px;
+     margin-top: 4px;
+     width: 164px;
+     float: right;
+     font-style: italic;
+}
+.one-s {
+     font-size: 12px;
+     line-height: 14px;
+     margin-top: 2px;
+     font-style: normal;
+}
+
+.hello {
+     width: 162px;
+     float: right;
+     margin: 8px 20px 0 0;
+     line-height: 16px;
+     font-size: 14px;
+     color: #5a5b5b;
+     font-style: italic;
+}
+.hello span {
+     font-size: 72px;
+     color: #d45d5c;
+     float: left;
+     margin:  16px 4px -22px -40px;
+     font-family: 'SimHei';
+     font-style: normal;
+}
+.hello span:last-child {
+     float: right;
+     margin:  30px -36px;
+}
+
+/* 尾部 */
+footer {
+     margin-top: 40px;
+     border-top: 2px solid #11456b;
+     width: 928px;
+}
+footer p {
+     float: right;
+}
+footer p a:hover{
+     color: #f5e327;
+}
